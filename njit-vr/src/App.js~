@@ -1,0 +1,13 @@
+import React, { Component } from 'react';
+
+import VRTutorial from './components/VRTutorial/VRTutorial';
+
+class App extends Component {
+  render() {
+    return (
+	<VRTutorial/>
+    );
+  }
+}
+
+export default App;
