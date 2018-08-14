@@ -1,0 +1,175 @@
+\hypertarget{class_stage4}{}\section{Stage4 Class Reference}
+\label{class_stage4}\index{Stage4@{Stage4}}
+Inheritance diagram for Stage4\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_stage4}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_stage4_a3b96ad980e2129d1fcb619673921c233}{Notify\+Ball\+Trigger}} ()
+\begin{DoxyCompactList}\small\item\em Gets called when the user drops the ball through the trap doors \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_stage4}{Stage4}} \mbox{\hyperlink{class_stage4_a34780e013df9edac711f8b62d9c9a629}{s\+\_\+\+Instance}} = null
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_stage4_a24aafa249875c3bd1a1383d2eb40c79e}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_stage4_ace16b39395d5c08775c8e031c0e76aa2}{On\+Enable}} ()
+\item 
+void \mbox{\hyperlink{class_stage4_a2746354b2a72b27e3add3f0f4c7f5160}{On\+Disable}} ()
+\item 
+void \mbox{\hyperlink{class_stage4_a32fad5731207055e6b5630a59076dcfd}{Ball\+Dropped}} ()
+\begin{DoxyCompactList}\small\item\em Called when the ball has been dropped. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_stage4_aeb84711e7a42d39c057d74c7d7a1fe17}{Ball\+Picked\+Up}} ()
+\begin{DoxyCompactList}\small\item\em Called when the ball is picked up \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_stage4_a6772bbc4255878e6c0987c8876e547b7}{Update}} ()
+\item 
+void \mbox{\hyperlink{class_stage4_a972d03f467d6ce6fd2de56b541b85a3b}{End\+Of\+Stage}} ()
+\begin{DoxyCompactList}\small\item\em Ends the stage, closes the trap doors, and advances to the next scene \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_v_r_standard_assets_1_1_utils_1_1_raycaster_v_r}{Raycaster\+VR}} \mbox{\hyperlink{class_stage4_a7ac8343ac248e658b20a135aa7771cf1}{m\+\_\+\+Raycaster\+Script}}
+\item 
+\mbox{\hyperlink{class_intro_session_manager}{Intro\+Session\+Manager}} \mbox{\hyperlink{class_stage4_a8f131659124d1b84a702b7a2b2b5b5ad}{m\+\_\+\+Manager}}
+\item 
+\mbox{\hyperlink{class_dialogue}{Dialogue}} \mbox{\hyperlink{class_stage4_a8862f5c33367530940185e68a778bb4a}{m\+\_\+\+Dialogue\+Instructions}}
+\item 
+\mbox{\hyperlink{class_dialogue}{Dialogue}} \mbox{\hyperlink{class_stage4_aae05efed193bd950fd9bf3c8b6d9e438}{m\+\_\+\+Dialogue\+Fail}}
+\item 
+int \mbox{\hyperlink{class_stage4_abca0599ad45f84b0cfa068aee6e10fa2}{m\+\_\+ball\+Dropped\+Count}} = 0
+\item 
+bool \mbox{\hyperlink{class_stage4_ae0bebd4e94c3f743c7e81af16042fe6d}{m\+\_\+is\+End}}
+\item 
+float \mbox{\hyperlink{class_stage4_a49602aa6588e4e288a1fda3ea03987a7}{m\+\_\+timer}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_stage4_a32fad5731207055e6b5630a59076dcfd}\label{class_stage4_a32fad5731207055e6b5630a59076dcfd}} 
+\index{Stage4@{Stage4}!Ball\+Dropped@{Ball\+Dropped}}
+\index{Ball\+Dropped@{Ball\+Dropped}!Stage4@{Stage4}}
+\subsubsection{\texorpdfstring{Ball\+Dropped()}{BallDropped()}}
+{\footnotesize\ttfamily void Stage4.\+Ball\+Dropped (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Called when the ball has been dropped. 
+
+\mbox{\Hypertarget{class_stage4_aeb84711e7a42d39c057d74c7d7a1fe17}\label{class_stage4_aeb84711e7a42d39c057d74c7d7a1fe17}} 
+\index{Stage4@{Stage4}!Ball\+Picked\+Up@{Ball\+Picked\+Up}}
+\index{Ball\+Picked\+Up@{Ball\+Picked\+Up}!Stage4@{Stage4}}
+\subsubsection{\texorpdfstring{Ball\+Picked\+Up()}{BallPickedUp()}}
+{\footnotesize\ttfamily void Stage4.\+Ball\+Picked\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Called when the ball is picked up 
+
+\mbox{\Hypertarget{class_stage4_a972d03f467d6ce6fd2de56b541b85a3b}\label{class_stage4_a972d03f467d6ce6fd2de56b541b85a3b}} 
+\index{Stage4@{Stage4}!End\+Of\+Stage@{End\+Of\+Stage}}
+\index{End\+Of\+Stage@{End\+Of\+Stage}!Stage4@{Stage4}}
+\subsubsection{\texorpdfstring{End\+Of\+Stage()}{EndOfStage()}}
+{\footnotesize\ttfamily void Stage4.\+End\+Of\+Stage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Ends the stage, closes the trap doors, and advances to the next scene 
+
+\mbox{\Hypertarget{class_stage4_a3b96ad980e2129d1fcb619673921c233}\label{class_stage4_a3b96ad980e2129d1fcb619673921c233}} 
+\index{Stage4@{Stage4}!Notify\+Ball\+Trigger@{Notify\+Ball\+Trigger}}
+\index{Notify\+Ball\+Trigger@{Notify\+Ball\+Trigger}!Stage4@{Stage4}}
+\subsubsection{\texorpdfstring{Notify\+Ball\+Trigger()}{NotifyBallTrigger()}}
+{\footnotesize\ttfamily void Stage4.\+Notify\+Ball\+Trigger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets called when the user drops the ball through the trap doors 
+
+\mbox{\Hypertarget{class_stage4_a2746354b2a72b27e3add3f0f4c7f5160}\label{class_stage4_a2746354b2a72b27e3add3f0f4c7f5160}} 
+\index{Stage4@{Stage4}!On\+Disable@{On\+Disable}}
+\index{On\+Disable@{On\+Disable}!Stage4@{Stage4}}
+\subsubsection{\texorpdfstring{On\+Disable()}{OnDisable()}}
+{\footnotesize\ttfamily void Stage4.\+On\+Disable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_stage4_ace16b39395d5c08775c8e031c0e76aa2}\label{class_stage4_ace16b39395d5c08775c8e031c0e76aa2}} 
+\index{Stage4@{Stage4}!On\+Enable@{On\+Enable}}
+\index{On\+Enable@{On\+Enable}!Stage4@{Stage4}}
+\subsubsection{\texorpdfstring{On\+Enable()}{OnEnable()}}
+{\footnotesize\ttfamily void Stage4.\+On\+Enable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_stage4_a24aafa249875c3bd1a1383d2eb40c79e}\label{class_stage4_a24aafa249875c3bd1a1383d2eb40c79e}} 
+\index{Stage4@{Stage4}!Start@{Start}}
+\index{Start@{Start}!Stage4@{Stage4}}
+\subsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Stage4.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_stage4_a6772bbc4255878e6c0987c8876e547b7}\label{class_stage4_a6772bbc4255878e6c0987c8876e547b7}} 
+\index{Stage4@{Stage4}!Update@{Update}}
+\index{Update@{Update}!Stage4@{Stage4}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Stage4.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_stage4_abca0599ad45f84b0cfa068aee6e10fa2}\label{class_stage4_abca0599ad45f84b0cfa068aee6e10fa2}} 
+\index{Stage4@{Stage4}!m\+\_\+ball\+Dropped\+Count@{m\+\_\+ball\+Dropped\+Count}}
+\index{m\+\_\+ball\+Dropped\+Count@{m\+\_\+ball\+Dropped\+Count}!Stage4@{Stage4}}
+\subsubsection{\texorpdfstring{m\+\_\+ball\+Dropped\+Count}{m\_ballDroppedCount}}
+{\footnotesize\ttfamily int Stage4.\+m\+\_\+ball\+Dropped\+Count = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_stage4_aae05efed193bd950fd9bf3c8b6d9e438}\label{class_stage4_aae05efed193bd950fd9bf3c8b6d9e438}} 
+\index{Stage4@{Stage4}!m\+\_\+\+Dialogue\+Fail@{m\+\_\+\+Dialogue\+Fail}}
+\index{m\+\_\+\+Dialogue\+Fail@{m\+\_\+\+Dialogue\+Fail}!Stage4@{Stage4}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Dialogue\+Fail}{m\_DialogueFail}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_dialogue}{Dialogue}} Stage4.\+m\+\_\+\+Dialogue\+Fail\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_stage4_a8862f5c33367530940185e68a778bb4a}\label{class_stage4_a8862f5c33367530940185e68a778bb4a}} 
+\index{Stage4@{Stage4}!m\+\_\+\+Dialogue\+Instructions@{m\+\_\+\+Dialogue\+Instructions}}
+\index{m\+\_\+\+Dialogue\+Instructions@{m\+\_\+\+Dialogue\+Instructions}!Stage4@{Stage4}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Dialogue\+Instructions}{m\_DialogueInstructions}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_dialogue}{Dialogue}} Stage4.\+m\+\_\+\+Dialogue\+Instructions\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_stage4_ae0bebd4e94c3f743c7e81af16042fe6d}\label{class_stage4_ae0bebd4e94c3f743c7e81af16042fe6d}} 
+\index{Stage4@{Stage4}!m\+\_\+is\+End@{m\+\_\+is\+End}}
+\index{m\+\_\+is\+End@{m\+\_\+is\+End}!Stage4@{Stage4}}
+\subsubsection{\texorpdfstring{m\+\_\+is\+End}{m\_isEnd}}
+{\footnotesize\ttfamily bool Stage4.\+m\+\_\+is\+End\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_stage4_a8f131659124d1b84a702b7a2b2b5b5ad}\label{class_stage4_a8f131659124d1b84a702b7a2b2b5b5ad}} 
+\index{Stage4@{Stage4}!m\+\_\+\+Manager@{m\+\_\+\+Manager}}
+\index{m\+\_\+\+Manager@{m\+\_\+\+Manager}!Stage4@{Stage4}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Manager}{m\_Manager}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_intro_session_manager}{Intro\+Session\+Manager}} Stage4.\+m\+\_\+\+Manager\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_stage4_a7ac8343ac248e658b20a135aa7771cf1}\label{class_stage4_a7ac8343ac248e658b20a135aa7771cf1}} 
+\index{Stage4@{Stage4}!m\+\_\+\+Raycaster\+Script@{m\+\_\+\+Raycaster\+Script}}
+\index{m\+\_\+\+Raycaster\+Script@{m\+\_\+\+Raycaster\+Script}!Stage4@{Stage4}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Raycaster\+Script}{m\_RaycasterScript}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_v_r_standard_assets_1_1_utils_1_1_raycaster_v_r}{Raycaster\+VR}} Stage4.\+m\+\_\+\+Raycaster\+Script\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_stage4_a49602aa6588e4e288a1fda3ea03987a7}\label{class_stage4_a49602aa6588e4e288a1fda3ea03987a7}} 
+\index{Stage4@{Stage4}!m\+\_\+timer@{m\+\_\+timer}}
+\index{m\+\_\+timer@{m\+\_\+timer}!Stage4@{Stage4}}
+\subsubsection{\texorpdfstring{m\+\_\+timer}{m\_timer}}
+{\footnotesize\ttfamily float Stage4.\+m\+\_\+timer\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_stage4_a34780e013df9edac711f8b62d9c9a629}\label{class_stage4_a34780e013df9edac711f8b62d9c9a629}} 
+\index{Stage4@{Stage4}!s\+\_\+\+Instance@{s\+\_\+\+Instance}}
+\index{s\+\_\+\+Instance@{s\+\_\+\+Instance}!Stage4@{Stage4}}
+\subsubsection{\texorpdfstring{s\+\_\+\+Instance}{s\_Instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_stage4}{Stage4}} Stage4.\+s\+\_\+\+Instance = null\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_stage4_8cs}{Stage4.\+cs}}\end{DoxyCompactItemize}

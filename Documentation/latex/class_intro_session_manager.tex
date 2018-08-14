@@ -1,0 +1,1080 @@
+\hypertarget{class_intro_session_manager}{}\section{Intro\+Session\+Manager Class Reference}
+\label{class_intro_session_manager}\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+Inheritance diagram for Intro\+Session\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_intro_session_manager}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_intro_session_manager_a9541e181250bbfbfa2d16f62ccb64a22}{Move\+To\+Next\+Stage}} (float delay=0)
+\begin{DoxyCompactList}\small\item\em Driver function to advance to the next scene with a specified delay \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_intro_session_manager_ab234b0587ea8c4283121ac8103ef67e1}{Spawn\+New\+Ball}} ()
+\begin{DoxyCompactList}\small\item\em Spawns a new ball and destroys the old one if one exists \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_intro_session_manager_a0998c6878046777a1baecb46ff8859ec}{Open\+Button\+Box}} ()
+\begin{DoxyCompactList}\small\item\em Method triggers the box to be opened \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_intro_session_manager_ac76f64b1d5b9e0a1a31b2f082708513b}{Close\+Button\+Box}} ()
+\begin{DoxyCompactList}\small\item\em Method triggers the box to close \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_intro_session_manager_ab0c0444fb1525d86b4187c32cec0ce42}{Open\+Sliding\+Doors}} ()
+\begin{DoxyCompactList}\small\item\em Method triggers opening the sliding doors \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_intro_session_manager_ad19be66a5259ad1075f5bec8389bb2ed}{Close\+Sliding\+Doors}} ()
+\begin{DoxyCompactList}\small\item\em Method triggers closing the sliding doors \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_intro_session_manager_a7f844de6716bc367d539bd3a0dd835de}{Bring\+Box\+Into\+Scene}} ()
+\begin{DoxyCompactList}\small\item\em Method triggers bringing the box into the scene \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_intro_session_manager_a238203538188c1c9407b816adae6487b}{Move\+Box\+Out\+Of\+Scene}} ()
+\begin{DoxyCompactList}\small\item\em Method triggers bringing the box out of the scene \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_intro_session_manager_a158dbb9e63a362ad1f71380ad1f116db}{Toast}} (string msg, float length)
+\begin{DoxyCompactList}\small\item\em Method displays a Toast on the Message\+Board \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_intro_session_manager_a6b31e91f5f7fb8d55555424b3f795750}{Move\+Robot\+To\+Position}} (Vector3 position, float speed=5f)
+\begin{DoxyCompactList}\small\item\em Moves the robot to the Vector3 location passed in the param \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_intro_session_manager_a8e0deb467e6dbfcc9074221bfba81053}{Global\+Message}} (string msg)
+\begin{DoxyCompactList}\small\item\em Displays a message to the user on the message board. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_intro_session_manager_a97e1107140022bb06bfef6e4054ae69c}{Global\+Message}} (\mbox{\hyperlink{class_dialogue_element}{Dialogue\+Element}} ele)
+\begin{DoxyCompactList}\small\item\em Driver function to display a message and audio from the {\ttfamily Dialog\+Element{\ttfamily  parameter. }}
+
+{\ttfamily {\ttfamily  }}\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_intro_session_manager_af70a43fd234d1f362d0b9d75a613e9db}{Change\+Music}} (int track)
+\item 
+void \mbox{\hyperlink{class_intro_session_manager_a5f7f82cd17d0cfd8c54abd6dffcde081}{Highlight\+Button\+On}} (Game\+Object obj)
+\item 
+void \mbox{\hyperlink{class_intro_session_manager_afa85136787b9c937f76f92c22314341d}{Highlight\+Button\+Off}} (Game\+Object obj)
+\begin{DoxyCompactList}\small\item\em Turns glow effect off of obj \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_intro_session_manager_a16f670a63e6d68ef3ae65573b3a7b01f}{Get\+Current\+Scene}} ()
+\begin{DoxyCompactList}\small\item\em Returns the current scene. \end{DoxyCompactList}\item 
+Game\+Object \mbox{\hyperlink{class_intro_session_manager_a7ce12de7f1dfcec0ad8b57f7e867a30d}{Get\+Home\+Button}} ()
+\begin{DoxyCompactList}\small\item\em Returns a reference to the {\ttfamily home\+\_\+\+P\+LY} button. \end{DoxyCompactList}\item 
+Game\+Object \mbox{\hyperlink{class_intro_session_manager_a78cade3f987f624f20d216b53a1c8f90}{Get\+Trigger\+Button}} ()
+\begin{DoxyCompactList}\small\item\em Returns a reference to the {\ttfamily trigger\+\_\+\+P\+LY} button. \end{DoxyCompactList}\item 
+Game\+Object \mbox{\hyperlink{class_intro_session_manager_a8932e2f5e73d5f9915a703f87e5c9f49}{Get\+Reticle}} ()
+\begin{DoxyCompactList}\small\item\em Gets a reference to the reticle \end{DoxyCompactList}\item 
+Game\+Object \mbox{\hyperlink{class_intro_session_manager_afbbc0627840abc6a3666eba25a7efd76}{Get\+Center\+Eye\+Anchor}} ()
+\begin{DoxyCompactList}\small\item\em Returns a reference to the Center\+Eye\+Anchor (Camera the player is looking through) \end{DoxyCompactList}\item 
+Game\+Object \mbox{\hyperlink{class_intro_session_manager_a836a60ce3ae8f1fb514c81f3c59da3ad}{Get\+Controller\+Model}} ()
+\begin{DoxyCompactList}\small\item\em Returns a reference to the controller model \end{DoxyCompactList}\item 
+Vector3 \mbox{\hyperlink{class_intro_session_manager_ab271ab8ae6b7e13929f05fd55670dc3f}{Get\+Robot\+Default\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Returns a reference to the default position of the robot in the scenes \end{DoxyCompactList}\item 
+Image \mbox{\hyperlink{class_intro_session_manager_a918fbca0cbe7a7769c8a777e059f1375}{Get\+Loading\+Bar}} ()
+\begin{DoxyCompactList}\small\item\em Returns a reference to the loading bar image \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_intro_session_manager_a2c3b7ee11852a65be6fb794c84de14f5}{Reticle\+Set\+Default\+State}} ()
+\begin{DoxyCompactList}\small\item\em Function resets the state of the reticle to its default state. Pass in true to add a small delay before reverting to default. This could be used for when the user just clicks on an item instead of pressing and holding, so they have time to see the click was registered. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_intro_session_manager_a31072153b257d37a5b1cd1566dd45d16}{Reticle\+Set\+Hover\+State}} ()
+\begin{DoxyCompactList}\small\item\em Sets the reticle to its Hover state. Should be used when the user is hovering over an interactable item \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_intro_session_manager_aed37fcae779d3784743969ae0739c1c3}{Reticle\+Set\+Interacting}} ()
+\item 
+void \mbox{\hyperlink{class_intro_session_manager_a7ecdbb5df14f9c17bd6556467916f4aa}{Reticle\+Invalid\+Operation}} ()
+\begin{DoxyCompactList}\small\item\em Driver method to start a coroutine that shows an invalid operation on the reticle (circle with line through it) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static readonly float \mbox{\hyperlink{class_intro_session_manager_a34742224aa0d8383b9153c24c4995e4c}{c\+\_\+\+T\+O\+A\+S\+T\+\_\+\+E\+X\+T\+RA}} = 6f
+\item 
+static readonly float \mbox{\hyperlink{class_intro_session_manager_ace53262c015b3c124166d5fcf5813b40}{c\+\_\+\+T\+O\+A\+S\+T\+\_\+\+L\+O\+NG}} = 4f
+\item 
+static readonly float \mbox{\hyperlink{class_intro_session_manager_af8478d0e7c13bd12f28b785b95a1851f}{c\+\_\+\+T\+O\+A\+S\+T\+\_\+\+S\+H\+O\+RT}} = 2f
+\item 
+static readonly Color \mbox{\hyperlink{class_intro_session_manager_aba87a1dd94fe94906cc2b8590d4bc430}{c\+\_\+\+C\+O\+L\+O\+R\+\_\+\+L\+I\+G\+H\+T\+G\+R\+AY}} = new Color(.\+8f, .\+8f, .\+8f, 1f)
+\item 
+static \mbox{\hyperlink{class_intro_session_manager}{Intro\+Session\+Manager}} \mbox{\hyperlink{class_intro_session_manager_a206bd6bc9edad9b90ee89aa85b00000c}{s\+\_\+\+Instance}} = null
+\item 
+static \mbox{\hyperlink{class_v_r_standard_assets_1_1_utils_1_1_raycaster_v_r}{Raycaster\+VR}} \mbox{\hyperlink{class_intro_session_manager_ae797af3e2ada3170f3c9f533b88a3806}{s\+\_\+\+Raycaster\+Script}}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_intro_session_manager_a7c36bee635e59c09531ed8c64665b0fd}{Awake}} ()
+\item 
+void \mbox{\hyperlink{class_intro_session_manager_af44cc6aa8fff0329411659f44ba29475}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_intro_session_manager_ad430deae2d91891de87162529e915ab9}{Update}} ()
+\item 
+I\+Enumerator \mbox{\hyperlink{class_intro_session_manager_abbbe032dd983857f6a0d843686738bfc}{Tutorial\+Introduction}} ()
+\begin{DoxyCompactList}\small\item\em Begins the introduction to the tutorial \end{DoxyCompactList}\item 
+I\+Enumerator \mbox{\hyperlink{class_intro_session_manager_a93c526ae0e6c546c2ee76a6d150b4781}{Advance\+Stage}} (float delay)
+\begin{DoxyCompactList}\small\item\em Method is used as a coroutine to advance through the stage \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_intro_session_manager_a6731f9f957d00bf47bb55f745f3af95b}{Opening\+Sliding\+Doors}} ()
+\begin{DoxyCompactList}\small\item\em Method gets called in update. Opens the sliding doors one step per call. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_intro_session_manager_a7cc8cfc2810a691bbc149f9688f68118}{Closing\+Sliding\+Doors}} ()
+\begin{DoxyCompactList}\small\item\em Method gets called in update. Closes the sliding doors one step per call. \end{DoxyCompactList}\item 
+I\+Enumerator \mbox{\hyperlink{class_intro_session_manager_ad809a83bf76ede581699a9efd0280a4c}{Show\+Toast\+Length}} (string msg, float length)
+\begin{DoxyCompactList}\small\item\em Shows a Toast message on the Message Board for a duration of time. \end{DoxyCompactList}\item 
+I\+Enumerator \mbox{\hyperlink{class_intro_session_manager_a1f4d274eb1210032091a14668007010e}{Intro\+In}} ()
+\item 
+void \mbox{\hyperlink{class_intro_session_manager_a96f4ea7bcbd9459bf04ccc1663cc7259}{Intro\+Out}} ()
+\begin{DoxyCompactList}\small\item\em Controls the flow of the tutorial introduction \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_intro_session_manager_a8ea998890634808b09e0f05a68d81d64}{Do\+Bring\+Box\+Into\+Scene}} ()
+\begin{DoxyCompactList}\small\item\em Moves the box into the scene \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_intro_session_manager_a1458287c5067948bca87eaeb05dc9ebf}{Do\+Move\+Box\+Out\+Of\+Scene}} ()
+\begin{DoxyCompactList}\small\item\em Move the box out of the scene \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_intro_session_manager_ae9859df135187ffdfccd320d8d011500}{Opening\+Button\+Box}} ()
+\begin{DoxyCompactList}\small\item\em Opens the doors on the box and brings the button out of the box \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_intro_session_manager_a58ae098b28554a98916370ad0647fd87}{Closing\+Button\+Box}} ()
+\begin{DoxyCompactList}\small\item\em Method closes the doors on the button box \end{DoxyCompactList}\item 
+I\+Enumerator \mbox{\hyperlink{class_intro_session_manager_ad0caff53bd4a5a65499e13c4a2f20212}{Do\+Invalid\+Operation}} ()
+\begin{DoxyCompactList}\small\item\em Displays the invalid operation image on the reticle for 1 second \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+readonly float \mbox{\hyperlink{class_intro_session_manager_ae24a9c30326fa7bff220c8a88c97cbbd}{c\+\_\+\+Door\+Forward\+Speed}} = 0.\+1f
+\item 
+readonly float \mbox{\hyperlink{class_intro_session_manager_a2704a73e12814b6c83f5daec3e962723}{c\+\_\+\+Door\+Side\+Speed}} = 0.\+8f
+\item 
+\mbox{\hyperlink{class_dialogue}{Dialogue}} \mbox{\hyperlink{class_intro_session_manager_ab695398be29615d5e14df3d1e0019059}{m\+\_\+\+Dialogue\+Instructions}}
+\item 
+\mbox{\hyperlink{class_dialogue}{Dialogue}} \mbox{\hyperlink{class_intro_session_manager_a470ec4b3778051a627d6c24f40fc61d3}{music\+Clips}}
+\item 
+Game\+Object \mbox{\hyperlink{class_intro_session_manager_a4acb0cd1ca734c4b2d287c21e0d94f66}{m\+\_\+\+Reticle}}
+\item 
+Game\+Object \mbox{\hyperlink{class_intro_session_manager_a99b3acd5b53deddb2707d0a572524b2d}{m\+\_\+\+Robot}}
+\item 
+Game\+Object \mbox{\hyperlink{class_intro_session_manager_a235a181ca063d1fda1e971e7f52d0ebc}{m\+\_\+\+Center\+Eye\+Anchor}}
+\item 
+Game\+Object \mbox{\hyperlink{class_intro_session_manager_a24b3a594b1749a687454f4f580452d7a}{m\+\_\+\+Ball\+Prefab}}
+\item 
+Game\+Object \mbox{\hyperlink{class_intro_session_manager_a29cd7383da1ce27357209f218bb4bdb6}{m\+\_\+\+Controller\+Model}}
+\item 
+Game\+Object \mbox{\hyperlink{class_intro_session_manager_aca0fa30bffd1159e786232541b0f254a}{m\+\_\+\+Starting\+Platform}}
+\item 
+Game\+Object \mbox{\hyperlink{class_intro_session_manager_a86f65280712498492706c8c460c2ecef}{m\+\_\+\+Sliding\+Door\+Right}}
+\item 
+Game\+Object \mbox{\hyperlink{class_intro_session_manager_a8f507b5c62504d8f0b3c99583080d1c6}{m\+\_\+\+Sliding\+Door\+Left}}
+\item 
+Game\+Object \mbox{\hyperlink{class_intro_session_manager_a1ec45e159d4b876b370443534a4140ee}{m\+\_\+\+Home\+Button}}
+\item 
+Game\+Object \mbox{\hyperlink{class_intro_session_manager_a4ce2d50d7ff83169dc8224b199ac7e68}{m\+\_\+\+Trigger\+Button}}
+\item 
+Game\+Object \mbox{\hyperlink{class_intro_session_manager_ab9bab6c380a3dcc60825a13fffd65414}{m\+\_\+\+Button\+Box}}
+\item 
+Game\+Object \mbox{\hyperlink{class_intro_session_manager_ac1ebde5d641b0fbe3f5c7d5f466406c4}{m\+\_\+\+Left\+Door\+Button\+Box}}
+\item 
+Game\+Object \mbox{\hyperlink{class_intro_session_manager_a156fbcdf5bd354b60a3a864e63149d74}{m\+\_\+\+Right\+Door\+Button\+Box}}
+\item 
+Game\+Object \mbox{\hyperlink{class_intro_session_manager_af373a8e1add9dccca5985f10db4c3c13}{m\+\_\+\+Button}}
+\item 
+Game\+Object \mbox{\hyperlink{class_intro_session_manager_ac7c8eb1a21d3cf81c759c6088e02fac5}{m\+\_\+\+Platform\+Raised\+Position}}
+\item 
+Game\+Object \mbox{\hyperlink{class_intro_session_manager_a0c8ac69af055d55bef22944606a0232d}{m\+\_\+\+Robot\+Intro\+Dest1}}
+\item 
+Game\+Object \mbox{\hyperlink{class_intro_session_manager_ab609b1106ef0b8526612fc511bf711f3}{m\+\_\+\+Robot\+Default\+Position}}
+\item 
+Game\+Object \mbox{\hyperlink{class_intro_session_manager_a0de05def8a32179bbea80d1d4a296829}{m\+\_\+\+Message\+Panel}}
+\item 
+Game\+Object \mbox{\hyperlink{class_intro_session_manager_a1a92991967b5d8f322610a85a548d4df}{m\+\_\+\+Message\+Board\+Border}}
+\item 
+Material \mbox{\hyperlink{class_intro_session_manager_a74a01ae10424770fa43f60f407cf2cf1}{m\+\_\+\+Highlight\+Material}}
+\item 
+Audio\+Source \mbox{\hyperlink{class_intro_session_manager_a184d9e4647fb9b54d6292971c0d36590}{m\+\_\+\+Robot\+Audio\+Source}}
+\item 
+Audio\+Source \mbox{\hyperlink{class_intro_session_manager_af435af1ecc0838851211ff54a82c750b}{m\+\_\+\+Stage\+Music}}
+\item 
+Text \mbox{\hyperlink{class_intro_session_manager_ace9b36a18f2d4f140836a98827011cef}{m\+\_\+\+Global\+Message\+Board\+Text}}
+\item 
+Text \mbox{\hyperlink{class_intro_session_manager_affe78d60003972c8f0dc9e9e1e63e50e}{m\+\_\+\+Clock\+Text}}
+\item 
+bool \mbox{\hyperlink{class_intro_session_manager_a4f6bbbe92b466fc9713ea809e44b8715}{m\+\_\+\+Test\+Mode}}
+\item 
+int \mbox{\hyperlink{class_intro_session_manager_aaeefdeac17668edbd7638eea2c771c5f}{m\+\_\+\+Start\+Scene}}
+\item 
+Image \mbox{\hyperlink{class_intro_session_manager_aa6a3bae892b3055d81deec38c303f37c}{m\+\_\+\+Invalid\+Operation\+Image}}
+\item 
+Image \mbox{\hyperlink{class_intro_session_manager_a3a614c679e3c032bbd9b9a12e525ef68}{m\+\_\+\+Reticle\+Outer\+Circle}}
+\item 
+Image \mbox{\hyperlink{class_intro_session_manager_ae70b15e66a1828fac715707eb92d8f70}{m\+\_\+\+Reticle\+Inner\+Circle}}
+\item 
+Image \mbox{\hyperlink{class_intro_session_manager_a3ab9cd9a1ca04c1570a3e4d35a382f80}{m\+\_\+\+Loading\+Bar}}
+\item 
+int \mbox{\hyperlink{class_intro_session_manager_aed8065a46f21ce1d465d0523b9cd6a94}{i\+\_\+\+Current\+Scene}} = 0
+\item 
+Animator \mbox{\hyperlink{class_intro_session_manager_aba1ae4db2632c630034c828a55ff44a8}{m\+\_\+\+Robot\+Animator}}
+\item 
+string \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_intro_session_manager_a4e9865d9b05cc6f052cea4bd7d9b7e1f}{m\+\_\+\+Scenes}}
+\item 
+bool \mbox{\hyperlink{class_intro_session_manager_aca63a7e6cd979f5110c3054024284fa4}{m\+\_\+\+Opening\+Sliding\+Doors}}
+\item 
+bool \mbox{\hyperlink{class_intro_session_manager_ab296c21bb7534168337854df487ecd6a}{m\+\_\+\+Closing\+Sliding\+Doors}}
+\item 
+bool \mbox{\hyperlink{class_intro_session_manager_a30e27176dbb3a3eb25c429ad65a88200}{m\+\_\+\+Intro\+In}}
+\item 
+bool \mbox{\hyperlink{class_intro_session_manager_a5896398e369471a9085d7208309cc730}{m\+\_\+\+Intro\+Out}}
+\item 
+bool \mbox{\hyperlink{class_intro_session_manager_ada16df52e05f0c7780efdb0f14b0509e}{m\+\_\+\+Opening\+Box}}
+\item 
+bool \mbox{\hyperlink{class_intro_session_manager_ab238042bfbf997400f5abce96cc0408f}{m\+\_\+\+Closing\+Box}}
+\item 
+bool \mbox{\hyperlink{class_intro_session_manager_abce70a4bbbb5858a2b7a08b4305809a0}{m\+\_\+\+Bring\+Box\+Into\+Scene}}
+\item 
+bool \mbox{\hyperlink{class_intro_session_manager_a16bbfff4e9b4adb0f3372357d222ee5f}{m\+\_\+\+Move\+Box\+Out\+Of\+Scene}}
+\item 
+Vector3 \mbox{\hyperlink{class_intro_session_manager_a94c3ed99ca9e372cd778c89403a5888a}{m\+\_\+\+Platform\+Start\+Pos}}
+\item 
+Game\+Object \mbox{\hyperlink{class_intro_session_manager_aba1a41efd4328b389c8dd6a301b20a4a}{m\+\_\+\+Ball\+Clone}}
+\item 
+bool \mbox{\hyperlink{class_intro_session_manager_ade25d99d3058a14d4c2738a51281780e}{m\+\_\+\+Showing\+Toast}}
+\item 
+Hashtable \mbox{\hyperlink{class_intro_session_manager_ad719cd26d73b589cc92fdb3b4ad9a996}{m\+\_\+\+Material\+Map}}
+\item 
+I\+Enumerator \mbox{\hyperlink{class_intro_session_manager_ac3a4cf5ad448811271447cf9fa4b6d2b}{m\+\_\+\+Invalid\+Operation\+Coroutine}}
+\item 
+I\+Enumerator \mbox{\hyperlink{class_intro_session_manager_a709ed8345dde73d0a36c3c59e03f18f5}{m\+\_\+\+Toast\+Coroutine}} = null
+\item 
+I\+Enumerator \mbox{\hyperlink{class_intro_session_manager_acedcbccfb11e49f5279cbc11e7832c67}{m\+\_\+\+Reticle\+State\+Coroutine}}
+\item 
+string \mbox{\hyperlink{class_intro_session_manager_ab430fe3c2e7472725e639ba1dbe22822}{m\+\_\+\+Prev\+Message}}
+\item 
+Color \mbox{\hyperlink{class_intro_session_manager_a439437ada3c600dbffb75b971aafc45a}{m\+\_\+\+Prev\+Color}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_intro_session_manager_a93c526ae0e6c546c2ee76a6d150b4781}\label{class_intro_session_manager_a93c526ae0e6c546c2ee76a6d150b4781}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!Advance\+Stage@{Advance\+Stage}}
+\index{Advance\+Stage@{Advance\+Stage}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{Advance\+Stage()}{AdvanceStage()}}
+{\footnotesize\ttfamily I\+Enumerator Intro\+Session\+Manager.\+Advance\+Stage (\begin{DoxyParamCaption}\item[{float}]{delay }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Method is used as a coroutine to advance through the stage 
+
+
+\begin{DoxyParams}{Parameters}
+{\em delay} & The time delay between scene trasitions\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An I\+Enumerator that can reference this specific coroutine
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_intro_session_manager_a7c36bee635e59c09531ed8c64665b0fd}\label{class_intro_session_manager_a7c36bee635e59c09531ed8c64665b0fd}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!Awake@{Awake}}
+\index{Awake@{Awake}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void Intro\+Session\+Manager.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_a7f844de6716bc367d539bd3a0dd835de}\label{class_intro_session_manager_a7f844de6716bc367d539bd3a0dd835de}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!Bring\+Box\+Into\+Scene@{Bring\+Box\+Into\+Scene}}
+\index{Bring\+Box\+Into\+Scene@{Bring\+Box\+Into\+Scene}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{Bring\+Box\+Into\+Scene()}{BringBoxIntoScene()}}
+{\footnotesize\ttfamily void Intro\+Session\+Manager.\+Bring\+Box\+Into\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Method triggers bringing the box into the scene 
+
+\mbox{\Hypertarget{class_intro_session_manager_af70a43fd234d1f362d0b9d75a613e9db}\label{class_intro_session_manager_af70a43fd234d1f362d0b9d75a613e9db}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!Change\+Music@{Change\+Music}}
+\index{Change\+Music@{Change\+Music}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{Change\+Music()}{ChangeMusic()}}
+{\footnotesize\ttfamily void Intro\+Session\+Manager.\+Change\+Music (\begin{DoxyParamCaption}\item[{int}]{track }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_intro_session_manager_ac76f64b1d5b9e0a1a31b2f082708513b}\label{class_intro_session_manager_ac76f64b1d5b9e0a1a31b2f082708513b}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!Close\+Button\+Box@{Close\+Button\+Box}}
+\index{Close\+Button\+Box@{Close\+Button\+Box}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{Close\+Button\+Box()}{CloseButtonBox()}}
+{\footnotesize\ttfamily void Intro\+Session\+Manager.\+Close\+Button\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Method triggers the box to close 
+
+\mbox{\Hypertarget{class_intro_session_manager_ad19be66a5259ad1075f5bec8389bb2ed}\label{class_intro_session_manager_ad19be66a5259ad1075f5bec8389bb2ed}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!Close\+Sliding\+Doors@{Close\+Sliding\+Doors}}
+\index{Close\+Sliding\+Doors@{Close\+Sliding\+Doors}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{Close\+Sliding\+Doors()}{CloseSlidingDoors()}}
+{\footnotesize\ttfamily void Intro\+Session\+Manager.\+Close\+Sliding\+Doors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Method triggers closing the sliding doors 
+
+\mbox{\Hypertarget{class_intro_session_manager_a58ae098b28554a98916370ad0647fd87}\label{class_intro_session_manager_a58ae098b28554a98916370ad0647fd87}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!Closing\+Button\+Box@{Closing\+Button\+Box}}
+\index{Closing\+Button\+Box@{Closing\+Button\+Box}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{Closing\+Button\+Box()}{ClosingButtonBox()}}
+{\footnotesize\ttfamily void Intro\+Session\+Manager.\+Closing\+Button\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Method closes the doors on the button box 
+
+\mbox{\Hypertarget{class_intro_session_manager_a7cc8cfc2810a691bbc149f9688f68118}\label{class_intro_session_manager_a7cc8cfc2810a691bbc149f9688f68118}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!Closing\+Sliding\+Doors@{Closing\+Sliding\+Doors}}
+\index{Closing\+Sliding\+Doors@{Closing\+Sliding\+Doors}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{Closing\+Sliding\+Doors()}{ClosingSlidingDoors()}}
+{\footnotesize\ttfamily void Intro\+Session\+Manager.\+Closing\+Sliding\+Doors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Method gets called in update. Closes the sliding doors one step per call. 
+
+\mbox{\Hypertarget{class_intro_session_manager_a8ea998890634808b09e0f05a68d81d64}\label{class_intro_session_manager_a8ea998890634808b09e0f05a68d81d64}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!Do\+Bring\+Box\+Into\+Scene@{Do\+Bring\+Box\+Into\+Scene}}
+\index{Do\+Bring\+Box\+Into\+Scene@{Do\+Bring\+Box\+Into\+Scene}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{Do\+Bring\+Box\+Into\+Scene()}{DoBringBoxIntoScene()}}
+{\footnotesize\ttfamily void Intro\+Session\+Manager.\+Do\+Bring\+Box\+Into\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Moves the box into the scene 
+
+\mbox{\Hypertarget{class_intro_session_manager_ad0caff53bd4a5a65499e13c4a2f20212}\label{class_intro_session_manager_ad0caff53bd4a5a65499e13c4a2f20212}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!Do\+Invalid\+Operation@{Do\+Invalid\+Operation}}
+\index{Do\+Invalid\+Operation@{Do\+Invalid\+Operation}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{Do\+Invalid\+Operation()}{DoInvalidOperation()}}
+{\footnotesize\ttfamily I\+Enumerator Intro\+Session\+Manager.\+Do\+Invalid\+Operation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Displays the invalid operation image on the reticle for 1 second 
+
+\begin{DoxyReturn}{Returns}
+A reference to the coroutine
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_intro_session_manager_a1458287c5067948bca87eaeb05dc9ebf}\label{class_intro_session_manager_a1458287c5067948bca87eaeb05dc9ebf}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!Do\+Move\+Box\+Out\+Of\+Scene@{Do\+Move\+Box\+Out\+Of\+Scene}}
+\index{Do\+Move\+Box\+Out\+Of\+Scene@{Do\+Move\+Box\+Out\+Of\+Scene}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{Do\+Move\+Box\+Out\+Of\+Scene()}{DoMoveBoxOutOfScene()}}
+{\footnotesize\ttfamily void Intro\+Session\+Manager.\+Do\+Move\+Box\+Out\+Of\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Move the box out of the scene 
+
+\mbox{\Hypertarget{class_intro_session_manager_afbbc0627840abc6a3666eba25a7efd76}\label{class_intro_session_manager_afbbc0627840abc6a3666eba25a7efd76}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!Get\+Center\+Eye\+Anchor@{Get\+Center\+Eye\+Anchor}}
+\index{Get\+Center\+Eye\+Anchor@{Get\+Center\+Eye\+Anchor}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Center\+Eye\+Anchor()}{GetCenterEyeAnchor()}}
+{\footnotesize\ttfamily Game\+Object Intro\+Session\+Manager.\+Get\+Center\+Eye\+Anchor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns a reference to the Center\+Eye\+Anchor (Camera the player is looking through) 
+
+\begin{DoxyReturn}{Returns}
+A reference to the Center\+Eye\+Anchor
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_intro_session_manager_a836a60ce3ae8f1fb514c81f3c59da3ad}\label{class_intro_session_manager_a836a60ce3ae8f1fb514c81f3c59da3ad}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!Get\+Controller\+Model@{Get\+Controller\+Model}}
+\index{Get\+Controller\+Model@{Get\+Controller\+Model}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Controller\+Model()}{GetControllerModel()}}
+{\footnotesize\ttfamily Game\+Object Intro\+Session\+Manager.\+Get\+Controller\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns a reference to the controller model 
+
+\begin{DoxyReturn}{Returns}
+A reference to the controller model
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_intro_session_manager_a16f670a63e6d68ef3ae65573b3a7b01f}\label{class_intro_session_manager_a16f670a63e6d68ef3ae65573b3a7b01f}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!Get\+Current\+Scene@{Get\+Current\+Scene}}
+\index{Get\+Current\+Scene@{Get\+Current\+Scene}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Current\+Scene()}{GetCurrentScene()}}
+{\footnotesize\ttfamily int Intro\+Session\+Manager.\+Get\+Current\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the current scene. 
+
+\begin{DoxyReturn}{Returns}
+The current scene.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_intro_session_manager_a7ce12de7f1dfcec0ad8b57f7e867a30d}\label{class_intro_session_manager_a7ce12de7f1dfcec0ad8b57f7e867a30d}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!Get\+Home\+Button@{Get\+Home\+Button}}
+\index{Get\+Home\+Button@{Get\+Home\+Button}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Home\+Button()}{GetHomeButton()}}
+{\footnotesize\ttfamily Game\+Object Intro\+Session\+Manager.\+Get\+Home\+Button (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns a reference to the {\ttfamily home\+\_\+\+P\+LY} button. 
+
+\begin{DoxyReturn}{Returns}
+The home button
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_intro_session_manager_a918fbca0cbe7a7769c8a777e059f1375}\label{class_intro_session_manager_a918fbca0cbe7a7769c8a777e059f1375}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!Get\+Loading\+Bar@{Get\+Loading\+Bar}}
+\index{Get\+Loading\+Bar@{Get\+Loading\+Bar}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Loading\+Bar()}{GetLoadingBar()}}
+{\footnotesize\ttfamily Image Intro\+Session\+Manager.\+Get\+Loading\+Bar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns a reference to the loading bar image 
+
+\begin{DoxyReturn}{Returns}
+A reference to the loading bar image
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_intro_session_manager_a8932e2f5e73d5f9915a703f87e5c9f49}\label{class_intro_session_manager_a8932e2f5e73d5f9915a703f87e5c9f49}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!Get\+Reticle@{Get\+Reticle}}
+\index{Get\+Reticle@{Get\+Reticle}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Reticle()}{GetReticle()}}
+{\footnotesize\ttfamily Game\+Object Intro\+Session\+Manager.\+Get\+Reticle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets a reference to the reticle 
+
+\begin{DoxyReturn}{Returns}
+The Reticle
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_intro_session_manager_ab271ab8ae6b7e13929f05fd55670dc3f}\label{class_intro_session_manager_ab271ab8ae6b7e13929f05fd55670dc3f}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!Get\+Robot\+Default\+Position@{Get\+Robot\+Default\+Position}}
+\index{Get\+Robot\+Default\+Position@{Get\+Robot\+Default\+Position}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Robot\+Default\+Position()}{GetRobotDefaultPosition()}}
+{\footnotesize\ttfamily Vector3 Intro\+Session\+Manager.\+Get\+Robot\+Default\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns a reference to the default position of the robot in the scenes 
+
+\begin{DoxyReturn}{Returns}
+A reference to the default position of the robot in the scenes
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_intro_session_manager_a78cade3f987f624f20d216b53a1c8f90}\label{class_intro_session_manager_a78cade3f987f624f20d216b53a1c8f90}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!Get\+Trigger\+Button@{Get\+Trigger\+Button}}
+\index{Get\+Trigger\+Button@{Get\+Trigger\+Button}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Trigger\+Button()}{GetTriggerButton()}}
+{\footnotesize\ttfamily Game\+Object Intro\+Session\+Manager.\+Get\+Trigger\+Button (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns a reference to the {\ttfamily trigger\+\_\+\+P\+LY} button. 
+
+\begin{DoxyReturn}{Returns}
+The trigger button
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_intro_session_manager_a8e0deb467e6dbfcc9074221bfba81053}\label{class_intro_session_manager_a8e0deb467e6dbfcc9074221bfba81053}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!Global\+Message@{Global\+Message}}
+\index{Global\+Message@{Global\+Message}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{Global\+Message()}{GlobalMessage()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Intro\+Session\+Manager.\+Global\+Message (\begin{DoxyParamCaption}\item[{string}]{msg }\end{DoxyParamCaption})}
+
+
+
+Displays a message to the user on the message board. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & Message that will be displayed on the message board in the game.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_intro_session_manager_a97e1107140022bb06bfef6e4054ae69c}\label{class_intro_session_manager_a97e1107140022bb06bfef6e4054ae69c}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!Global\+Message@{Global\+Message}}
+\index{Global\+Message@{Global\+Message}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{Global\+Message()}{GlobalMessage()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Intro\+Session\+Manager.\+Global\+Message (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_dialogue_element}{Dialogue\+Element}}}]{ele }\end{DoxyParamCaption})}
+
+
+
+Driver function to display a message and audio from the {\ttfamily Dialog\+Element{\ttfamily  parameter. }}
+
+{\ttfamily {\ttfamily  }}
+
+
+\begin{DoxyParams}{Parameters}
+{\em ele} & The Dialog\+Element containing the text and audio clip\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_intro_session_manager_afa85136787b9c937f76f92c22314341d}\label{class_intro_session_manager_afa85136787b9c937f76f92c22314341d}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!Highlight\+Button\+Off@{Highlight\+Button\+Off}}
+\index{Highlight\+Button\+Off@{Highlight\+Button\+Off}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{Highlight\+Button\+Off()}{HighlightButtonOff()}}
+{\footnotesize\ttfamily void Intro\+Session\+Manager.\+Highlight\+Button\+Off (\begin{DoxyParamCaption}\item[{Game\+Object}]{obj }\end{DoxyParamCaption})}
+
+
+
+Turns glow effect off of obj 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & Game\+Object to turn on glow.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_intro_session_manager_a5f7f82cd17d0cfd8c54abd6dffcde081}\label{class_intro_session_manager_a5f7f82cd17d0cfd8c54abd6dffcde081}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!Highlight\+Button\+On@{Highlight\+Button\+On}}
+\index{Highlight\+Button\+On@{Highlight\+Button\+On}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{Highlight\+Button\+On()}{HighlightButtonOn()}}
+{\footnotesize\ttfamily void Intro\+Session\+Manager.\+Highlight\+Button\+On (\begin{DoxyParamCaption}\item[{Game\+Object}]{obj }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_intro_session_manager_a1f4d274eb1210032091a14668007010e}\label{class_intro_session_manager_a1f4d274eb1210032091a14668007010e}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!Intro\+In@{Intro\+In}}
+\index{Intro\+In@{Intro\+In}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{Intro\+In()}{IntroIn()}}
+{\footnotesize\ttfamily I\+Enumerator Intro\+Session\+Manager.\+Intro\+In (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_intro_session_manager_a96f4ea7bcbd9459bf04ccc1663cc7259}\label{class_intro_session_manager_a96f4ea7bcbd9459bf04ccc1663cc7259}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!Intro\+Out@{Intro\+Out}}
+\index{Intro\+Out@{Intro\+Out}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{Intro\+Out()}{IntroOut()}}
+{\footnotesize\ttfamily void Intro\+Session\+Manager.\+Intro\+Out (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Controls the flow of the tutorial introduction 
+
+\mbox{\Hypertarget{class_intro_session_manager_a238203538188c1c9407b816adae6487b}\label{class_intro_session_manager_a238203538188c1c9407b816adae6487b}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!Move\+Box\+Out\+Of\+Scene@{Move\+Box\+Out\+Of\+Scene}}
+\index{Move\+Box\+Out\+Of\+Scene@{Move\+Box\+Out\+Of\+Scene}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{Move\+Box\+Out\+Of\+Scene()}{MoveBoxOutOfScene()}}
+{\footnotesize\ttfamily void Intro\+Session\+Manager.\+Move\+Box\+Out\+Of\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Method triggers bringing the box out of the scene 
+
+\mbox{\Hypertarget{class_intro_session_manager_a6b31e91f5f7fb8d55555424b3f795750}\label{class_intro_session_manager_a6b31e91f5f7fb8d55555424b3f795750}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!Move\+Robot\+To\+Position@{Move\+Robot\+To\+Position}}
+\index{Move\+Robot\+To\+Position@{Move\+Robot\+To\+Position}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{Move\+Robot\+To\+Position()}{MoveRobotToPosition()}}
+{\footnotesize\ttfamily void Intro\+Session\+Manager.\+Move\+Robot\+To\+Position (\begin{DoxyParamCaption}\item[{Vector3}]{position,  }\item[{float}]{speed = {\ttfamily 5f} }\end{DoxyParamCaption})}
+
+
+
+Moves the robot to the Vector3 location passed in the param 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The Vector3 location to move the robot to\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_intro_session_manager_a9541e181250bbfbfa2d16f62ccb64a22}\label{class_intro_session_manager_a9541e181250bbfbfa2d16f62ccb64a22}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!Move\+To\+Next\+Stage@{Move\+To\+Next\+Stage}}
+\index{Move\+To\+Next\+Stage@{Move\+To\+Next\+Stage}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{Move\+To\+Next\+Stage()}{MoveToNextStage()}}
+{\footnotesize\ttfamily void Intro\+Session\+Manager.\+Move\+To\+Next\+Stage (\begin{DoxyParamCaption}\item[{float}]{delay = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Driver function to advance to the next scene with a specified delay 
+
+
+\begin{DoxyParams}{Parameters}
+{\em delay} & The delay to add between scene transitions\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_intro_session_manager_a0998c6878046777a1baecb46ff8859ec}\label{class_intro_session_manager_a0998c6878046777a1baecb46ff8859ec}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!Open\+Button\+Box@{Open\+Button\+Box}}
+\index{Open\+Button\+Box@{Open\+Button\+Box}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{Open\+Button\+Box()}{OpenButtonBox()}}
+{\footnotesize\ttfamily void Intro\+Session\+Manager.\+Open\+Button\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Method triggers the box to be opened 
+
+\mbox{\Hypertarget{class_intro_session_manager_ae9859df135187ffdfccd320d8d011500}\label{class_intro_session_manager_ae9859df135187ffdfccd320d8d011500}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!Opening\+Button\+Box@{Opening\+Button\+Box}}
+\index{Opening\+Button\+Box@{Opening\+Button\+Box}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{Opening\+Button\+Box()}{OpeningButtonBox()}}
+{\footnotesize\ttfamily void Intro\+Session\+Manager.\+Opening\+Button\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Opens the doors on the box and brings the button out of the box 
+
+\mbox{\Hypertarget{class_intro_session_manager_a6731f9f957d00bf47bb55f745f3af95b}\label{class_intro_session_manager_a6731f9f957d00bf47bb55f745f3af95b}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!Opening\+Sliding\+Doors@{Opening\+Sliding\+Doors}}
+\index{Opening\+Sliding\+Doors@{Opening\+Sliding\+Doors}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{Opening\+Sliding\+Doors()}{OpeningSlidingDoors()}}
+{\footnotesize\ttfamily void Intro\+Session\+Manager.\+Opening\+Sliding\+Doors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Method gets called in update. Opens the sliding doors one step per call. 
+
+\mbox{\Hypertarget{class_intro_session_manager_ab0c0444fb1525d86b4187c32cec0ce42}\label{class_intro_session_manager_ab0c0444fb1525d86b4187c32cec0ce42}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!Open\+Sliding\+Doors@{Open\+Sliding\+Doors}}
+\index{Open\+Sliding\+Doors@{Open\+Sliding\+Doors}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{Open\+Sliding\+Doors()}{OpenSlidingDoors()}}
+{\footnotesize\ttfamily void Intro\+Session\+Manager.\+Open\+Sliding\+Doors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Method triggers opening the sliding doors 
+
+\mbox{\Hypertarget{class_intro_session_manager_a7ecdbb5df14f9c17bd6556467916f4aa}\label{class_intro_session_manager_a7ecdbb5df14f9c17bd6556467916f4aa}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!Reticle\+Invalid\+Operation@{Reticle\+Invalid\+Operation}}
+\index{Reticle\+Invalid\+Operation@{Reticle\+Invalid\+Operation}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{Reticle\+Invalid\+Operation()}{ReticleInvalidOperation()}}
+{\footnotesize\ttfamily void Intro\+Session\+Manager.\+Reticle\+Invalid\+Operation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Driver method to start a coroutine that shows an invalid operation on the reticle (circle with line through it) 
+
+\mbox{\Hypertarget{class_intro_session_manager_a2c3b7ee11852a65be6fb794c84de14f5}\label{class_intro_session_manager_a2c3b7ee11852a65be6fb794c84de14f5}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!Reticle\+Set\+Default\+State@{Reticle\+Set\+Default\+State}}
+\index{Reticle\+Set\+Default\+State@{Reticle\+Set\+Default\+State}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{Reticle\+Set\+Default\+State()}{ReticleSetDefaultState()}}
+{\footnotesize\ttfamily void Intro\+Session\+Manager.\+Reticle\+Set\+Default\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function resets the state of the reticle to its default state. Pass in true to add a small delay before reverting to default. This could be used for when the user just clicks on an item instead of pressing and holding, so they have time to see the click was registered. 
+
+\mbox{\Hypertarget{class_intro_session_manager_a31072153b257d37a5b1cd1566dd45d16}\label{class_intro_session_manager_a31072153b257d37a5b1cd1566dd45d16}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!Reticle\+Set\+Hover\+State@{Reticle\+Set\+Hover\+State}}
+\index{Reticle\+Set\+Hover\+State@{Reticle\+Set\+Hover\+State}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{Reticle\+Set\+Hover\+State()}{ReticleSetHoverState()}}
+{\footnotesize\ttfamily void Intro\+Session\+Manager.\+Reticle\+Set\+Hover\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sets the reticle to its Hover state. Should be used when the user is hovering over an interactable item 
+
+\mbox{\Hypertarget{class_intro_session_manager_aed37fcae779d3784743969ae0739c1c3}\label{class_intro_session_manager_aed37fcae779d3784743969ae0739c1c3}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!Reticle\+Set\+Interacting@{Reticle\+Set\+Interacting}}
+\index{Reticle\+Set\+Interacting@{Reticle\+Set\+Interacting}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{Reticle\+Set\+Interacting()}{ReticleSetInteracting()}}
+{\footnotesize\ttfamily void Intro\+Session\+Manager.\+Reticle\+Set\+Interacting (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_intro_session_manager_ad809a83bf76ede581699a9efd0280a4c}\label{class_intro_session_manager_ad809a83bf76ede581699a9efd0280a4c}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!Show\+Toast\+Length@{Show\+Toast\+Length}}
+\index{Show\+Toast\+Length@{Show\+Toast\+Length}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{Show\+Toast\+Length()}{ShowToastLength()}}
+{\footnotesize\ttfamily I\+Enumerator Intro\+Session\+Manager.\+Show\+Toast\+Length (\begin{DoxyParamCaption}\item[{string}]{msg,  }\item[{float}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Shows a Toast message on the Message Board for a duration of time. 
+
+Returns an I\+Enumerator that can reference a specific coroutine.
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & The message to show\\
+\hline
+{\em length} & The duration to show the message\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An I\+Enumerator that can reference a specific coroutine.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_intro_session_manager_ab234b0587ea8c4283121ac8103ef67e1}\label{class_intro_session_manager_ab234b0587ea8c4283121ac8103ef67e1}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!Spawn\+New\+Ball@{Spawn\+New\+Ball}}
+\index{Spawn\+New\+Ball@{Spawn\+New\+Ball}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{Spawn\+New\+Ball()}{SpawnNewBall()}}
+{\footnotesize\ttfamily void Intro\+Session\+Manager.\+Spawn\+New\+Ball (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Spawns a new ball and destroys the old one if one exists 
+
+\mbox{\Hypertarget{class_intro_session_manager_af44cc6aa8fff0329411659f44ba29475}\label{class_intro_session_manager_af44cc6aa8fff0329411659f44ba29475}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!Start@{Start}}
+\index{Start@{Start}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Intro\+Session\+Manager.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_a158dbb9e63a362ad1f71380ad1f116db}\label{class_intro_session_manager_a158dbb9e63a362ad1f71380ad1f116db}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!Toast@{Toast}}
+\index{Toast@{Toast}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{Toast()}{Toast()}}
+{\footnotesize\ttfamily void Intro\+Session\+Manager.\+Toast (\begin{DoxyParamCaption}\item[{string}]{msg,  }\item[{float}]{length }\end{DoxyParamCaption})}
+
+
+
+Method displays a Toast on the Message\+Board 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & \\
+\hline
+{\em length} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_intro_session_manager_abbbe032dd983857f6a0d843686738bfc}\label{class_intro_session_manager_abbbe032dd983857f6a0d843686738bfc}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!Tutorial\+Introduction@{Tutorial\+Introduction}}
+\index{Tutorial\+Introduction@{Tutorial\+Introduction}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{Tutorial\+Introduction()}{TutorialIntroduction()}}
+{\footnotesize\ttfamily I\+Enumerator Intro\+Session\+Manager.\+Tutorial\+Introduction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Begins the introduction to the tutorial 
+
+\begin{DoxyReturn}{Returns}
+An I\+Enumerator that can reference this specific coroutine
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_intro_session_manager_ad430deae2d91891de87162529e915ab9}\label{class_intro_session_manager_ad430deae2d91891de87162529e915ab9}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!Update@{Update}}
+\index{Update@{Update}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Intro\+Session\+Manager.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_intro_session_manager_aba87a1dd94fe94906cc2b8590d4bc430}\label{class_intro_session_manager_aba87a1dd94fe94906cc2b8590d4bc430}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!c\+\_\+\+C\+O\+L\+O\+R\+\_\+\+L\+I\+G\+H\+T\+G\+R\+AY@{c\+\_\+\+C\+O\+L\+O\+R\+\_\+\+L\+I\+G\+H\+T\+G\+R\+AY}}
+\index{c\+\_\+\+C\+O\+L\+O\+R\+\_\+\+L\+I\+G\+H\+T\+G\+R\+AY@{c\+\_\+\+C\+O\+L\+O\+R\+\_\+\+L\+I\+G\+H\+T\+G\+R\+AY}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{c\+\_\+\+C\+O\+L\+O\+R\+\_\+\+L\+I\+G\+H\+T\+G\+R\+AY}{c\_COLOR\_LIGHTGRAY}}
+{\footnotesize\ttfamily readonly Color Intro\+Session\+Manager.\+c\+\_\+\+C\+O\+L\+O\+R\+\_\+\+L\+I\+G\+H\+T\+G\+R\+AY = new Color(.\+8f, .\+8f, .\+8f, 1f)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_ae24a9c30326fa7bff220c8a88c97cbbd}\label{class_intro_session_manager_ae24a9c30326fa7bff220c8a88c97cbbd}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!c\+\_\+\+Door\+Forward\+Speed@{c\+\_\+\+Door\+Forward\+Speed}}
+\index{c\+\_\+\+Door\+Forward\+Speed@{c\+\_\+\+Door\+Forward\+Speed}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{c\+\_\+\+Door\+Forward\+Speed}{c\_DoorForwardSpeed}}
+{\footnotesize\ttfamily readonly float Intro\+Session\+Manager.\+c\+\_\+\+Door\+Forward\+Speed = 0.\+1f\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_a2704a73e12814b6c83f5daec3e962723}\label{class_intro_session_manager_a2704a73e12814b6c83f5daec3e962723}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!c\+\_\+\+Door\+Side\+Speed@{c\+\_\+\+Door\+Side\+Speed}}
+\index{c\+\_\+\+Door\+Side\+Speed@{c\+\_\+\+Door\+Side\+Speed}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{c\+\_\+\+Door\+Side\+Speed}{c\_DoorSideSpeed}}
+{\footnotesize\ttfamily readonly float Intro\+Session\+Manager.\+c\+\_\+\+Door\+Side\+Speed = 0.\+8f\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_a34742224aa0d8383b9153c24c4995e4c}\label{class_intro_session_manager_a34742224aa0d8383b9153c24c4995e4c}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!c\+\_\+\+T\+O\+A\+S\+T\+\_\+\+E\+X\+T\+RA@{c\+\_\+\+T\+O\+A\+S\+T\+\_\+\+E\+X\+T\+RA}}
+\index{c\+\_\+\+T\+O\+A\+S\+T\+\_\+\+E\+X\+T\+RA@{c\+\_\+\+T\+O\+A\+S\+T\+\_\+\+E\+X\+T\+RA}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{c\+\_\+\+T\+O\+A\+S\+T\+\_\+\+E\+X\+T\+RA}{c\_TOAST\_EXTRA}}
+{\footnotesize\ttfamily readonly float Intro\+Session\+Manager.\+c\+\_\+\+T\+O\+A\+S\+T\+\_\+\+E\+X\+T\+RA = 6f\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_ace53262c015b3c124166d5fcf5813b40}\label{class_intro_session_manager_ace53262c015b3c124166d5fcf5813b40}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!c\+\_\+\+T\+O\+A\+S\+T\+\_\+\+L\+O\+NG@{c\+\_\+\+T\+O\+A\+S\+T\+\_\+\+L\+O\+NG}}
+\index{c\+\_\+\+T\+O\+A\+S\+T\+\_\+\+L\+O\+NG@{c\+\_\+\+T\+O\+A\+S\+T\+\_\+\+L\+O\+NG}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{c\+\_\+\+T\+O\+A\+S\+T\+\_\+\+L\+O\+NG}{c\_TOAST\_LONG}}
+{\footnotesize\ttfamily readonly float Intro\+Session\+Manager.\+c\+\_\+\+T\+O\+A\+S\+T\+\_\+\+L\+O\+NG = 4f\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_af8478d0e7c13bd12f28b785b95a1851f}\label{class_intro_session_manager_af8478d0e7c13bd12f28b785b95a1851f}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!c\+\_\+\+T\+O\+A\+S\+T\+\_\+\+S\+H\+O\+RT@{c\+\_\+\+T\+O\+A\+S\+T\+\_\+\+S\+H\+O\+RT}}
+\index{c\+\_\+\+T\+O\+A\+S\+T\+\_\+\+S\+H\+O\+RT@{c\+\_\+\+T\+O\+A\+S\+T\+\_\+\+S\+H\+O\+RT}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{c\+\_\+\+T\+O\+A\+S\+T\+\_\+\+S\+H\+O\+RT}{c\_TOAST\_SHORT}}
+{\footnotesize\ttfamily readonly float Intro\+Session\+Manager.\+c\+\_\+\+T\+O\+A\+S\+T\+\_\+\+S\+H\+O\+RT = 2f\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_aed8065a46f21ce1d465d0523b9cd6a94}\label{class_intro_session_manager_aed8065a46f21ce1d465d0523b9cd6a94}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!i\+\_\+\+Current\+Scene@{i\+\_\+\+Current\+Scene}}
+\index{i\+\_\+\+Current\+Scene@{i\+\_\+\+Current\+Scene}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{i\+\_\+\+Current\+Scene}{i\_CurrentScene}}
+{\footnotesize\ttfamily int Intro\+Session\+Manager.\+i\+\_\+\+Current\+Scene = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_aba1a41efd4328b389c8dd6a301b20a4a}\label{class_intro_session_manager_aba1a41efd4328b389c8dd6a301b20a4a}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!m\+\_\+\+Ball\+Clone@{m\+\_\+\+Ball\+Clone}}
+\index{m\+\_\+\+Ball\+Clone@{m\+\_\+\+Ball\+Clone}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Ball\+Clone}{m\_BallClone}}
+{\footnotesize\ttfamily Game\+Object Intro\+Session\+Manager.\+m\+\_\+\+Ball\+Clone\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_a24b3a594b1749a687454f4f580452d7a}\label{class_intro_session_manager_a24b3a594b1749a687454f4f580452d7a}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!m\+\_\+\+Ball\+Prefab@{m\+\_\+\+Ball\+Prefab}}
+\index{m\+\_\+\+Ball\+Prefab@{m\+\_\+\+Ball\+Prefab}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Ball\+Prefab}{m\_BallPrefab}}
+{\footnotesize\ttfamily Game\+Object Intro\+Session\+Manager.\+m\+\_\+\+Ball\+Prefab\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_abce70a4bbbb5858a2b7a08b4305809a0}\label{class_intro_session_manager_abce70a4bbbb5858a2b7a08b4305809a0}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!m\+\_\+\+Bring\+Box\+Into\+Scene@{m\+\_\+\+Bring\+Box\+Into\+Scene}}
+\index{m\+\_\+\+Bring\+Box\+Into\+Scene@{m\+\_\+\+Bring\+Box\+Into\+Scene}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Bring\+Box\+Into\+Scene}{m\_BringBoxIntoScene}}
+{\footnotesize\ttfamily bool Intro\+Session\+Manager.\+m\+\_\+\+Bring\+Box\+Into\+Scene\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_af373a8e1add9dccca5985f10db4c3c13}\label{class_intro_session_manager_af373a8e1add9dccca5985f10db4c3c13}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!m\+\_\+\+Button@{m\+\_\+\+Button}}
+\index{m\+\_\+\+Button@{m\+\_\+\+Button}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Button}{m\_Button}}
+{\footnotesize\ttfamily Game\+Object Intro\+Session\+Manager.\+m\+\_\+\+Button\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_ab9bab6c380a3dcc60825a13fffd65414}\label{class_intro_session_manager_ab9bab6c380a3dcc60825a13fffd65414}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!m\+\_\+\+Button\+Box@{m\+\_\+\+Button\+Box}}
+\index{m\+\_\+\+Button\+Box@{m\+\_\+\+Button\+Box}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Button\+Box}{m\_ButtonBox}}
+{\footnotesize\ttfamily Game\+Object Intro\+Session\+Manager.\+m\+\_\+\+Button\+Box\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_a235a181ca063d1fda1e971e7f52d0ebc}\label{class_intro_session_manager_a235a181ca063d1fda1e971e7f52d0ebc}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!m\+\_\+\+Center\+Eye\+Anchor@{m\+\_\+\+Center\+Eye\+Anchor}}
+\index{m\+\_\+\+Center\+Eye\+Anchor@{m\+\_\+\+Center\+Eye\+Anchor}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Center\+Eye\+Anchor}{m\_CenterEyeAnchor}}
+{\footnotesize\ttfamily Game\+Object Intro\+Session\+Manager.\+m\+\_\+\+Center\+Eye\+Anchor\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_affe78d60003972c8f0dc9e9e1e63e50e}\label{class_intro_session_manager_affe78d60003972c8f0dc9e9e1e63e50e}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!m\+\_\+\+Clock\+Text@{m\+\_\+\+Clock\+Text}}
+\index{m\+\_\+\+Clock\+Text@{m\+\_\+\+Clock\+Text}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Clock\+Text}{m\_ClockText}}
+{\footnotesize\ttfamily Text Intro\+Session\+Manager.\+m\+\_\+\+Clock\+Text\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_ab238042bfbf997400f5abce96cc0408f}\label{class_intro_session_manager_ab238042bfbf997400f5abce96cc0408f}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!m\+\_\+\+Closing\+Box@{m\+\_\+\+Closing\+Box}}
+\index{m\+\_\+\+Closing\+Box@{m\+\_\+\+Closing\+Box}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Closing\+Box}{m\_ClosingBox}}
+{\footnotesize\ttfamily bool Intro\+Session\+Manager.\+m\+\_\+\+Closing\+Box\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_ab296c21bb7534168337854df487ecd6a}\label{class_intro_session_manager_ab296c21bb7534168337854df487ecd6a}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!m\+\_\+\+Closing\+Sliding\+Doors@{m\+\_\+\+Closing\+Sliding\+Doors}}
+\index{m\+\_\+\+Closing\+Sliding\+Doors@{m\+\_\+\+Closing\+Sliding\+Doors}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Closing\+Sliding\+Doors}{m\_ClosingSlidingDoors}}
+{\footnotesize\ttfamily bool Intro\+Session\+Manager.\+m\+\_\+\+Closing\+Sliding\+Doors\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_a29cd7383da1ce27357209f218bb4bdb6}\label{class_intro_session_manager_a29cd7383da1ce27357209f218bb4bdb6}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!m\+\_\+\+Controller\+Model@{m\+\_\+\+Controller\+Model}}
+\index{m\+\_\+\+Controller\+Model@{m\+\_\+\+Controller\+Model}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Controller\+Model}{m\_ControllerModel}}
+{\footnotesize\ttfamily Game\+Object Intro\+Session\+Manager.\+m\+\_\+\+Controller\+Model\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_ab695398be29615d5e14df3d1e0019059}\label{class_intro_session_manager_ab695398be29615d5e14df3d1e0019059}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!m\+\_\+\+Dialogue\+Instructions@{m\+\_\+\+Dialogue\+Instructions}}
+\index{m\+\_\+\+Dialogue\+Instructions@{m\+\_\+\+Dialogue\+Instructions}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Dialogue\+Instructions}{m\_DialogueInstructions}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_dialogue}{Dialogue}} Intro\+Session\+Manager.\+m\+\_\+\+Dialogue\+Instructions\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_ace9b36a18f2d4f140836a98827011cef}\label{class_intro_session_manager_ace9b36a18f2d4f140836a98827011cef}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!m\+\_\+\+Global\+Message\+Board\+Text@{m\+\_\+\+Global\+Message\+Board\+Text}}
+\index{m\+\_\+\+Global\+Message\+Board\+Text@{m\+\_\+\+Global\+Message\+Board\+Text}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Global\+Message\+Board\+Text}{m\_GlobalMessageBoardText}}
+{\footnotesize\ttfamily Text Intro\+Session\+Manager.\+m\+\_\+\+Global\+Message\+Board\+Text\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_a74a01ae10424770fa43f60f407cf2cf1}\label{class_intro_session_manager_a74a01ae10424770fa43f60f407cf2cf1}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!m\+\_\+\+Highlight\+Material@{m\+\_\+\+Highlight\+Material}}
+\index{m\+\_\+\+Highlight\+Material@{m\+\_\+\+Highlight\+Material}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Highlight\+Material}{m\_HighlightMaterial}}
+{\footnotesize\ttfamily Material Intro\+Session\+Manager.\+m\+\_\+\+Highlight\+Material\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_a1ec45e159d4b876b370443534a4140ee}\label{class_intro_session_manager_a1ec45e159d4b876b370443534a4140ee}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!m\+\_\+\+Home\+Button@{m\+\_\+\+Home\+Button}}
+\index{m\+\_\+\+Home\+Button@{m\+\_\+\+Home\+Button}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Home\+Button}{m\_HomeButton}}
+{\footnotesize\ttfamily Game\+Object Intro\+Session\+Manager.\+m\+\_\+\+Home\+Button\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_a30e27176dbb3a3eb25c429ad65a88200}\label{class_intro_session_manager_a30e27176dbb3a3eb25c429ad65a88200}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!m\+\_\+\+Intro\+In@{m\+\_\+\+Intro\+In}}
+\index{m\+\_\+\+Intro\+In@{m\+\_\+\+Intro\+In}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Intro\+In}{m\_IntroIn}}
+{\footnotesize\ttfamily bool Intro\+Session\+Manager.\+m\+\_\+\+Intro\+In\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_a5896398e369471a9085d7208309cc730}\label{class_intro_session_manager_a5896398e369471a9085d7208309cc730}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!m\+\_\+\+Intro\+Out@{m\+\_\+\+Intro\+Out}}
+\index{m\+\_\+\+Intro\+Out@{m\+\_\+\+Intro\+Out}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Intro\+Out}{m\_IntroOut}}
+{\footnotesize\ttfamily bool Intro\+Session\+Manager.\+m\+\_\+\+Intro\+Out\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_ac3a4cf5ad448811271447cf9fa4b6d2b}\label{class_intro_session_manager_ac3a4cf5ad448811271447cf9fa4b6d2b}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!m\+\_\+\+Invalid\+Operation\+Coroutine@{m\+\_\+\+Invalid\+Operation\+Coroutine}}
+\index{m\+\_\+\+Invalid\+Operation\+Coroutine@{m\+\_\+\+Invalid\+Operation\+Coroutine}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Invalid\+Operation\+Coroutine}{m\_InvalidOperationCoroutine}}
+{\footnotesize\ttfamily I\+Enumerator Intro\+Session\+Manager.\+m\+\_\+\+Invalid\+Operation\+Coroutine\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_aa6a3bae892b3055d81deec38c303f37c}\label{class_intro_session_manager_aa6a3bae892b3055d81deec38c303f37c}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!m\+\_\+\+Invalid\+Operation\+Image@{m\+\_\+\+Invalid\+Operation\+Image}}
+\index{m\+\_\+\+Invalid\+Operation\+Image@{m\+\_\+\+Invalid\+Operation\+Image}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Invalid\+Operation\+Image}{m\_InvalidOperationImage}}
+{\footnotesize\ttfamily Image Intro\+Session\+Manager.\+m\+\_\+\+Invalid\+Operation\+Image\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_ac1ebde5d641b0fbe3f5c7d5f466406c4}\label{class_intro_session_manager_ac1ebde5d641b0fbe3f5c7d5f466406c4}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!m\+\_\+\+Left\+Door\+Button\+Box@{m\+\_\+\+Left\+Door\+Button\+Box}}
+\index{m\+\_\+\+Left\+Door\+Button\+Box@{m\+\_\+\+Left\+Door\+Button\+Box}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Left\+Door\+Button\+Box}{m\_LeftDoorButtonBox}}
+{\footnotesize\ttfamily Game\+Object Intro\+Session\+Manager.\+m\+\_\+\+Left\+Door\+Button\+Box\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_a3ab9cd9a1ca04c1570a3e4d35a382f80}\label{class_intro_session_manager_a3ab9cd9a1ca04c1570a3e4d35a382f80}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!m\+\_\+\+Loading\+Bar@{m\+\_\+\+Loading\+Bar}}
+\index{m\+\_\+\+Loading\+Bar@{m\+\_\+\+Loading\+Bar}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Loading\+Bar}{m\_LoadingBar}}
+{\footnotesize\ttfamily Image Intro\+Session\+Manager.\+m\+\_\+\+Loading\+Bar\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_ad719cd26d73b589cc92fdb3b4ad9a996}\label{class_intro_session_manager_ad719cd26d73b589cc92fdb3b4ad9a996}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!m\+\_\+\+Material\+Map@{m\+\_\+\+Material\+Map}}
+\index{m\+\_\+\+Material\+Map@{m\+\_\+\+Material\+Map}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Material\+Map}{m\_MaterialMap}}
+{\footnotesize\ttfamily Hashtable Intro\+Session\+Manager.\+m\+\_\+\+Material\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_a1a92991967b5d8f322610a85a548d4df}\label{class_intro_session_manager_a1a92991967b5d8f322610a85a548d4df}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!m\+\_\+\+Message\+Board\+Border@{m\+\_\+\+Message\+Board\+Border}}
+\index{m\+\_\+\+Message\+Board\+Border@{m\+\_\+\+Message\+Board\+Border}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Message\+Board\+Border}{m\_MessageBoardBorder}}
+{\footnotesize\ttfamily Game\+Object Intro\+Session\+Manager.\+m\+\_\+\+Message\+Board\+Border\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_a0de05def8a32179bbea80d1d4a296829}\label{class_intro_session_manager_a0de05def8a32179bbea80d1d4a296829}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!m\+\_\+\+Message\+Panel@{m\+\_\+\+Message\+Panel}}
+\index{m\+\_\+\+Message\+Panel@{m\+\_\+\+Message\+Panel}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Message\+Panel}{m\_MessagePanel}}
+{\footnotesize\ttfamily Game\+Object Intro\+Session\+Manager.\+m\+\_\+\+Message\+Panel\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_a16bbfff4e9b4adb0f3372357d222ee5f}\label{class_intro_session_manager_a16bbfff4e9b4adb0f3372357d222ee5f}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!m\+\_\+\+Move\+Box\+Out\+Of\+Scene@{m\+\_\+\+Move\+Box\+Out\+Of\+Scene}}
+\index{m\+\_\+\+Move\+Box\+Out\+Of\+Scene@{m\+\_\+\+Move\+Box\+Out\+Of\+Scene}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Move\+Box\+Out\+Of\+Scene}{m\_MoveBoxOutOfScene}}
+{\footnotesize\ttfamily bool Intro\+Session\+Manager.\+m\+\_\+\+Move\+Box\+Out\+Of\+Scene\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_ada16df52e05f0c7780efdb0f14b0509e}\label{class_intro_session_manager_ada16df52e05f0c7780efdb0f14b0509e}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!m\+\_\+\+Opening\+Box@{m\+\_\+\+Opening\+Box}}
+\index{m\+\_\+\+Opening\+Box@{m\+\_\+\+Opening\+Box}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Opening\+Box}{m\_OpeningBox}}
+{\footnotesize\ttfamily bool Intro\+Session\+Manager.\+m\+\_\+\+Opening\+Box\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_aca63a7e6cd979f5110c3054024284fa4}\label{class_intro_session_manager_aca63a7e6cd979f5110c3054024284fa4}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!m\+\_\+\+Opening\+Sliding\+Doors@{m\+\_\+\+Opening\+Sliding\+Doors}}
+\index{m\+\_\+\+Opening\+Sliding\+Doors@{m\+\_\+\+Opening\+Sliding\+Doors}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Opening\+Sliding\+Doors}{m\_OpeningSlidingDoors}}
+{\footnotesize\ttfamily bool Intro\+Session\+Manager.\+m\+\_\+\+Opening\+Sliding\+Doors\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_ac7c8eb1a21d3cf81c759c6088e02fac5}\label{class_intro_session_manager_ac7c8eb1a21d3cf81c759c6088e02fac5}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!m\+\_\+\+Platform\+Raised\+Position@{m\+\_\+\+Platform\+Raised\+Position}}
+\index{m\+\_\+\+Platform\+Raised\+Position@{m\+\_\+\+Platform\+Raised\+Position}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Platform\+Raised\+Position}{m\_PlatformRaisedPosition}}
+{\footnotesize\ttfamily Game\+Object Intro\+Session\+Manager.\+m\+\_\+\+Platform\+Raised\+Position\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_a94c3ed99ca9e372cd778c89403a5888a}\label{class_intro_session_manager_a94c3ed99ca9e372cd778c89403a5888a}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!m\+\_\+\+Platform\+Start\+Pos@{m\+\_\+\+Platform\+Start\+Pos}}
+\index{m\+\_\+\+Platform\+Start\+Pos@{m\+\_\+\+Platform\+Start\+Pos}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Platform\+Start\+Pos}{m\_PlatformStartPos}}
+{\footnotesize\ttfamily Vector3 Intro\+Session\+Manager.\+m\+\_\+\+Platform\+Start\+Pos\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_a439437ada3c600dbffb75b971aafc45a}\label{class_intro_session_manager_a439437ada3c600dbffb75b971aafc45a}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!m\+\_\+\+Prev\+Color@{m\+\_\+\+Prev\+Color}}
+\index{m\+\_\+\+Prev\+Color@{m\+\_\+\+Prev\+Color}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Prev\+Color}{m\_PrevColor}}
+{\footnotesize\ttfamily Color Intro\+Session\+Manager.\+m\+\_\+\+Prev\+Color\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_ab430fe3c2e7472725e639ba1dbe22822}\label{class_intro_session_manager_ab430fe3c2e7472725e639ba1dbe22822}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!m\+\_\+\+Prev\+Message@{m\+\_\+\+Prev\+Message}}
+\index{m\+\_\+\+Prev\+Message@{m\+\_\+\+Prev\+Message}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Prev\+Message}{m\_PrevMessage}}
+{\footnotesize\ttfamily string Intro\+Session\+Manager.\+m\+\_\+\+Prev\+Message\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_a4acb0cd1ca734c4b2d287c21e0d94f66}\label{class_intro_session_manager_a4acb0cd1ca734c4b2d287c21e0d94f66}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!m\+\_\+\+Reticle@{m\+\_\+\+Reticle}}
+\index{m\+\_\+\+Reticle@{m\+\_\+\+Reticle}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Reticle}{m\_Reticle}}
+{\footnotesize\ttfamily Game\+Object Intro\+Session\+Manager.\+m\+\_\+\+Reticle\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_ae70b15e66a1828fac715707eb92d8f70}\label{class_intro_session_manager_ae70b15e66a1828fac715707eb92d8f70}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!m\+\_\+\+Reticle\+Inner\+Circle@{m\+\_\+\+Reticle\+Inner\+Circle}}
+\index{m\+\_\+\+Reticle\+Inner\+Circle@{m\+\_\+\+Reticle\+Inner\+Circle}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Reticle\+Inner\+Circle}{m\_ReticleInnerCircle}}
+{\footnotesize\ttfamily Image Intro\+Session\+Manager.\+m\+\_\+\+Reticle\+Inner\+Circle\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_a3a614c679e3c032bbd9b9a12e525ef68}\label{class_intro_session_manager_a3a614c679e3c032bbd9b9a12e525ef68}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!m\+\_\+\+Reticle\+Outer\+Circle@{m\+\_\+\+Reticle\+Outer\+Circle}}
+\index{m\+\_\+\+Reticle\+Outer\+Circle@{m\+\_\+\+Reticle\+Outer\+Circle}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Reticle\+Outer\+Circle}{m\_ReticleOuterCircle}}
+{\footnotesize\ttfamily Image Intro\+Session\+Manager.\+m\+\_\+\+Reticle\+Outer\+Circle\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_acedcbccfb11e49f5279cbc11e7832c67}\label{class_intro_session_manager_acedcbccfb11e49f5279cbc11e7832c67}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!m\+\_\+\+Reticle\+State\+Coroutine@{m\+\_\+\+Reticle\+State\+Coroutine}}
+\index{m\+\_\+\+Reticle\+State\+Coroutine@{m\+\_\+\+Reticle\+State\+Coroutine}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Reticle\+State\+Coroutine}{m\_ReticleStateCoroutine}}
+{\footnotesize\ttfamily I\+Enumerator Intro\+Session\+Manager.\+m\+\_\+\+Reticle\+State\+Coroutine\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_a156fbcdf5bd354b60a3a864e63149d74}\label{class_intro_session_manager_a156fbcdf5bd354b60a3a864e63149d74}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!m\+\_\+\+Right\+Door\+Button\+Box@{m\+\_\+\+Right\+Door\+Button\+Box}}
+\index{m\+\_\+\+Right\+Door\+Button\+Box@{m\+\_\+\+Right\+Door\+Button\+Box}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Right\+Door\+Button\+Box}{m\_RightDoorButtonBox}}
+{\footnotesize\ttfamily Game\+Object Intro\+Session\+Manager.\+m\+\_\+\+Right\+Door\+Button\+Box\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_a99b3acd5b53deddb2707d0a572524b2d}\label{class_intro_session_manager_a99b3acd5b53deddb2707d0a572524b2d}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!m\+\_\+\+Robot@{m\+\_\+\+Robot}}
+\index{m\+\_\+\+Robot@{m\+\_\+\+Robot}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Robot}{m\_Robot}}
+{\footnotesize\ttfamily Game\+Object Intro\+Session\+Manager.\+m\+\_\+\+Robot\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_aba1ae4db2632c630034c828a55ff44a8}\label{class_intro_session_manager_aba1ae4db2632c630034c828a55ff44a8}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!m\+\_\+\+Robot\+Animator@{m\+\_\+\+Robot\+Animator}}
+\index{m\+\_\+\+Robot\+Animator@{m\+\_\+\+Robot\+Animator}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Robot\+Animator}{m\_RobotAnimator}}
+{\footnotesize\ttfamily Animator Intro\+Session\+Manager.\+m\+\_\+\+Robot\+Animator\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_a184d9e4647fb9b54d6292971c0d36590}\label{class_intro_session_manager_a184d9e4647fb9b54d6292971c0d36590}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!m\+\_\+\+Robot\+Audio\+Source@{m\+\_\+\+Robot\+Audio\+Source}}
+\index{m\+\_\+\+Robot\+Audio\+Source@{m\+\_\+\+Robot\+Audio\+Source}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Robot\+Audio\+Source}{m\_RobotAudioSource}}
+{\footnotesize\ttfamily Audio\+Source Intro\+Session\+Manager.\+m\+\_\+\+Robot\+Audio\+Source\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_ab609b1106ef0b8526612fc511bf711f3}\label{class_intro_session_manager_ab609b1106ef0b8526612fc511bf711f3}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!m\+\_\+\+Robot\+Default\+Position@{m\+\_\+\+Robot\+Default\+Position}}
+\index{m\+\_\+\+Robot\+Default\+Position@{m\+\_\+\+Robot\+Default\+Position}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Robot\+Default\+Position}{m\_RobotDefaultPosition}}
+{\footnotesize\ttfamily Game\+Object Intro\+Session\+Manager.\+m\+\_\+\+Robot\+Default\+Position\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_a0c8ac69af055d55bef22944606a0232d}\label{class_intro_session_manager_a0c8ac69af055d55bef22944606a0232d}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!m\+\_\+\+Robot\+Intro\+Dest1@{m\+\_\+\+Robot\+Intro\+Dest1}}
+\index{m\+\_\+\+Robot\+Intro\+Dest1@{m\+\_\+\+Robot\+Intro\+Dest1}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Robot\+Intro\+Dest1}{m\_RobotIntroDest1}}
+{\footnotesize\ttfamily Game\+Object Intro\+Session\+Manager.\+m\+\_\+\+Robot\+Intro\+Dest1\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_a4e9865d9b05cc6f052cea4bd7d9b7e1f}\label{class_intro_session_manager_a4e9865d9b05cc6f052cea4bd7d9b7e1f}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!m\+\_\+\+Scenes@{m\+\_\+\+Scenes}}
+\index{m\+\_\+\+Scenes@{m\+\_\+\+Scenes}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Scenes}{m\_Scenes}}
+{\footnotesize\ttfamily string \mbox{[}$\,$\mbox{]} Intro\+Session\+Manager.\+m\+\_\+\+Scenes\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_ade25d99d3058a14d4c2738a51281780e}\label{class_intro_session_manager_ade25d99d3058a14d4c2738a51281780e}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!m\+\_\+\+Showing\+Toast@{m\+\_\+\+Showing\+Toast}}
+\index{m\+\_\+\+Showing\+Toast@{m\+\_\+\+Showing\+Toast}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Showing\+Toast}{m\_ShowingToast}}
+{\footnotesize\ttfamily bool Intro\+Session\+Manager.\+m\+\_\+\+Showing\+Toast\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_a8f507b5c62504d8f0b3c99583080d1c6}\label{class_intro_session_manager_a8f507b5c62504d8f0b3c99583080d1c6}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!m\+\_\+\+Sliding\+Door\+Left@{m\+\_\+\+Sliding\+Door\+Left}}
+\index{m\+\_\+\+Sliding\+Door\+Left@{m\+\_\+\+Sliding\+Door\+Left}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Sliding\+Door\+Left}{m\_SlidingDoorLeft}}
+{\footnotesize\ttfamily Game\+Object Intro\+Session\+Manager.\+m\+\_\+\+Sliding\+Door\+Left\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_a86f65280712498492706c8c460c2ecef}\label{class_intro_session_manager_a86f65280712498492706c8c460c2ecef}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!m\+\_\+\+Sliding\+Door\+Right@{m\+\_\+\+Sliding\+Door\+Right}}
+\index{m\+\_\+\+Sliding\+Door\+Right@{m\+\_\+\+Sliding\+Door\+Right}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Sliding\+Door\+Right}{m\_SlidingDoorRight}}
+{\footnotesize\ttfamily Game\+Object Intro\+Session\+Manager.\+m\+\_\+\+Sliding\+Door\+Right\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_af435af1ecc0838851211ff54a82c750b}\label{class_intro_session_manager_af435af1ecc0838851211ff54a82c750b}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!m\+\_\+\+Stage\+Music@{m\+\_\+\+Stage\+Music}}
+\index{m\+\_\+\+Stage\+Music@{m\+\_\+\+Stage\+Music}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Stage\+Music}{m\_StageMusic}}
+{\footnotesize\ttfamily Audio\+Source Intro\+Session\+Manager.\+m\+\_\+\+Stage\+Music\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_aca0fa30bffd1159e786232541b0f254a}\label{class_intro_session_manager_aca0fa30bffd1159e786232541b0f254a}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!m\+\_\+\+Starting\+Platform@{m\+\_\+\+Starting\+Platform}}
+\index{m\+\_\+\+Starting\+Platform@{m\+\_\+\+Starting\+Platform}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Starting\+Platform}{m\_StartingPlatform}}
+{\footnotesize\ttfamily Game\+Object Intro\+Session\+Manager.\+m\+\_\+\+Starting\+Platform\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_aaeefdeac17668edbd7638eea2c771c5f}\label{class_intro_session_manager_aaeefdeac17668edbd7638eea2c771c5f}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!m\+\_\+\+Start\+Scene@{m\+\_\+\+Start\+Scene}}
+\index{m\+\_\+\+Start\+Scene@{m\+\_\+\+Start\+Scene}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Start\+Scene}{m\_StartScene}}
+{\footnotesize\ttfamily int Intro\+Session\+Manager.\+m\+\_\+\+Start\+Scene\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_a4f6bbbe92b466fc9713ea809e44b8715}\label{class_intro_session_manager_a4f6bbbe92b466fc9713ea809e44b8715}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!m\+\_\+\+Test\+Mode@{m\+\_\+\+Test\+Mode}}
+\index{m\+\_\+\+Test\+Mode@{m\+\_\+\+Test\+Mode}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Test\+Mode}{m\_TestMode}}
+{\footnotesize\ttfamily bool Intro\+Session\+Manager.\+m\+\_\+\+Test\+Mode\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_a709ed8345dde73d0a36c3c59e03f18f5}\label{class_intro_session_manager_a709ed8345dde73d0a36c3c59e03f18f5}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!m\+\_\+\+Toast\+Coroutine@{m\+\_\+\+Toast\+Coroutine}}
+\index{m\+\_\+\+Toast\+Coroutine@{m\+\_\+\+Toast\+Coroutine}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Toast\+Coroutine}{m\_ToastCoroutine}}
+{\footnotesize\ttfamily I\+Enumerator Intro\+Session\+Manager.\+m\+\_\+\+Toast\+Coroutine = null\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_a4ce2d50d7ff83169dc8224b199ac7e68}\label{class_intro_session_manager_a4ce2d50d7ff83169dc8224b199ac7e68}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!m\+\_\+\+Trigger\+Button@{m\+\_\+\+Trigger\+Button}}
+\index{m\+\_\+\+Trigger\+Button@{m\+\_\+\+Trigger\+Button}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Trigger\+Button}{m\_TriggerButton}}
+{\footnotesize\ttfamily Game\+Object Intro\+Session\+Manager.\+m\+\_\+\+Trigger\+Button\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_a470ec4b3778051a627d6c24f40fc61d3}\label{class_intro_session_manager_a470ec4b3778051a627d6c24f40fc61d3}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!music\+Clips@{music\+Clips}}
+\index{music\+Clips@{music\+Clips}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{music\+Clips}{musicClips}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_dialogue}{Dialogue}} Intro\+Session\+Manager.\+music\+Clips\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_a206bd6bc9edad9b90ee89aa85b00000c}\label{class_intro_session_manager_a206bd6bc9edad9b90ee89aa85b00000c}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!s\+\_\+\+Instance@{s\+\_\+\+Instance}}
+\index{s\+\_\+\+Instance@{s\+\_\+\+Instance}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{s\+\_\+\+Instance}{s\_Instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_intro_session_manager}{Intro\+Session\+Manager}} Intro\+Session\+Manager.\+s\+\_\+\+Instance = null\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_intro_session_manager_ae797af3e2ada3170f3c9f533b88a3806}\label{class_intro_session_manager_ae797af3e2ada3170f3c9f533b88a3806}} 
+\index{Intro\+Session\+Manager@{Intro\+Session\+Manager}!s\+\_\+\+Raycaster\+Script@{s\+\_\+\+Raycaster\+Script}}
+\index{s\+\_\+\+Raycaster\+Script@{s\+\_\+\+Raycaster\+Script}!Intro\+Session\+Manager@{Intro\+Session\+Manager}}
+\subsubsection{\texorpdfstring{s\+\_\+\+Raycaster\+Script}{s\_RaycasterScript}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_v_r_standard_assets_1_1_utils_1_1_raycaster_v_r}{Raycaster\+VR}} Intro\+Session\+Manager.\+s\+\_\+\+Raycaster\+Script\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_intro_session_manager_8cs}{Intro\+Session\+Manager.\+cs}}\end{DoxyCompactItemize}

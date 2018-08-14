@@ -1,0 +1,107 @@
+\hypertarget{class_target}{}\section{Target Class Reference}
+\label{class_target}\index{Target@{Target}}
+
+
+Class is designed to be used on the targets in Scene6. They have a voxel effect when they are hit by the ball.  
+
+
+Inheritance diagram for Target\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_target}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+delegate void \mbox{\hyperlink{class_target_a4f2a0b66fecc85bdcf301cc9ab926898}{Ball\+Hit\+Target}} ()
+\end{DoxyCompactItemize}
+\subsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_target_a4f2a0b66fecc85bdcf301cc9ab926898}{Ball\+Hit\+Target}} \mbox{\hyperlink{class_target_aa54347b745ba5f74774bda61839cce75}{e\+\_\+\+Ball\+Hit\+The\+Target}}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_target_a0f01237749302a315f5f9427524ac45a}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_target_adac88a907571e0494bbafc363236a84e}{On\+Trigger\+Enter}} (Collider collider)
+\item 
+I\+Enumerator \mbox{\hyperlink{class_target_af48513275b10a25477fb07f499a4b596}{Target\+Hit}} ()
+\begin{DoxyCompactList}\small\item\em Once the target gets hit, wait 2.\+5 seconds to allow the voxels to spread out, then turn gravity on for each one and let them fall. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Rigidbody \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_target_a570a932db2872d5f0d00656f038c2f21}{m\+\_\+children\+Rigid\+Bodies}}
+\item 
+bool \mbox{\hyperlink{class_target_abfdb205d5c2872d5d983b4e617eb5e40}{m\+\_\+\+Target\+Hit}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class is designed to be used on the targets in Scene6. They have a voxel effect when they are hit by the ball. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_target_a4f2a0b66fecc85bdcf301cc9ab926898}\label{class_target_a4f2a0b66fecc85bdcf301cc9ab926898}} 
+\index{Target@{Target}!Ball\+Hit\+Target@{Ball\+Hit\+Target}}
+\index{Ball\+Hit\+Target@{Ball\+Hit\+Target}!Target@{Target}}
+\subsubsection{\texorpdfstring{Ball\+Hit\+Target()}{BallHitTarget()}}
+{\footnotesize\ttfamily delegate void Target.\+Ball\+Hit\+Target (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_target_adac88a907571e0494bbafc363236a84e}\label{class_target_adac88a907571e0494bbafc363236a84e}} 
+\index{Target@{Target}!On\+Trigger\+Enter@{On\+Trigger\+Enter}}
+\index{On\+Trigger\+Enter@{On\+Trigger\+Enter}!Target@{Target}}
+\subsubsection{\texorpdfstring{On\+Trigger\+Enter()}{OnTriggerEnter()}}
+{\footnotesize\ttfamily void Target.\+On\+Trigger\+Enter (\begin{DoxyParamCaption}\item[{Collider}]{collider }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_target_a0f01237749302a315f5f9427524ac45a}\label{class_target_a0f01237749302a315f5f9427524ac45a}} 
+\index{Target@{Target}!Start@{Start}}
+\index{Start@{Start}!Target@{Target}}
+\subsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Target.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_target_af48513275b10a25477fb07f499a4b596}\label{class_target_af48513275b10a25477fb07f499a4b596}} 
+\index{Target@{Target}!Target\+Hit@{Target\+Hit}}
+\index{Target\+Hit@{Target\+Hit}!Target@{Target}}
+\subsubsection{\texorpdfstring{Target\+Hit()}{TargetHit()}}
+{\footnotesize\ttfamily I\+Enumerator Target.\+Target\+Hit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Once the target gets hit, wait 2.\+5 seconds to allow the voxels to spread out, then turn gravity on for each one and let them fall. 
+
+\begin{DoxyReturn}{Returns}
+A reference to the coroutine
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_target_a570a932db2872d5f0d00656f038c2f21}\label{class_target_a570a932db2872d5f0d00656f038c2f21}} 
+\index{Target@{Target}!m\+\_\+children\+Rigid\+Bodies@{m\+\_\+children\+Rigid\+Bodies}}
+\index{m\+\_\+children\+Rigid\+Bodies@{m\+\_\+children\+Rigid\+Bodies}!Target@{Target}}
+\subsubsection{\texorpdfstring{m\+\_\+children\+Rigid\+Bodies}{m\_childrenRigidBodies}}
+{\footnotesize\ttfamily Rigidbody \mbox{[}$\,$\mbox{]} Target.\+m\+\_\+children\+Rigid\+Bodies\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_target_abfdb205d5c2872d5d983b4e617eb5e40}\label{class_target_abfdb205d5c2872d5d983b4e617eb5e40}} 
+\index{Target@{Target}!m\+\_\+\+Target\+Hit@{m\+\_\+\+Target\+Hit}}
+\index{m\+\_\+\+Target\+Hit@{m\+\_\+\+Target\+Hit}!Target@{Target}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Target\+Hit}{m\_TargetHit}}
+{\footnotesize\ttfamily bool Target.\+m\+\_\+\+Target\+Hit\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Event Documentation}
+\mbox{\Hypertarget{class_target_aa54347b745ba5f74774bda61839cce75}\label{class_target_aa54347b745ba5f74774bda61839cce75}} 
+\index{Target@{Target}!e\+\_\+\+Ball\+Hit\+The\+Target@{e\+\_\+\+Ball\+Hit\+The\+Target}}
+\index{e\+\_\+\+Ball\+Hit\+The\+Target@{e\+\_\+\+Ball\+Hit\+The\+Target}!Target@{Target}}
+\subsubsection{\texorpdfstring{e\+\_\+\+Ball\+Hit\+The\+Target}{e\_BallHitTheTarget}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_target_a4f2a0b66fecc85bdcf301cc9ab926898}{Ball\+Hit\+Target}} Target.\+e\+\_\+\+Ball\+Hit\+The\+Target\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_target_8cs}{Target.\+cs}}\end{DoxyCompactItemize}

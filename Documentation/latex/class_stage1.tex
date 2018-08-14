@@ -1,0 +1,252 @@
+\hypertarget{class_stage1}{}\section{Stage1 Class Reference}
+\label{class_stage1}\index{Stage1@{Stage1}}
+Inheritance diagram for Stage1\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_stage1}
+\end{center}
+\end{figure}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_stage1}{Stage1}} \mbox{\hyperlink{class_stage1_ab20fb1804b3c34a0d5f0df630b79f48c}{s\+\_\+\+Instance}}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_stage1_a22cb4953258834766118cccf6637bf6e}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_stage1_a31a6ea5ef3ab028a99be7116cd90e37f}{Update}} ()
+\item 
+void \mbox{\hyperlink{class_stage1_aa992bad0fdb8df10f5ea6689ef8863ae}{Register\+Arrow}} ()
+\begin{DoxyCompactList}\small\item\em Registers the arrow as successfully looked at and increments {\ttfamily i\+\_\+\+Current\+Arrow} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_stage1_ac86ffd4a366e400042b42869b9282594}{Reset\+Progress\+Bar}} ()
+\begin{DoxyCompactList}\small\item\em Resets the progress bar back to 0. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_stage1_af625f5fcec1c9ac7a6fd6d74e437c13e}{Load\+Progress\+Bar}} ()
+\begin{DoxyCompactList}\small\item\em Precondition\+: Expecting to be called in Update. Loads the progress bar by one step. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_stage1_a6792b3b46499c0c5a6bf63031f6783b7}{Face\+Arrows\+To\+User}} ()
+\begin{DoxyCompactList}\small\item\em Iterates through the arrows and makes them face the user \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_v_r_standard_assets_1_1_utils_1_1_raycaster_v_r}{Raycaster\+VR}} \mbox{\hyperlink{class_stage1_a8df5a3c960c460aed5d994cc74598294}{m\+\_\+\+Raycaster\+Script}}
+\item 
+\mbox{\hyperlink{class_intro_session_manager}{Intro\+Session\+Manager}} \mbox{\hyperlink{class_stage1_aa75e5070f730ce1c8a22374540b5a165}{m\+\_\+\+Manager}}
+\item 
+\mbox{\hyperlink{class_dialogue}{Dialogue}} \mbox{\hyperlink{class_stage1_a5e0b22e242f1dc57f25116368047a74a}{m\+\_\+\+Dialogue\+Instructions}}
+\item 
+\mbox{\hyperlink{class_dialogue}{Dialogue}} \mbox{\hyperlink{class_stage1_a053a8aac4bdbe9827e07d00b10c89ddb}{m\+\_\+\+Dialogue\+Fail}}
+\item 
+Game\+Object \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_stage1_a61cc42d02ddfdb4c9e2deb58783a2106}{m\+\_\+\+Arrows\+Object\+List}} = new Game\+Object\mbox{[}4\mbox{]}
+\item 
+Transform \mbox{\hyperlink{class_stage1_a3833d350fc50f9ad32af955e6f2cdd7a}{m\+\_\+\+Center\+Position}}
+\item 
+float \mbox{\hyperlink{class_stage1_a717cdee3689d0e77cefec54c8f0c6ca4}{m\+\_\+\+Progress\+Bar\+Load\+Time}} = 2f
+\item 
+float \mbox{\hyperlink{class_stage1_a25cdcb8d515ce432b7656735e6920559}{m\+\_\+\+Loaded}} = 0
+\item 
+float \mbox{\hyperlink{class_stage1_a6d69553223e46e861ace3e060792508f}{m\+\_\+\+Reticle\+Scale\+Factor}}
+\item 
+Image \mbox{\hyperlink{class_stage1_a3bf55a6567f3517d9882c4c5e75b9864}{m\+\_\+\+Loading\+Bar}}
+\item 
+string \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_stage1_a19950f79b749e93f7588fe8f2b4c41f4}{m\+\_\+\+Arrows\+List}}
+\item 
+int \mbox{\hyperlink{class_stage1_a1c91dd1b16a5f371f684ef8c9f8c28b6}{i\+\_\+\+Current\+Arrow}}
+\item 
+Game\+Object \mbox{\hyperlink{class_stage1_ab34fda2e3ccabd8793c8749951277a6b}{m\+\_\+\+Target}}
+\item 
+bool \mbox{\hyperlink{class_stage1_a0388f6c2c86f10d5490731d6ba84be39}{m\+\_\+\+Was\+Looking\+At\+Arrow}}
+\item 
+bool \mbox{\hyperlink{class_stage1_ac4aaa3ab55eca6e4e561a51c7257d246}{m\+\_\+\+Is\+Stage\+Complete}}
+\item 
+Hashtable \mbox{\hyperlink{class_stage1_a013cab53ec598101d39197f1eae83e44}{m\+\_\+\+Arrow\+Map}}
+\item 
+bool \mbox{\hyperlink{class_stage1_ae2f93b4706065e7891ece3becaeef9cd}{m\+\_\+\+Looking\+At\+Completed}}
+\item 
+Game\+Object \mbox{\hyperlink{class_stage1_a6ffff0ae9f4d8ba81069bbec5fa8b899}{m\+\_\+\+Reticle}}
+\item 
+Game\+Object \mbox{\hyperlink{class_stage1_a61914e3464e7a11b41cdf5fb2516a619}{m\+\_\+\+Center\+Eye\+Anchor}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_stage1_a6792b3b46499c0c5a6bf63031f6783b7}\label{class_stage1_a6792b3b46499c0c5a6bf63031f6783b7}} 
+\index{Stage1@{Stage1}!Face\+Arrows\+To\+User@{Face\+Arrows\+To\+User}}
+\index{Face\+Arrows\+To\+User@{Face\+Arrows\+To\+User}!Stage1@{Stage1}}
+\subsubsection{\texorpdfstring{Face\+Arrows\+To\+User()}{FaceArrowsToUser()}}
+{\footnotesize\ttfamily void Stage1.\+Face\+Arrows\+To\+User (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Iterates through the arrows and makes them face the user 
+
+\mbox{\Hypertarget{class_stage1_af625f5fcec1c9ac7a6fd6d74e437c13e}\label{class_stage1_af625f5fcec1c9ac7a6fd6d74e437c13e}} 
+\index{Stage1@{Stage1}!Load\+Progress\+Bar@{Load\+Progress\+Bar}}
+\index{Load\+Progress\+Bar@{Load\+Progress\+Bar}!Stage1@{Stage1}}
+\subsubsection{\texorpdfstring{Load\+Progress\+Bar()}{LoadProgressBar()}}
+{\footnotesize\ttfamily void Stage1.\+Load\+Progress\+Bar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Precondition\+: Expecting to be called in Update. Loads the progress bar by one step. 
+
+\mbox{\Hypertarget{class_stage1_aa992bad0fdb8df10f5ea6689ef8863ae}\label{class_stage1_aa992bad0fdb8df10f5ea6689ef8863ae}} 
+\index{Stage1@{Stage1}!Register\+Arrow@{Register\+Arrow}}
+\index{Register\+Arrow@{Register\+Arrow}!Stage1@{Stage1}}
+\subsubsection{\texorpdfstring{Register\+Arrow()}{RegisterArrow()}}
+{\footnotesize\ttfamily void Stage1.\+Register\+Arrow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Registers the arrow as successfully looked at and increments {\ttfamily i\+\_\+\+Current\+Arrow} 
+
+\mbox{\Hypertarget{class_stage1_ac86ffd4a366e400042b42869b9282594}\label{class_stage1_ac86ffd4a366e400042b42869b9282594}} 
+\index{Stage1@{Stage1}!Reset\+Progress\+Bar@{Reset\+Progress\+Bar}}
+\index{Reset\+Progress\+Bar@{Reset\+Progress\+Bar}!Stage1@{Stage1}}
+\subsubsection{\texorpdfstring{Reset\+Progress\+Bar()}{ResetProgressBar()}}
+{\footnotesize\ttfamily void Stage1.\+Reset\+Progress\+Bar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Resets the progress bar back to 0. 
+
+\mbox{\Hypertarget{class_stage1_a22cb4953258834766118cccf6637bf6e}\label{class_stage1_a22cb4953258834766118cccf6637bf6e}} 
+\index{Stage1@{Stage1}!Start@{Start}}
+\index{Start@{Start}!Stage1@{Stage1}}
+\subsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Stage1.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_stage1_a31a6ea5ef3ab028a99be7116cd90e37f}\label{class_stage1_a31a6ea5ef3ab028a99be7116cd90e37f}} 
+\index{Stage1@{Stage1}!Update@{Update}}
+\index{Update@{Update}!Stage1@{Stage1}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Stage1.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_stage1_a1c91dd1b16a5f371f684ef8c9f8c28b6}\label{class_stage1_a1c91dd1b16a5f371f684ef8c9f8c28b6}} 
+\index{Stage1@{Stage1}!i\+\_\+\+Current\+Arrow@{i\+\_\+\+Current\+Arrow}}
+\index{i\+\_\+\+Current\+Arrow@{i\+\_\+\+Current\+Arrow}!Stage1@{Stage1}}
+\subsubsection{\texorpdfstring{i\+\_\+\+Current\+Arrow}{i\_CurrentArrow}}
+{\footnotesize\ttfamily int Stage1.\+i\+\_\+\+Current\+Arrow\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_stage1_a013cab53ec598101d39197f1eae83e44}\label{class_stage1_a013cab53ec598101d39197f1eae83e44}} 
+\index{Stage1@{Stage1}!m\+\_\+\+Arrow\+Map@{m\+\_\+\+Arrow\+Map}}
+\index{m\+\_\+\+Arrow\+Map@{m\+\_\+\+Arrow\+Map}!Stage1@{Stage1}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Arrow\+Map}{m\_ArrowMap}}
+{\footnotesize\ttfamily Hashtable Stage1.\+m\+\_\+\+Arrow\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_stage1_a19950f79b749e93f7588fe8f2b4c41f4}\label{class_stage1_a19950f79b749e93f7588fe8f2b4c41f4}} 
+\index{Stage1@{Stage1}!m\+\_\+\+Arrows\+List@{m\+\_\+\+Arrows\+List}}
+\index{m\+\_\+\+Arrows\+List@{m\+\_\+\+Arrows\+List}!Stage1@{Stage1}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Arrows\+List}{m\_ArrowsList}}
+{\footnotesize\ttfamily string \mbox{[}$\,$\mbox{]} Stage1.\+m\+\_\+\+Arrows\+List\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_stage1_a61cc42d02ddfdb4c9e2deb58783a2106}\label{class_stage1_a61cc42d02ddfdb4c9e2deb58783a2106}} 
+\index{Stage1@{Stage1}!m\+\_\+\+Arrows\+Object\+List@{m\+\_\+\+Arrows\+Object\+List}}
+\index{m\+\_\+\+Arrows\+Object\+List@{m\+\_\+\+Arrows\+Object\+List}!Stage1@{Stage1}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Arrows\+Object\+List}{m\_ArrowsObjectList}}
+{\footnotesize\ttfamily Game\+Object \mbox{[}$\,$\mbox{]} Stage1.\+m\+\_\+\+Arrows\+Object\+List = new Game\+Object\mbox{[}4\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_stage1_a61914e3464e7a11b41cdf5fb2516a619}\label{class_stage1_a61914e3464e7a11b41cdf5fb2516a619}} 
+\index{Stage1@{Stage1}!m\+\_\+\+Center\+Eye\+Anchor@{m\+\_\+\+Center\+Eye\+Anchor}}
+\index{m\+\_\+\+Center\+Eye\+Anchor@{m\+\_\+\+Center\+Eye\+Anchor}!Stage1@{Stage1}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Center\+Eye\+Anchor}{m\_CenterEyeAnchor}}
+{\footnotesize\ttfamily Game\+Object Stage1.\+m\+\_\+\+Center\+Eye\+Anchor\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_stage1_a3833d350fc50f9ad32af955e6f2cdd7a}\label{class_stage1_a3833d350fc50f9ad32af955e6f2cdd7a}} 
+\index{Stage1@{Stage1}!m\+\_\+\+Center\+Position@{m\+\_\+\+Center\+Position}}
+\index{m\+\_\+\+Center\+Position@{m\+\_\+\+Center\+Position}!Stage1@{Stage1}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Center\+Position}{m\_CenterPosition}}
+{\footnotesize\ttfamily Transform Stage1.\+m\+\_\+\+Center\+Position\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_stage1_a053a8aac4bdbe9827e07d00b10c89ddb}\label{class_stage1_a053a8aac4bdbe9827e07d00b10c89ddb}} 
+\index{Stage1@{Stage1}!m\+\_\+\+Dialogue\+Fail@{m\+\_\+\+Dialogue\+Fail}}
+\index{m\+\_\+\+Dialogue\+Fail@{m\+\_\+\+Dialogue\+Fail}!Stage1@{Stage1}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Dialogue\+Fail}{m\_DialogueFail}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_dialogue}{Dialogue}} Stage1.\+m\+\_\+\+Dialogue\+Fail\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_stage1_a5e0b22e242f1dc57f25116368047a74a}\label{class_stage1_a5e0b22e242f1dc57f25116368047a74a}} 
+\index{Stage1@{Stage1}!m\+\_\+\+Dialogue\+Instructions@{m\+\_\+\+Dialogue\+Instructions}}
+\index{m\+\_\+\+Dialogue\+Instructions@{m\+\_\+\+Dialogue\+Instructions}!Stage1@{Stage1}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Dialogue\+Instructions}{m\_DialogueInstructions}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_dialogue}{Dialogue}} Stage1.\+m\+\_\+\+Dialogue\+Instructions\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_stage1_ac4aaa3ab55eca6e4e561a51c7257d246}\label{class_stage1_ac4aaa3ab55eca6e4e561a51c7257d246}} 
+\index{Stage1@{Stage1}!m\+\_\+\+Is\+Stage\+Complete@{m\+\_\+\+Is\+Stage\+Complete}}
+\index{m\+\_\+\+Is\+Stage\+Complete@{m\+\_\+\+Is\+Stage\+Complete}!Stage1@{Stage1}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Is\+Stage\+Complete}{m\_IsStageComplete}}
+{\footnotesize\ttfamily bool Stage1.\+m\+\_\+\+Is\+Stage\+Complete\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_stage1_a25cdcb8d515ce432b7656735e6920559}\label{class_stage1_a25cdcb8d515ce432b7656735e6920559}} 
+\index{Stage1@{Stage1}!m\+\_\+\+Loaded@{m\+\_\+\+Loaded}}
+\index{m\+\_\+\+Loaded@{m\+\_\+\+Loaded}!Stage1@{Stage1}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Loaded}{m\_Loaded}}
+{\footnotesize\ttfamily float Stage1.\+m\+\_\+\+Loaded = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_stage1_a3bf55a6567f3517d9882c4c5e75b9864}\label{class_stage1_a3bf55a6567f3517d9882c4c5e75b9864}} 
+\index{Stage1@{Stage1}!m\+\_\+\+Loading\+Bar@{m\+\_\+\+Loading\+Bar}}
+\index{m\+\_\+\+Loading\+Bar@{m\+\_\+\+Loading\+Bar}!Stage1@{Stage1}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Loading\+Bar}{m\_LoadingBar}}
+{\footnotesize\ttfamily Image Stage1.\+m\+\_\+\+Loading\+Bar\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_stage1_ae2f93b4706065e7891ece3becaeef9cd}\label{class_stage1_ae2f93b4706065e7891ece3becaeef9cd}} 
+\index{Stage1@{Stage1}!m\+\_\+\+Looking\+At\+Completed@{m\+\_\+\+Looking\+At\+Completed}}
+\index{m\+\_\+\+Looking\+At\+Completed@{m\+\_\+\+Looking\+At\+Completed}!Stage1@{Stage1}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Looking\+At\+Completed}{m\_LookingAtCompleted}}
+{\footnotesize\ttfamily bool Stage1.\+m\+\_\+\+Looking\+At\+Completed\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_stage1_aa75e5070f730ce1c8a22374540b5a165}\label{class_stage1_aa75e5070f730ce1c8a22374540b5a165}} 
+\index{Stage1@{Stage1}!m\+\_\+\+Manager@{m\+\_\+\+Manager}}
+\index{m\+\_\+\+Manager@{m\+\_\+\+Manager}!Stage1@{Stage1}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Manager}{m\_Manager}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_intro_session_manager}{Intro\+Session\+Manager}} Stage1.\+m\+\_\+\+Manager\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_stage1_a717cdee3689d0e77cefec54c8f0c6ca4}\label{class_stage1_a717cdee3689d0e77cefec54c8f0c6ca4}} 
+\index{Stage1@{Stage1}!m\+\_\+\+Progress\+Bar\+Load\+Time@{m\+\_\+\+Progress\+Bar\+Load\+Time}}
+\index{m\+\_\+\+Progress\+Bar\+Load\+Time@{m\+\_\+\+Progress\+Bar\+Load\+Time}!Stage1@{Stage1}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Progress\+Bar\+Load\+Time}{m\_ProgressBarLoadTime}}
+{\footnotesize\ttfamily float Stage1.\+m\+\_\+\+Progress\+Bar\+Load\+Time = 2f\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_stage1_a8df5a3c960c460aed5d994cc74598294}\label{class_stage1_a8df5a3c960c460aed5d994cc74598294}} 
+\index{Stage1@{Stage1}!m\+\_\+\+Raycaster\+Script@{m\+\_\+\+Raycaster\+Script}}
+\index{m\+\_\+\+Raycaster\+Script@{m\+\_\+\+Raycaster\+Script}!Stage1@{Stage1}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Raycaster\+Script}{m\_RaycasterScript}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_v_r_standard_assets_1_1_utils_1_1_raycaster_v_r}{Raycaster\+VR}} Stage1.\+m\+\_\+\+Raycaster\+Script\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_stage1_a6ffff0ae9f4d8ba81069bbec5fa8b899}\label{class_stage1_a6ffff0ae9f4d8ba81069bbec5fa8b899}} 
+\index{Stage1@{Stage1}!m\+\_\+\+Reticle@{m\+\_\+\+Reticle}}
+\index{m\+\_\+\+Reticle@{m\+\_\+\+Reticle}!Stage1@{Stage1}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Reticle}{m\_Reticle}}
+{\footnotesize\ttfamily Game\+Object Stage1.\+m\+\_\+\+Reticle\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_stage1_a6d69553223e46e861ace3e060792508f}\label{class_stage1_a6d69553223e46e861ace3e060792508f}} 
+\index{Stage1@{Stage1}!m\+\_\+\+Reticle\+Scale\+Factor@{m\+\_\+\+Reticle\+Scale\+Factor}}
+\index{m\+\_\+\+Reticle\+Scale\+Factor@{m\+\_\+\+Reticle\+Scale\+Factor}!Stage1@{Stage1}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Reticle\+Scale\+Factor}{m\_ReticleScaleFactor}}
+{\footnotesize\ttfamily float Stage1.\+m\+\_\+\+Reticle\+Scale\+Factor\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_stage1_ab34fda2e3ccabd8793c8749951277a6b}\label{class_stage1_ab34fda2e3ccabd8793c8749951277a6b}} 
+\index{Stage1@{Stage1}!m\+\_\+\+Target@{m\+\_\+\+Target}}
+\index{m\+\_\+\+Target@{m\+\_\+\+Target}!Stage1@{Stage1}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Target}{m\_Target}}
+{\footnotesize\ttfamily Game\+Object Stage1.\+m\+\_\+\+Target\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_stage1_a0388f6c2c86f10d5490731d6ba84be39}\label{class_stage1_a0388f6c2c86f10d5490731d6ba84be39}} 
+\index{Stage1@{Stage1}!m\+\_\+\+Was\+Looking\+At\+Arrow@{m\+\_\+\+Was\+Looking\+At\+Arrow}}
+\index{m\+\_\+\+Was\+Looking\+At\+Arrow@{m\+\_\+\+Was\+Looking\+At\+Arrow}!Stage1@{Stage1}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Was\+Looking\+At\+Arrow}{m\_WasLookingAtArrow}}
+{\footnotesize\ttfamily bool Stage1.\+m\+\_\+\+Was\+Looking\+At\+Arrow\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_stage1_ab20fb1804b3c34a0d5f0df630b79f48c}\label{class_stage1_ab20fb1804b3c34a0d5f0df630b79f48c}} 
+\index{Stage1@{Stage1}!s\+\_\+\+Instance@{s\+\_\+\+Instance}}
+\index{s\+\_\+\+Instance@{s\+\_\+\+Instance}!Stage1@{Stage1}}
+\subsubsection{\texorpdfstring{s\+\_\+\+Instance}{s\_Instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_stage1}{Stage1}} Stage1.\+s\+\_\+\+Instance\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_stage1_8cs}{Stage1.\+cs}}\end{DoxyCompactItemize}

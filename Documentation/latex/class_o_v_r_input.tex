@@ -1,0 +1,1524 @@
+\hypertarget{class_o_v_r_input}{}\section{O\+V\+R\+Input Class Reference}
+\label{class_o_v_r_input}\index{O\+V\+R\+Input@{O\+V\+R\+Input}}
+
+
+Provides a unified input system for Oculus controllers and gamepads.  
+
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_o_v_r_input_1_1_o_v_r_controller_base}{O\+V\+R\+Controller\+Base}}
+\item 
+class \mbox{\hyperlink{class_o_v_r_input_1_1_o_v_r_controller_gamepad_android}{O\+V\+R\+Controller\+Gamepad\+Android}}
+\item 
+class \mbox{\hyperlink{class_o_v_r_input_1_1_o_v_r_controller_gamepad_mac}{O\+V\+R\+Controller\+Gamepad\+Mac}}
+\item 
+class \mbox{\hyperlink{class_o_v_r_input_1_1_o_v_r_controller_gamepad_p_c}{O\+V\+R\+Controller\+Gamepad\+PC}}
+\item 
+class \mbox{\hyperlink{class_o_v_r_input_1_1_o_v_r_controller_l_touch}{O\+V\+R\+Controller\+L\+Touch}}
+\item 
+class \mbox{\hyperlink{class_o_v_r_input_1_1_o_v_r_controller_l_tracked_remote}{O\+V\+R\+Controller\+L\+Tracked\+Remote}}
+\item 
+class \mbox{\hyperlink{class_o_v_r_input_1_1_o_v_r_controller_remote}{O\+V\+R\+Controller\+Remote}}
+\item 
+class \mbox{\hyperlink{class_o_v_r_input_1_1_o_v_r_controller_r_touch}{O\+V\+R\+Controller\+R\+Touch}}
+\item 
+class \mbox{\hyperlink{class_o_v_r_input_1_1_o_v_r_controller_r_tracked_remote}{O\+V\+R\+Controller\+R\+Tracked\+Remote}}
+\item 
+class \mbox{\hyperlink{class_o_v_r_input_1_1_o_v_r_controller_touch}{O\+V\+R\+Controller\+Touch}}
+\item 
+class \mbox{\hyperlink{class_o_v_r_input_1_1_o_v_r_controller_touchpad}{O\+V\+R\+Controller\+Touchpad}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5}{Button}} \{ \newline
+\mbox{\hyperlink{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a6adf97f83acf6453d4a6a4b1070f3754}{Button.\+None}} = 0, 
+\mbox{\hyperlink{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a06c2cea18679d64399783748fa367bdd}{Button.\+One}} = 0x00000001, 
+\mbox{\hyperlink{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5aaada29daee1d64ed0fe907043855cb7e}{Button.\+Two}} = 0x00000002, 
+\mbox{\hyperlink{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5aca8a2087e5557e317599344687a57391}{Button.\+Three}} = 0x00000004, 
+\newline
+\mbox{\hyperlink{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a981b8fcee42e1e726a67a2b9a98ea6e9}{Button.\+Four}} = 0x00000008, 
+\mbox{\hyperlink{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5aa6122a65eaa676f700ae68d393054a37}{Button.\+Start}} = 0x00000100, 
+\mbox{\hyperlink{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a0557fa923dcee4d0f86b1409f5c2167f}{Button.\+Back}} = 0x00000200, 
+\mbox{\hyperlink{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a1ec49088c410d9bfef3b40c7edefa927}{Button.\+Primary\+Shoulder}} = 0x00001000, 
+\newline
+\mbox{\hyperlink{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a05ce3346fd067f05de712c153423a543}{Button.\+Primary\+Index\+Trigger}} = 0x00002000, 
+\mbox{\hyperlink{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a2a8de88690d6135dc9389b0ce8014bd6}{Button.\+Primary\+Hand\+Trigger}} = 0x00004000, 
+\mbox{\hyperlink{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a44e853762529750fc9e2c3dfdbda6173}{Button.\+Primary\+Thumbstick}} = 0x00008000, 
+\mbox{\hyperlink{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5aefcd7e6a17d36bb743f07b54b98d418c}{Button.\+Primary\+Thumbstick\+Up}} = 0x00010000, 
+\newline
+\mbox{\hyperlink{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5ae6a8aee39717b8f2bfb2bb6201fdb5c0}{Button.\+Primary\+Thumbstick\+Down}} = 0x00020000, 
+\mbox{\hyperlink{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5ab70806bd9dd5f7f1b14c9e03328c21c0}{Button.\+Primary\+Thumbstick\+Left}} = 0x00040000, 
+\mbox{\hyperlink{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a269f230f6f421a23590ed7c128d34e39}{Button.\+Primary\+Thumbstick\+Right}} = 0x00080000, 
+\mbox{\hyperlink{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5af7efa4c905fcd3de5fabbb80e316f797}{Button.\+Primary\+Touchpad}} = 0x00000400, 
+\newline
+\mbox{\hyperlink{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a93fbd3ce5778a454ff725bc1a8acf6ef}{Button.\+Secondary\+Shoulder}} = 0x00100000, 
+\mbox{\hyperlink{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a8e997b6d1a9db4d4084bdb67c3701b01}{Button.\+Secondary\+Index\+Trigger}} = 0x00200000, 
+\mbox{\hyperlink{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5aad324586099c56274933df3594e0da91}{Button.\+Secondary\+Hand\+Trigger}} = 0x00400000, 
+\mbox{\hyperlink{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a4cfe69061380abb7e3b7f1d21e633600}{Button.\+Secondary\+Thumbstick}} = 0x00800000, 
+\newline
+\mbox{\hyperlink{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5aec34a44f06f86b9ab77664fb20d844b5}{Button.\+Secondary\+Thumbstick\+Up}} = 0x01000000, 
+\mbox{\hyperlink{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a2ce896a345f38678b74c756e050a789d}{Button.\+Secondary\+Thumbstick\+Down}} = 0x02000000, 
+\mbox{\hyperlink{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a36dc00c0ad70cc1cd91a174b3e282c11}{Button.\+Secondary\+Thumbstick\+Left}} = 0x04000000, 
+\mbox{\hyperlink{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a5a8aace1d2e424880be1916689a5f074}{Button.\+Secondary\+Thumbstick\+Right}} = 0x08000000, 
+\newline
+\mbox{\hyperlink{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a177ba2bf42c325826c45d82357fc9e70}{Button.\+Secondary\+Touchpad}} = 0x00000800, 
+\mbox{\hyperlink{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5ad3ca4590094b47dd5e7ddfd4679a1139}{Button.\+Dpad\+Up}} = 0x00000010, 
+\mbox{\hyperlink{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5af926cb67913be40219a97ec3889f90d9}{Button.\+Dpad\+Down}} = 0x00000020, 
+\mbox{\hyperlink{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a126eb11514ec5936a690e24fce06a075}{Button.\+Dpad\+Left}} = 0x00000040, 
+\newline
+\mbox{\hyperlink{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5ad3c7cfd48048567e4d093aaad0bbcb7a}{Button.\+Dpad\+Right}} = 0x00000080, 
+\mbox{\hyperlink{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a258f49887ef8d14ac268c92b02503aaa}{Button.\+Up}} = 0x10000000, 
+\mbox{\hyperlink{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a08a38277b0309070706f6652eeae9a53}{Button.\+Down}} = 0x20000000, 
+\mbox{\hyperlink{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a945d5e233cf7d6240f6b783b36a374ff}{Button.\+Left}} = 0x40000000, 
+\newline
+\mbox{\hyperlink{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a92b09c7c48c520c3c55e497875da437c}{Button.\+Right}} = unchecked((int)0x80000000), 
+\mbox{\hyperlink{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5aed36a1ef76a59ee3f15180e0441188ad}{Button.\+Any}} = $\sim$\+None
+ \}
+\begin{DoxyCompactList}\small\item\em Virtual button mappings that allow the same input bindings to work across different controllers. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77a}{Raw\+Button}} \{ \newline
+\mbox{\hyperlink{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa6adf97f83acf6453d4a6a4b1070f3754}{Raw\+Button.\+None}} = 0, 
+\mbox{\hyperlink{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa7fc56270e7a70fa81a5935b72eacbe29}{Raw\+Button.\+A}} = 0x00000001, 
+\mbox{\hyperlink{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa9d5ed678fe57bcca610140957afab571}{Raw\+Button.\+B}} = 0x00000002, 
+\mbox{\hyperlink{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa02129bb861061d1a052c592e2dc6b383}{Raw\+Button.\+X}} = 0x00000100, 
+\newline
+\mbox{\hyperlink{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa57cec4137b614c87cb4e24a3d003a3e0}{Raw\+Button.\+Y}} = 0x00000200, 
+\mbox{\hyperlink{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aaa6122a65eaa676f700ae68d393054a37}{Raw\+Button.\+Start}} = 0x00100000, 
+\mbox{\hyperlink{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa0557fa923dcee4d0f86b1409f5c2167f}{Raw\+Button.\+Back}} = 0x00200000, 
+\mbox{\hyperlink{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aafe788e67252c3049b894226c0c6ca5aa}{Raw\+Button.\+L\+Shoulder}} = 0x00000800, 
+\newline
+\mbox{\hyperlink{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa539fc444c6c42c09fec1c86daa96b8a2}{Raw\+Button.\+L\+Index\+Trigger}} = 0x10000000, 
+\mbox{\hyperlink{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa0676a01bc10e9f8770512c041832f748}{Raw\+Button.\+L\+Hand\+Trigger}} = 0x20000000, 
+\mbox{\hyperlink{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa60bb23d20b84538d31231081472ba86c}{Raw\+Button.\+L\+Thumbstick}} = 0x00000400, 
+\mbox{\hyperlink{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa63a682a06c8b48a275ce3e6808e346ea}{Raw\+Button.\+L\+Thumbstick\+Up}} = 0x00000010, 
+\newline
+\mbox{\hyperlink{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aad4c8c2597b450a33c01383f3aa8970cd}{Raw\+Button.\+L\+Thumbstick\+Down}} = 0x00000020, 
+\mbox{\hyperlink{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa2251cbf49fdcce9aa31b12116d8971ee}{Raw\+Button.\+L\+Thumbstick\+Left}} = 0x00000040, 
+\mbox{\hyperlink{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa0edd1863a955bf90c202143547d316b6}{Raw\+Button.\+L\+Thumbstick\+Right}} = 0x00000080, 
+\mbox{\hyperlink{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa7c0bd966a0e7a99323b6fd18efef7602}{Raw\+Button.\+L\+Touchpad}} = 0x40000000, 
+\newline
+\mbox{\hyperlink{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa41a810fe24d1ea211a55337eaaa1e3d2}{Raw\+Button.\+R\+Shoulder}} = 0x00000008, 
+\mbox{\hyperlink{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa0501589371e70c45f36658f9bb4b7843}{Raw\+Button.\+R\+Index\+Trigger}} = 0x04000000, 
+\mbox{\hyperlink{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa2d5b73bea84840ebcd86393266fb601d}{Raw\+Button.\+R\+Hand\+Trigger}} = 0x08000000, 
+\mbox{\hyperlink{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa143ae6547eaed39d27d96f4bd1a57df7}{Raw\+Button.\+R\+Thumbstick}} = 0x00000004, 
+\newline
+\mbox{\hyperlink{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa9c9e4202021739d84c3b90010c89ccfa}{Raw\+Button.\+R\+Thumbstick\+Up}} = 0x00001000, 
+\mbox{\hyperlink{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aae5bafe28b2a52cd6e82cb04e70c77481}{Raw\+Button.\+R\+Thumbstick\+Down}} = 0x00002000, 
+\mbox{\hyperlink{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aad2680ec4a1c95d6b296c403a504e06e3}{Raw\+Button.\+R\+Thumbstick\+Left}} = 0x00004000, 
+\mbox{\hyperlink{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aabdfb1d9b3943a1cc85ac7d37f0bb69f0}{Raw\+Button.\+R\+Thumbstick\+Right}} = 0x00008000, 
+\newline
+\mbox{\hyperlink{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa589550297d0b2ddda9f8bc62fcb2060e}{Raw\+Button.\+R\+Touchpad}} = unchecked((int)0x80000000), 
+\mbox{\hyperlink{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aad3ca4590094b47dd5e7ddfd4679a1139}{Raw\+Button.\+Dpad\+Up}} = 0x00010000, 
+\mbox{\hyperlink{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aaf926cb67913be40219a97ec3889f90d9}{Raw\+Button.\+Dpad\+Down}} = 0x00020000, 
+\mbox{\hyperlink{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa126eb11514ec5936a690e24fce06a075}{Raw\+Button.\+Dpad\+Left}} = 0x00040000, 
+\newline
+\mbox{\hyperlink{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aad3c7cfd48048567e4d093aaad0bbcb7a}{Raw\+Button.\+Dpad\+Right}} = 0x00080000, 
+\mbox{\hyperlink{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aaed36a1ef76a59ee3f15180e0441188ad}{Raw\+Button.\+Any}} = $\sim$\+None
+ \}
+\begin{DoxyCompactList}\small\item\em Raw button mappings that can be used to directly query the state of a controller. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{class_o_v_r_input_a4e1f1eb856223383aefc1965dd2db39a}{Touch}} \{ \newline
+\mbox{\hyperlink{class_o_v_r_input_a4e1f1eb856223383aefc1965dd2db39aa6adf97f83acf6453d4a6a4b1070f3754}{Touch.\+None}} = 0, 
+\mbox{\hyperlink{class_o_v_r_input_a4e1f1eb856223383aefc1965dd2db39aa06c2cea18679d64399783748fa367bdd}{Touch.\+One}} = Button.\+One, 
+\mbox{\hyperlink{class_o_v_r_input_a4e1f1eb856223383aefc1965dd2db39aaaada29daee1d64ed0fe907043855cb7e}{Touch.\+Two}} = Button.\+Two, 
+\mbox{\hyperlink{class_o_v_r_input_a4e1f1eb856223383aefc1965dd2db39aaca8a2087e5557e317599344687a57391}{Touch.\+Three}} = Button.\+Three, 
+\newline
+\mbox{\hyperlink{class_o_v_r_input_a4e1f1eb856223383aefc1965dd2db39aa981b8fcee42e1e726a67a2b9a98ea6e9}{Touch.\+Four}} = Button.\+Four, 
+\mbox{\hyperlink{class_o_v_r_input_a4e1f1eb856223383aefc1965dd2db39aa05ce3346fd067f05de712c153423a543}{Touch.\+Primary\+Index\+Trigger}} = Button.\+Primary\+Index\+Trigger, 
+\mbox{\hyperlink{class_o_v_r_input_a4e1f1eb856223383aefc1965dd2db39aa44e853762529750fc9e2c3dfdbda6173}{Touch.\+Primary\+Thumbstick}} = Button.\+Primary\+Thumbstick, 
+\mbox{\hyperlink{class_o_v_r_input_a4e1f1eb856223383aefc1965dd2db39aad9ebd1d603d9438d99fc32baaf94a417}{Touch.\+Primary\+Thumb\+Rest}} = 0x00001000, 
+\newline
+\mbox{\hyperlink{class_o_v_r_input_a4e1f1eb856223383aefc1965dd2db39aaf7efa4c905fcd3de5fabbb80e316f797}{Touch.\+Primary\+Touchpad}} = Button.\+Primary\+Touchpad, 
+\mbox{\hyperlink{class_o_v_r_input_a4e1f1eb856223383aefc1965dd2db39aa8e997b6d1a9db4d4084bdb67c3701b01}{Touch.\+Secondary\+Index\+Trigger}} = Button.\+Secondary\+Index\+Trigger, 
+\mbox{\hyperlink{class_o_v_r_input_a4e1f1eb856223383aefc1965dd2db39aa4cfe69061380abb7e3b7f1d21e633600}{Touch.\+Secondary\+Thumbstick}} = Button.\+Secondary\+Thumbstick, 
+\mbox{\hyperlink{class_o_v_r_input_a4e1f1eb856223383aefc1965dd2db39aad4314569e4872e34d68317e2bfd7354b}{Touch.\+Secondary\+Thumb\+Rest}} = 0x00100000, 
+\newline
+\mbox{\hyperlink{class_o_v_r_input_a4e1f1eb856223383aefc1965dd2db39aa177ba2bf42c325826c45d82357fc9e70}{Touch.\+Secondary\+Touchpad}} = Button.\+Secondary\+Touchpad, 
+\mbox{\hyperlink{class_o_v_r_input_a4e1f1eb856223383aefc1965dd2db39aaed36a1ef76a59ee3f15180e0441188ad}{Touch.\+Any}} = $\sim$\+None
+ \}
+\begin{DoxyCompactList}\small\item\em Virtual capacitive touch mappings that allow the same input bindings to work across different controllers with capacitive touch support. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{class_o_v_r_input_a6e130faa2035c5b20853c1177d909cc6}{Raw\+Touch}} \{ \newline
+\mbox{\hyperlink{class_o_v_r_input_a6e130faa2035c5b20853c1177d909cc6a6adf97f83acf6453d4a6a4b1070f3754}{Raw\+Touch.\+None}} = 0, 
+\mbox{\hyperlink{class_o_v_r_input_a6e130faa2035c5b20853c1177d909cc6a7fc56270e7a70fa81a5935b72eacbe29}{Raw\+Touch.\+A}} = Raw\+Button.\+A, 
+\mbox{\hyperlink{class_o_v_r_input_a6e130faa2035c5b20853c1177d909cc6a9d5ed678fe57bcca610140957afab571}{Raw\+Touch.\+B}} = Raw\+Button.\+B, 
+\mbox{\hyperlink{class_o_v_r_input_a6e130faa2035c5b20853c1177d909cc6a02129bb861061d1a052c592e2dc6b383}{Raw\+Touch.\+X}} = Raw\+Button.\+X, 
+\newline
+\mbox{\hyperlink{class_o_v_r_input_a6e130faa2035c5b20853c1177d909cc6a57cec4137b614c87cb4e24a3d003a3e0}{Raw\+Touch.\+Y}} = Raw\+Button.\+Y, 
+\mbox{\hyperlink{class_o_v_r_input_a6e130faa2035c5b20853c1177d909cc6a539fc444c6c42c09fec1c86daa96b8a2}{Raw\+Touch.\+L\+Index\+Trigger}} = 0x00001000, 
+\mbox{\hyperlink{class_o_v_r_input_a6e130faa2035c5b20853c1177d909cc6a60bb23d20b84538d31231081472ba86c}{Raw\+Touch.\+L\+Thumbstick}} = Raw\+Button.\+L\+Thumbstick, 
+\mbox{\hyperlink{class_o_v_r_input_a6e130faa2035c5b20853c1177d909cc6af3a7cacac94764828ecf8f2c9c53641a}{Raw\+Touch.\+L\+Thumb\+Rest}} = 0x00000800, 
+\newline
+\mbox{\hyperlink{class_o_v_r_input_a6e130faa2035c5b20853c1177d909cc6a7c0bd966a0e7a99323b6fd18efef7602}{Raw\+Touch.\+L\+Touchpad}} = Raw\+Button.\+L\+Touchpad, 
+\mbox{\hyperlink{class_o_v_r_input_a6e130faa2035c5b20853c1177d909cc6a0501589371e70c45f36658f9bb4b7843}{Raw\+Touch.\+R\+Index\+Trigger}} = 0x00000010, 
+\mbox{\hyperlink{class_o_v_r_input_a6e130faa2035c5b20853c1177d909cc6a143ae6547eaed39d27d96f4bd1a57df7}{Raw\+Touch.\+R\+Thumbstick}} = Raw\+Button.\+R\+Thumbstick, 
+\mbox{\hyperlink{class_o_v_r_input_a6e130faa2035c5b20853c1177d909cc6a285473e5dabe9d4f69223538d5d973d7}{Raw\+Touch.\+R\+Thumb\+Rest}} = 0x00000008, 
+\newline
+\mbox{\hyperlink{class_o_v_r_input_a6e130faa2035c5b20853c1177d909cc6a589550297d0b2ddda9f8bc62fcb2060e}{Raw\+Touch.\+R\+Touchpad}} = Raw\+Button.\+R\+Touchpad, 
+\mbox{\hyperlink{class_o_v_r_input_a6e130faa2035c5b20853c1177d909cc6aed36a1ef76a59ee3f15180e0441188ad}{Raw\+Touch.\+Any}} = $\sim$\+None
+ \}
+\begin{DoxyCompactList}\small\item\em Raw capacitive touch mappings that can be used to directly query the state of a controller. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{class_o_v_r_input_afa31aa573064be9bab8fc9e58cddeab6}{Near\+Touch}} \{ \newline
+\mbox{\hyperlink{class_o_v_r_input_afa31aa573064be9bab8fc9e58cddeab6a6adf97f83acf6453d4a6a4b1070f3754}{Near\+Touch.\+None}} = 0, 
+\mbox{\hyperlink{class_o_v_r_input_afa31aa573064be9bab8fc9e58cddeab6a05ce3346fd067f05de712c153423a543}{Near\+Touch.\+Primary\+Index\+Trigger}} = 0x00000001, 
+\mbox{\hyperlink{class_o_v_r_input_afa31aa573064be9bab8fc9e58cddeab6a85205b778ef8021ee14805c3a36c67a1}{Near\+Touch.\+Primary\+Thumb\+Buttons}} = 0x00000002, 
+\mbox{\hyperlink{class_o_v_r_input_afa31aa573064be9bab8fc9e58cddeab6a8e997b6d1a9db4d4084bdb67c3701b01}{Near\+Touch.\+Secondary\+Index\+Trigger}} = 0x00000004, 
+\newline
+\mbox{\hyperlink{class_o_v_r_input_afa31aa573064be9bab8fc9e58cddeab6acfec5e25ea7af4398e8618195c792ec3}{Near\+Touch.\+Secondary\+Thumb\+Buttons}} = 0x00000008, 
+\mbox{\hyperlink{class_o_v_r_input_afa31aa573064be9bab8fc9e58cddeab6aed36a1ef76a59ee3f15180e0441188ad}{Near\+Touch.\+Any}} = $\sim$\+None
+ \}
+\item 
+enum \mbox{\hyperlink{class_o_v_r_input_ac9c3c10aa9911507c6dc66e2dd6ec60e}{Raw\+Near\+Touch}} \{ \newline
+\mbox{\hyperlink{class_o_v_r_input_ac9c3c10aa9911507c6dc66e2dd6ec60ea6adf97f83acf6453d4a6a4b1070f3754}{Raw\+Near\+Touch.\+None}} = 0, 
+\mbox{\hyperlink{class_o_v_r_input_ac9c3c10aa9911507c6dc66e2dd6ec60ea539fc444c6c42c09fec1c86daa96b8a2}{Raw\+Near\+Touch.\+L\+Index\+Trigger}} = 0x00000001, 
+\mbox{\hyperlink{class_o_v_r_input_ac9c3c10aa9911507c6dc66e2dd6ec60ea4fa5a033fe18dd12447d7305efc90e91}{Raw\+Near\+Touch.\+L\+Thumb\+Buttons}} = 0x00000002, 
+\mbox{\hyperlink{class_o_v_r_input_ac9c3c10aa9911507c6dc66e2dd6ec60ea0501589371e70c45f36658f9bb4b7843}{Raw\+Near\+Touch.\+R\+Index\+Trigger}} = 0x00000004, 
+\newline
+\mbox{\hyperlink{class_o_v_r_input_ac9c3c10aa9911507c6dc66e2dd6ec60ea62dfe22c21f7c46d025b41f5b0d78a33}{Raw\+Near\+Touch.\+R\+Thumb\+Buttons}} = 0x00000008, 
+\mbox{\hyperlink{class_o_v_r_input_ac9c3c10aa9911507c6dc66e2dd6ec60eaed36a1ef76a59ee3f15180e0441188ad}{Raw\+Near\+Touch.\+Any}} = $\sim$\+None
+ \}
+\begin{DoxyCompactList}\small\item\em Raw near touch mappings that can be used to directly query the state of a controller. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{class_o_v_r_input_af5c3e63489ca9ee2e5db3a657f7f27f6}{Axis1D}} \{ \newline
+\mbox{\hyperlink{class_o_v_r_input_af5c3e63489ca9ee2e5db3a657f7f27f6a6adf97f83acf6453d4a6a4b1070f3754}{Axis1\+D.\+None}} = 0, 
+\mbox{\hyperlink{class_o_v_r_input_af5c3e63489ca9ee2e5db3a657f7f27f6a05ce3346fd067f05de712c153423a543}{Axis1\+D.\+Primary\+Index\+Trigger}} = 0x01, 
+\mbox{\hyperlink{class_o_v_r_input_af5c3e63489ca9ee2e5db3a657f7f27f6a2a8de88690d6135dc9389b0ce8014bd6}{Axis1\+D.\+Primary\+Hand\+Trigger}} = 0x04, 
+\mbox{\hyperlink{class_o_v_r_input_af5c3e63489ca9ee2e5db3a657f7f27f6a8e997b6d1a9db4d4084bdb67c3701b01}{Axis1\+D.\+Secondary\+Index\+Trigger}} = 0x02, 
+\newline
+\mbox{\hyperlink{class_o_v_r_input_af5c3e63489ca9ee2e5db3a657f7f27f6aad324586099c56274933df3594e0da91}{Axis1\+D.\+Secondary\+Hand\+Trigger}} = 0x08, 
+\mbox{\hyperlink{class_o_v_r_input_af5c3e63489ca9ee2e5db3a657f7f27f6aed36a1ef76a59ee3f15180e0441188ad}{Axis1\+D.\+Any}} = $\sim$\+None
+ \}
+\begin{DoxyCompactList}\small\item\em Virtual 1-\/dimensional axis (float) mappings that allow the same input bindings to work across different controllers. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{class_o_v_r_input_a9c9eff2910ca07d1fb0e924273ebefaf}{Raw\+Axis1D}} \{ \newline
+\mbox{\hyperlink{class_o_v_r_input_a9c9eff2910ca07d1fb0e924273ebefafa6adf97f83acf6453d4a6a4b1070f3754}{Raw\+Axis1\+D.\+None}} = 0, 
+\mbox{\hyperlink{class_o_v_r_input_a9c9eff2910ca07d1fb0e924273ebefafa539fc444c6c42c09fec1c86daa96b8a2}{Raw\+Axis1\+D.\+L\+Index\+Trigger}} = 0x01, 
+\mbox{\hyperlink{class_o_v_r_input_a9c9eff2910ca07d1fb0e924273ebefafa0676a01bc10e9f8770512c041832f748}{Raw\+Axis1\+D.\+L\+Hand\+Trigger}} = 0x04, 
+\mbox{\hyperlink{class_o_v_r_input_a9c9eff2910ca07d1fb0e924273ebefafa0501589371e70c45f36658f9bb4b7843}{Raw\+Axis1\+D.\+R\+Index\+Trigger}} = 0x02, 
+\newline
+\mbox{\hyperlink{class_o_v_r_input_a9c9eff2910ca07d1fb0e924273ebefafa2d5b73bea84840ebcd86393266fb601d}{Raw\+Axis1\+D.\+R\+Hand\+Trigger}} = 0x08, 
+\mbox{\hyperlink{class_o_v_r_input_a9c9eff2910ca07d1fb0e924273ebefafaed36a1ef76a59ee3f15180e0441188ad}{Raw\+Axis1\+D.\+Any}} = $\sim$\+None
+ \}
+\begin{DoxyCompactList}\small\item\em Raw 1-\/dimensional axis (float) mappings that can be used to directly query the state of a controller. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{class_o_v_r_input_a8d8de8321e36e4c5c3b5266b72468d8a}{Axis2D}} \{ \newline
+\mbox{\hyperlink{class_o_v_r_input_a8d8de8321e36e4c5c3b5266b72468d8aa6adf97f83acf6453d4a6a4b1070f3754}{Axis2\+D.\+None}} = 0, 
+\mbox{\hyperlink{class_o_v_r_input_a8d8de8321e36e4c5c3b5266b72468d8aa44e853762529750fc9e2c3dfdbda6173}{Axis2\+D.\+Primary\+Thumbstick}} = 0x01, 
+\mbox{\hyperlink{class_o_v_r_input_a8d8de8321e36e4c5c3b5266b72468d8aaf7efa4c905fcd3de5fabbb80e316f797}{Axis2\+D.\+Primary\+Touchpad}} = 0x04, 
+\mbox{\hyperlink{class_o_v_r_input_a8d8de8321e36e4c5c3b5266b72468d8aa4cfe69061380abb7e3b7f1d21e633600}{Axis2\+D.\+Secondary\+Thumbstick}} = 0x02, 
+\newline
+\mbox{\hyperlink{class_o_v_r_input_a8d8de8321e36e4c5c3b5266b72468d8aa177ba2bf42c325826c45d82357fc9e70}{Axis2\+D.\+Secondary\+Touchpad}} = 0x08, 
+\mbox{\hyperlink{class_o_v_r_input_a8d8de8321e36e4c5c3b5266b72468d8aaed36a1ef76a59ee3f15180e0441188ad}{Axis2\+D.\+Any}} = $\sim$\+None
+ \}
+\begin{DoxyCompactList}\small\item\em Virtual 2-\/dimensional axis (Vector2) mappings that allow the same input bindings to work across different controllers. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{class_o_v_r_input_a973c161bfb3bd6d0cc16c3a0b56c9f4a}{Raw\+Axis2D}} \{ \newline
+\mbox{\hyperlink{class_o_v_r_input_a973c161bfb3bd6d0cc16c3a0b56c9f4aa6adf97f83acf6453d4a6a4b1070f3754}{Raw\+Axis2\+D.\+None}} = 0, 
+\mbox{\hyperlink{class_o_v_r_input_a973c161bfb3bd6d0cc16c3a0b56c9f4aa60bb23d20b84538d31231081472ba86c}{Raw\+Axis2\+D.\+L\+Thumbstick}} = 0x01, 
+\mbox{\hyperlink{class_o_v_r_input_a973c161bfb3bd6d0cc16c3a0b56c9f4aa7c0bd966a0e7a99323b6fd18efef7602}{Raw\+Axis2\+D.\+L\+Touchpad}} = 0x04, 
+\mbox{\hyperlink{class_o_v_r_input_a973c161bfb3bd6d0cc16c3a0b56c9f4aa143ae6547eaed39d27d96f4bd1a57df7}{Raw\+Axis2\+D.\+R\+Thumbstick}} = 0x02, 
+\newline
+\mbox{\hyperlink{class_o_v_r_input_a973c161bfb3bd6d0cc16c3a0b56c9f4aa589550297d0b2ddda9f8bc62fcb2060e}{Raw\+Axis2\+D.\+R\+Touchpad}} = 0x08, 
+\mbox{\hyperlink{class_o_v_r_input_a973c161bfb3bd6d0cc16c3a0b56c9f4aaed36a1ef76a59ee3f15180e0441188ad}{Raw\+Axis2\+D.\+Any}} = $\sim$\+None
+ \}
+\begin{DoxyCompactList}\small\item\em Raw 2-\/dimensional axis (Vector2) mappings that can be used to directly query the state of a controller. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}} \{ \newline
+\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a6adf97f83acf6453d4a6a4b1070f3754}{Controller.\+None}} = O\+V\+R\+Plugin.\+Controller.\+None, 
+\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a253c104ad721758c8c0654a6878f47ff}{Controller.\+L\+Touch}} = O\+V\+R\+Plugin.\+Controller.\+L\+Touch, 
+\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a02f85d6ee062327d58a289335f56fca1}{Controller.\+R\+Touch}} = O\+V\+R\+Plugin.\+Controller.\+R\+Touch, 
+\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8af0f31c9700c6b10d8a20dc487b2ae6a8}{Controller.\+Touch}} = O\+V\+R\+Plugin.\+Controller.\+Touch, 
+\newline
+\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8af8508f576cd3f742dfc268258dcdf0dd}{Controller.\+Remote}} = O\+V\+R\+Plugin.\+Controller.\+Remote, 
+\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a221f6781b4faa2d321ca0d928f518d6e}{Controller.\+Gamepad}} = O\+V\+R\+Plugin.\+Controller.\+Gamepad, 
+\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a8229bf08d472e129beff22e3984afdbd}{Controller.\+Touchpad}} = O\+V\+R\+Plugin.\+Controller.\+Touchpad, 
+\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8aa184aebbab0392c84449b5608c3018b7}{Controller.\+L\+Tracked\+Remote}} = O\+V\+R\+Plugin.\+Controller.\+L\+Tracked\+Remote, 
+\newline
+\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a340397b86dde531ed77fa1b55f87f181}{Controller.\+R\+Tracked\+Remote}} = O\+V\+R\+Plugin.\+Controller.\+R\+Tracked\+Remote, 
+\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a4d3d769b812b6faa6b76e1a8abaece2d}{Controller.\+Active}} = O\+V\+R\+Plugin.\+Controller.\+Active, 
+\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8ab1c94ca2fbc3e78fc30069c8d0f01680}{Controller.\+All}} = O\+V\+R\+Plugin.\+Controller.\+All
+ \}
+\begin{DoxyCompactList}\small\item\em Identifies a controller which can be used to query the virtual or raw input state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_o_v_r_input_a6dfa622504b96b15183e4ba1b2e91575}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Updates the internal state of \mbox{\hyperlink{class_o_v_r_input}{O\+V\+R\+Input}}. Must be called manually if used independently from O\+V\+R\+Manager. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_o_v_r_input_acd501ed1f3f262609c66c37d784065dc}{Fixed\+Update}} ()
+\begin{DoxyCompactList}\small\item\em Updates the internal physics state of \mbox{\hyperlink{class_o_v_r_input}{O\+V\+R\+Input}}. Must be called manually if used independently from O\+V\+R\+Manager. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_o_v_r_input_adc89b414c04cff08dc0e8fdf469cf02a}{Get\+Controller\+Orientation\+Tracked}} (\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{O\+V\+R\+Input.\+Controller}} controller\+Type)
+\begin{DoxyCompactList}\small\item\em Returns true if the given Controller\textquotesingle{}s orientation is currently tracked. Only supported for Oculus L\+Touch and R\+Touch controllers. Non-\/tracked controllers will return false. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_o_v_r_input_ab99039a8f1f7b5ecc9b6ad137752a305}{Get\+Controller\+Position\+Tracked}} (\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{O\+V\+R\+Input.\+Controller}} controller\+Type)
+\begin{DoxyCompactList}\small\item\em Returns true if the given Controller\textquotesingle{}s position is currently tracked. Only supported for Oculus L\+Touch and R\+Touch controllers. Non-\/tracked controllers will return false. \end{DoxyCompactList}\item 
+static Vector3 \mbox{\hyperlink{class_o_v_r_input_aaf856370bc93d972ca00b9777e137493}{Get\+Local\+Controller\+Position}} (\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{O\+V\+R\+Input.\+Controller}} controller\+Type)
+\begin{DoxyCompactList}\small\item\em Gets the position of the given Controller local to its tracking space. Only supported for Oculus L\+Touch and R\+Touch controllers. Non-\/tracked controllers will return Vector3.\+zero. \end{DoxyCompactList}\item 
+static Vector3 \mbox{\hyperlink{class_o_v_r_input_a284d11ad0469f2b1e04447e2d6a26bd4}{Get\+Local\+Controller\+Velocity}} (\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{O\+V\+R\+Input.\+Controller}} controller\+Type)
+\begin{DoxyCompactList}\small\item\em Gets the linear velocity of the given Controller local to its tracking space. Only supported for Oculus L\+Touch and R\+Touch controllers. Non-\/tracked controllers will return Vector3.\+zero. \end{DoxyCompactList}\item 
+static Vector3 \mbox{\hyperlink{class_o_v_r_input_a3d20bf824d737b85497fab8442638864}{Get\+Local\+Controller\+Acceleration}} (\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{O\+V\+R\+Input.\+Controller}} controller\+Type)
+\begin{DoxyCompactList}\small\item\em Gets the linear acceleration of the given Controller local to its tracking space. Only supported for Oculus L\+Touch and R\+Touch controllers. Non-\/tracked controllers will return Vector3.\+zero. \end{DoxyCompactList}\item 
+static Quaternion \mbox{\hyperlink{class_o_v_r_input_ae2f486b9046928c9e82bf8cbc68054e6}{Get\+Local\+Controller\+Rotation}} (\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{O\+V\+R\+Input.\+Controller}} controller\+Type)
+\begin{DoxyCompactList}\small\item\em Gets the rotation of the given Controller local to its tracking space. Only supported for Oculus L\+Touch and R\+Touch controllers. Non-\/tracked controllers will return Quaternion.\+identity. \end{DoxyCompactList}\item 
+static Vector3 \mbox{\hyperlink{class_o_v_r_input_a98fc49ac302d343de505be72f6aec495}{Get\+Local\+Controller\+Angular\+Velocity}} (\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{O\+V\+R\+Input.\+Controller}} controller\+Type)
+\begin{DoxyCompactList}\small\item\em Gets the angular velocity of the given Controller local to its tracking space in radians per second around each axis. Only supported for Oculus L\+Touch and R\+Touch controllers. Non-\/tracked controllers will return Quaternion.\+identity. \end{DoxyCompactList}\item 
+static Vector3 \mbox{\hyperlink{class_o_v_r_input_a065d9defd470387ea588a374d2c1c6b3}{Get\+Local\+Controller\+Angular\+Acceleration}} (\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{O\+V\+R\+Input.\+Controller}} controller\+Type)
+\begin{DoxyCompactList}\small\item\em Gets the angular acceleration of the given Controller local to its tracking space in radians per second per second around each axis. Only supported for Oculus L\+Touch and R\+Touch controllers. Non-\/tracked controllers will return Quaternion.\+identity. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_o_v_r_input_a8ed5f1b79ace01d32a26c222aa64c50c}{Get}} (\mbox{\hyperlink{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5}{Button}} virtual\+Mask, \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}} controller\+Mask=\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a4d3d769b812b6faa6b76e1a8abaece2d}{Controller.\+Active}})
+\begin{DoxyCompactList}\small\item\em Gets the current state of the given virtual button mask with the given controller mask. Returns true if any masked button is down on any masked controller. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_o_v_r_input_abf55006f2fbc436561df178f7cb5a45a}{Get}} (\mbox{\hyperlink{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77a}{Raw\+Button}} raw\+Mask, \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}} controller\+Mask=\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a4d3d769b812b6faa6b76e1a8abaece2d}{Controller.\+Active}})
+\begin{DoxyCompactList}\small\item\em Gets the current state of the given raw button mask with the given controller mask. Returns true if any masked button is down on any masked controllers. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_o_v_r_input_a9c2ccada669b0054fd25a82e84d659c9}{Get\+Down}} (\mbox{\hyperlink{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5}{Button}} virtual\+Mask, \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}} controller\+Mask=\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a4d3d769b812b6faa6b76e1a8abaece2d}{Controller.\+Active}})
+\begin{DoxyCompactList}\small\item\em Gets the current down state of the given virtual button mask with the given controller mask. Returns true if any masked button was pressed this frame on any masked controller and no masked button was previously down last frame. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_o_v_r_input_aa1f47bbdab31082c5173cb8905b720d5}{Get\+Down}} (\mbox{\hyperlink{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77a}{Raw\+Button}} raw\+Mask, \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}} controller\+Mask=\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a4d3d769b812b6faa6b76e1a8abaece2d}{Controller.\+Active}})
+\begin{DoxyCompactList}\small\item\em Gets the current down state of the given raw button mask with the given controller mask. Returns true if any masked button was pressed this frame on any masked controller and no masked button was previously down last frame. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_o_v_r_input_a27ab53793953a2222097e5664852c6ad}{Get\+Up}} (\mbox{\hyperlink{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5}{Button}} virtual\+Mask, \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}} controller\+Mask=\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a4d3d769b812b6faa6b76e1a8abaece2d}{Controller.\+Active}})
+\begin{DoxyCompactList}\small\item\em Gets the current up state of the given virtual button mask with the given controller mask. Returns true if any masked button was released this frame on any masked controller and no other masked button is still down this frame. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_o_v_r_input_a4dd206208ab9835257a2495e92f41f71}{Get\+Up}} (\mbox{\hyperlink{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77a}{Raw\+Button}} raw\+Mask, \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}} controller\+Mask=\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a4d3d769b812b6faa6b76e1a8abaece2d}{Controller.\+Active}})
+\begin{DoxyCompactList}\small\item\em Gets the current up state of the given raw button mask with the given controller mask. Returns true if any masked button was released this frame on any masked controller and no other masked button is still down this frame. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_o_v_r_input_a166b60cfe8c0d26773c5bbe03194bbaf}{Get}} (\mbox{\hyperlink{class_o_v_r_input_a4e1f1eb856223383aefc1965dd2db39a}{Touch}} virtual\+Mask, \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}} controller\+Mask=\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a4d3d769b812b6faa6b76e1a8abaece2d}{Controller.\+Active}})
+\begin{DoxyCompactList}\small\item\em Gets the current state of the given virtual touch mask with the given controller mask. Returns true if any masked touch is down on any masked controller. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_o_v_r_input_a406a3baba0bd66abfe0d158a711f53dc}{Get}} (\mbox{\hyperlink{class_o_v_r_input_a6e130faa2035c5b20853c1177d909cc6}{Raw\+Touch}} raw\+Mask, \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}} controller\+Mask=\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a4d3d769b812b6faa6b76e1a8abaece2d}{Controller.\+Active}})
+\begin{DoxyCompactList}\small\item\em Gets the current state of the given raw touch mask with the given controller mask. Returns true if any masked touch is down on any masked controllers. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_o_v_r_input_a2ac7a06a7df7f7e3371d7183d144dea9}{Get\+Down}} (\mbox{\hyperlink{class_o_v_r_input_a4e1f1eb856223383aefc1965dd2db39a}{Touch}} virtual\+Mask, \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}} controller\+Mask=\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a4d3d769b812b6faa6b76e1a8abaece2d}{Controller.\+Active}})
+\begin{DoxyCompactList}\small\item\em Gets the current down state of the given virtual touch mask with the given controller mask. Returns true if any masked touch was pressed this frame on any masked controller and no masked touch was previously down last frame. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_o_v_r_input_ae1aeb0251eb70fc326264a720ec2a210}{Get\+Down}} (\mbox{\hyperlink{class_o_v_r_input_a6e130faa2035c5b20853c1177d909cc6}{Raw\+Touch}} raw\+Mask, \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}} controller\+Mask=\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a4d3d769b812b6faa6b76e1a8abaece2d}{Controller.\+Active}})
+\begin{DoxyCompactList}\small\item\em Gets the current down state of the given raw touch mask with the given controller mask. Returns true if any masked touch was pressed this frame on any masked controller and no masked touch was previously down last frame. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_o_v_r_input_a70c67e065dffb7d2ea3cfbb67944a0ea}{Get\+Up}} (\mbox{\hyperlink{class_o_v_r_input_a4e1f1eb856223383aefc1965dd2db39a}{Touch}} virtual\+Mask, \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}} controller\+Mask=\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a4d3d769b812b6faa6b76e1a8abaece2d}{Controller.\+Active}})
+\begin{DoxyCompactList}\small\item\em Gets the current up state of the given virtual touch mask with the given controller mask. Returns true if any masked touch was released this frame on any masked controller and no other masked touch is still down this frame. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_o_v_r_input_a32e849220eb1167615c8e44e7f7cfd41}{Get\+Up}} (\mbox{\hyperlink{class_o_v_r_input_a6e130faa2035c5b20853c1177d909cc6}{Raw\+Touch}} raw\+Mask, \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}} controller\+Mask=\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a4d3d769b812b6faa6b76e1a8abaece2d}{Controller.\+Active}})
+\begin{DoxyCompactList}\small\item\em Gets the current up state of the given raw touch mask with the given controller mask. Returns true if any masked touch was released this frame on any masked controller and no other masked touch is still down this frame. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_o_v_r_input_a89c93aac3fe4c225f2dd8984055cc163}{Get}} (\mbox{\hyperlink{class_o_v_r_input_afa31aa573064be9bab8fc9e58cddeab6}{Near\+Touch}} virtual\+Mask, \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}} controller\+Mask=\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a4d3d769b812b6faa6b76e1a8abaece2d}{Controller.\+Active}})
+\begin{DoxyCompactList}\small\item\em Gets the current state of the given virtual near touch mask with the given controller mask. Returns true if any masked near touch is down on any masked controller. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_o_v_r_input_afa96809b0dd349bfa586e97932f4f129}{Get}} (\mbox{\hyperlink{class_o_v_r_input_ac9c3c10aa9911507c6dc66e2dd6ec60e}{Raw\+Near\+Touch}} raw\+Mask, \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}} controller\+Mask=\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a4d3d769b812b6faa6b76e1a8abaece2d}{Controller.\+Active}})
+\begin{DoxyCompactList}\small\item\em Gets the current state of the given raw near touch mask with the given controller mask. Returns true if any masked near touch is down on any masked controllers. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_o_v_r_input_afb4731b4094d004c6df90d86189cb138}{Get\+Down}} (\mbox{\hyperlink{class_o_v_r_input_afa31aa573064be9bab8fc9e58cddeab6}{Near\+Touch}} virtual\+Mask, \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}} controller\+Mask=\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a4d3d769b812b6faa6b76e1a8abaece2d}{Controller.\+Active}})
+\begin{DoxyCompactList}\small\item\em Gets the current down state of the given virtual near touch mask with the given controller mask. Returns true if any masked near touch was pressed this frame on any masked controller and no masked near touch was previously down last frame. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_o_v_r_input_adb67773105cb3dbda71635d14b0963d5}{Get\+Down}} (\mbox{\hyperlink{class_o_v_r_input_ac9c3c10aa9911507c6dc66e2dd6ec60e}{Raw\+Near\+Touch}} raw\+Mask, \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}} controller\+Mask=\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a4d3d769b812b6faa6b76e1a8abaece2d}{Controller.\+Active}})
+\begin{DoxyCompactList}\small\item\em Gets the current down state of the given raw near touch mask with the given controller mask. Returns true if any masked near touch was pressed this frame on any masked controller and no masked near touch was previously down last frame. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_o_v_r_input_a68539258d6e7216281b8f85722ac10b3}{Get\+Up}} (\mbox{\hyperlink{class_o_v_r_input_afa31aa573064be9bab8fc9e58cddeab6}{Near\+Touch}} virtual\+Mask, \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}} controller\+Mask=\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a4d3d769b812b6faa6b76e1a8abaece2d}{Controller.\+Active}})
+\begin{DoxyCompactList}\small\item\em Gets the current up state of the given virtual near touch mask with the given controller mask. Returns true if any masked near touch was released this frame on any masked controller and no other masked near touch is still down this frame. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_o_v_r_input_a183c4e73f60720968a86fae467e9fc4f}{Get\+Up}} (\mbox{\hyperlink{class_o_v_r_input_ac9c3c10aa9911507c6dc66e2dd6ec60e}{Raw\+Near\+Touch}} raw\+Mask, \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}} controller\+Mask=\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a4d3d769b812b6faa6b76e1a8abaece2d}{Controller.\+Active}})
+\begin{DoxyCompactList}\small\item\em Gets the current up state of the given raw near touch mask with the given controller mask. Returns true if any masked near touch was released this frame on any masked controller and no other masked near touch is still down this frame. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_o_v_r_input_a32afd2d0bf3c8fa6332f685745de380a}{Get}} (\mbox{\hyperlink{class_o_v_r_input_af5c3e63489ca9ee2e5db3a657f7f27f6}{Axis1D}} virtual\+Mask, \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}} controller\+Mask=\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a4d3d769b812b6faa6b76e1a8abaece2d}{Controller.\+Active}})
+\begin{DoxyCompactList}\small\item\em Gets the current state of the given virtual 1-\/dimensional axis mask on the given controller mask. Returns the value of the largest masked axis across all masked controllers. Values range from 0 to 1. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_o_v_r_input_ace9bc5cb3f2817fffc28d58564890133}{Get}} (\mbox{\hyperlink{class_o_v_r_input_a9c9eff2910ca07d1fb0e924273ebefaf}{Raw\+Axis1D}} raw\+Mask, \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}} controller\+Mask=\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a4d3d769b812b6faa6b76e1a8abaece2d}{Controller.\+Active}})
+\begin{DoxyCompactList}\small\item\em Gets the current state of the given raw 1-\/dimensional axis mask on the given controller mask. Returns the value of the largest masked axis across all masked controllers. Values range from 0 to 1. \end{DoxyCompactList}\item 
+static Vector2 \mbox{\hyperlink{class_o_v_r_input_a9f50a4960aff3d92d98d3661d0321fd8}{Get}} (\mbox{\hyperlink{class_o_v_r_input_a8d8de8321e36e4c5c3b5266b72468d8a}{Axis2D}} virtual\+Mask, \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}} controller\+Mask=\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a4d3d769b812b6faa6b76e1a8abaece2d}{Controller.\+Active}})
+\begin{DoxyCompactList}\small\item\em Gets the current state of the given virtual 2-\/dimensional axis mask on the given controller mask. Returns the vector of the largest masked axis across all masked controllers. Values range from -\/1 to 1. \end{DoxyCompactList}\item 
+static Vector2 \mbox{\hyperlink{class_o_v_r_input_affa601653694045986dd68f3edd21b6b}{Get}} (\mbox{\hyperlink{class_o_v_r_input_a973c161bfb3bd6d0cc16c3a0b56c9f4a}{Raw\+Axis2D}} raw\+Mask, \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}} controller\+Mask=\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a4d3d769b812b6faa6b76e1a8abaece2d}{Controller.\+Active}})
+\begin{DoxyCompactList}\small\item\em Gets the current state of the given raw 2-\/dimensional axis mask on the given controller mask. Returns the vector of the largest masked axis across all masked controllers. Values range from -\/1 to 1. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}} \mbox{\hyperlink{class_o_v_r_input_a057e31053088d33555d5465313929148}{Get\+Connected\+Controllers}} ()
+\begin{DoxyCompactList}\small\item\em Returns a mask of all currently connected controller types. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_o_v_r_input_a3f4e283bf5665cbd9e2272d6ed5b54c0}{Is\+Controller\+Connected}} (\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}} controller)
+\begin{DoxyCompactList}\small\item\em Returns true if the specified controller type is currently connected. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}} \mbox{\hyperlink{class_o_v_r_input_aac9caffc4a6ddf1d467ed3cb63bc0db2}{Get\+Active\+Controller}} ()
+\begin{DoxyCompactList}\small\item\em Returns the current active controller type. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_o_v_r_input_a53bfdaf8b68f660d37acaabdd79c26e9}{Set\+Controller\+Vibration}} (float frequency, float amplitude, \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}} controller\+Mask=\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a4d3d769b812b6faa6b76e1a8abaece2d}{Controller.\+Active}})
+\begin{DoxyCompactList}\small\item\em Activates vibration with the given frequency and amplitude with the given controller mask. Ignored on controllers that do not support vibration. Expected values range from 0 to 1. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_o_v_r_input_ac31fe82f3aab6c0964331831a94833ce}{Recenter\+Controller}} (\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}} controller\+Mask=\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a4d3d769b812b6faa6b76e1a8abaece2d}{Controller.\+Active}})
+\begin{DoxyCompactList}\small\item\em Triggers a recenter to realign the specified controller\textquotesingle{}s virtual pose with the user\textquotesingle{}s real-\/world pose. Only applicable to controllers that require recentering, such as the Gear\+VR Controller. Ignored for controllers that do not require recentering. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_o_v_r_input_a07731a02d39af2a011d7579439dbeffd}{Get\+Controller\+Was\+Recentered}} (\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}} controller\+Mask=\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a4d3d769b812b6faa6b76e1a8abaece2d}{Controller.\+Active}})
+\begin{DoxyCompactList}\small\item\em Returns true if the specified controller was recentered this frame. Only applicable to controllers that require recentering, such as the Gear\+VR Controller. Returns false for controllers that do not require recentering. \end{DoxyCompactList}\item 
+static byte \mbox{\hyperlink{class_o_v_r_input_ad77e66e45c218b833c6dc4a4d9b21f00}{Get\+Controller\+Recenter\+Count}} (\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}} controller\+Mask=\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a4d3d769b812b6faa6b76e1a8abaece2d}{Controller.\+Active}})
+\begin{DoxyCompactList}\small\item\em Returns the number of times the controller has been recentered this session. Useful for detecting recenter events and resetting state such as arm model simulations, etc. Wraps around to 0 after 255. Only applicable to controllers that require recentering, such as the Gear\+VR Controller. Returns 0 for controllers that do not require recentering. \end{DoxyCompactList}\item 
+static byte \mbox{\hyperlink{class_o_v_r_input_abed7e5330bf1ef803f06728c48e2aa14}{Get\+Controller\+Battery\+Percent\+Remaining}} (\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}} controller\+Mask=\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a4d3d769b812b6faa6b76e1a8abaece2d}{Controller.\+Active}})
+\begin{DoxyCompactList}\small\item\em Returns the battery percentage remaining for the specified controller. Values range from 0 to 100. Only applicable to controllers that report battery level, such as the Gear\+VR Controller. Returns 0 for controllers that do not report battery level. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_o_v_r_input_a0c5955f378159342087b3e7adc6d6f75}\label{class_o_v_r_input_a0c5955f378159342087b3e7adc6d6f75}} 
+static bool {\bfseries plugin\+Supports\+Active\+Controller}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_o_v_r_input_a243b77bb05dd7621adb2fc3ae46f4283}{O\+V\+R\+Input}} ()
+\begin{DoxyCompactList}\small\item\em Creates an instance of \mbox{\hyperlink{class_o_v_r_input}{O\+V\+R\+Input}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_o_v_r_input_ac24e90334b74b8c3ad07261060fd0236}\label{class_o_v_r_input_ac24e90334b74b8c3ad07261060fd0236}} 
+static bool {\bfseries Get\+Resolved\+Button} (\mbox{\hyperlink{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5}{Button}} virtual\+Mask, \mbox{\hyperlink{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77a}{Raw\+Button}} raw\+Mask, \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}} controller\+Mask)
+\item 
+\mbox{\Hypertarget{class_o_v_r_input_a47d78a5ba8ea6977bf5aeca1e0240073}\label{class_o_v_r_input_a47d78a5ba8ea6977bf5aeca1e0240073}} 
+static bool {\bfseries Get\+Resolved\+Button\+Down} (\mbox{\hyperlink{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5}{Button}} virtual\+Mask, \mbox{\hyperlink{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77a}{Raw\+Button}} raw\+Mask, \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}} controller\+Mask)
+\item 
+\mbox{\Hypertarget{class_o_v_r_input_a495911ae3a540656845fa13ede056018}\label{class_o_v_r_input_a495911ae3a540656845fa13ede056018}} 
+static bool {\bfseries Get\+Resolved\+Button\+Up} (\mbox{\hyperlink{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5}{Button}} virtual\+Mask, \mbox{\hyperlink{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77a}{Raw\+Button}} raw\+Mask, \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}} controller\+Mask)
+\item 
+\mbox{\Hypertarget{class_o_v_r_input_ac5aefd4ee27bf0bda9e1c3b6bf919a92}\label{class_o_v_r_input_ac5aefd4ee27bf0bda9e1c3b6bf919a92}} 
+static bool {\bfseries Get\+Resolved\+Touch} (\mbox{\hyperlink{class_o_v_r_input_a4e1f1eb856223383aefc1965dd2db39a}{Touch}} virtual\+Mask, \mbox{\hyperlink{class_o_v_r_input_a6e130faa2035c5b20853c1177d909cc6}{Raw\+Touch}} raw\+Mask, \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}} controller\+Mask)
+\item 
+\mbox{\Hypertarget{class_o_v_r_input_af753d69edbbc642af9253f40e31d1fb9}\label{class_o_v_r_input_af753d69edbbc642af9253f40e31d1fb9}} 
+static bool {\bfseries Get\+Resolved\+Touch\+Down} (\mbox{\hyperlink{class_o_v_r_input_a4e1f1eb856223383aefc1965dd2db39a}{Touch}} virtual\+Mask, \mbox{\hyperlink{class_o_v_r_input_a6e130faa2035c5b20853c1177d909cc6}{Raw\+Touch}} raw\+Mask, \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}} controller\+Mask)
+\item 
+\mbox{\Hypertarget{class_o_v_r_input_a910c1ec9c5cdc311f9441aff20c65a5b}\label{class_o_v_r_input_a910c1ec9c5cdc311f9441aff20c65a5b}} 
+static bool {\bfseries Get\+Resolved\+Touch\+Up} (\mbox{\hyperlink{class_o_v_r_input_a4e1f1eb856223383aefc1965dd2db39a}{Touch}} virtual\+Mask, \mbox{\hyperlink{class_o_v_r_input_a6e130faa2035c5b20853c1177d909cc6}{Raw\+Touch}} raw\+Mask, \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}} controller\+Mask)
+\item 
+\mbox{\Hypertarget{class_o_v_r_input_a5aac63c2f4dee096ea1a219c8d83dd1c}\label{class_o_v_r_input_a5aac63c2f4dee096ea1a219c8d83dd1c}} 
+static bool {\bfseries Get\+Resolved\+Near\+Touch} (\mbox{\hyperlink{class_o_v_r_input_afa31aa573064be9bab8fc9e58cddeab6}{Near\+Touch}} virtual\+Mask, \mbox{\hyperlink{class_o_v_r_input_ac9c3c10aa9911507c6dc66e2dd6ec60e}{Raw\+Near\+Touch}} raw\+Mask, \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}} controller\+Mask)
+\item 
+\mbox{\Hypertarget{class_o_v_r_input_a7fcbeccc2235e052fdfa4ab8e6607d4b}\label{class_o_v_r_input_a7fcbeccc2235e052fdfa4ab8e6607d4b}} 
+static bool {\bfseries Get\+Resolved\+Near\+Touch\+Down} (\mbox{\hyperlink{class_o_v_r_input_afa31aa573064be9bab8fc9e58cddeab6}{Near\+Touch}} virtual\+Mask, \mbox{\hyperlink{class_o_v_r_input_ac9c3c10aa9911507c6dc66e2dd6ec60e}{Raw\+Near\+Touch}} raw\+Mask, \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}} controller\+Mask)
+\item 
+\mbox{\Hypertarget{class_o_v_r_input_ad7cdd19f56cdbc157116ae0f1d54efb2}\label{class_o_v_r_input_ad7cdd19f56cdbc157116ae0f1d54efb2}} 
+static bool {\bfseries Get\+Resolved\+Near\+Touch\+Up} (\mbox{\hyperlink{class_o_v_r_input_afa31aa573064be9bab8fc9e58cddeab6}{Near\+Touch}} virtual\+Mask, \mbox{\hyperlink{class_o_v_r_input_ac9c3c10aa9911507c6dc66e2dd6ec60e}{Raw\+Near\+Touch}} raw\+Mask, \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}} controller\+Mask)
+\item 
+\mbox{\Hypertarget{class_o_v_r_input_a9a5d2247797ff6fd085c579c1d075a17}\label{class_o_v_r_input_a9a5d2247797ff6fd085c579c1d075a17}} 
+static float {\bfseries Get\+Resolved\+Axis1D} (\mbox{\hyperlink{class_o_v_r_input_af5c3e63489ca9ee2e5db3a657f7f27f6}{Axis1D}} virtual\+Mask, \mbox{\hyperlink{class_o_v_r_input_a9c9eff2910ca07d1fb0e924273ebefaf}{Raw\+Axis1D}} raw\+Mask, \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}} controller\+Mask)
+\item 
+\mbox{\Hypertarget{class_o_v_r_input_a8640bc6ebc25c819eeb01f095eea37c9}\label{class_o_v_r_input_a8640bc6ebc25c819eeb01f095eea37c9}} 
+static Vector2 {\bfseries Get\+Resolved\+Axis2D} (\mbox{\hyperlink{class_o_v_r_input_a8d8de8321e36e4c5c3b5266b72468d8a}{Axis2D}} virtual\+Mask, \mbox{\hyperlink{class_o_v_r_input_a973c161bfb3bd6d0cc16c3a0b56c9f4a}{Raw\+Axis2D}} raw\+Mask, \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}} controller\+Mask)
+\item 
+\mbox{\Hypertarget{class_o_v_r_input_a7ac39b258dfcd5211ea8d715b7ab92bc}\label{class_o_v_r_input_a7ac39b258dfcd5211ea8d715b7ab92bc}} 
+static Vector2 {\bfseries Calculate\+Abs\+Max} (Vector2 a, Vector2 b)
+\item 
+\mbox{\Hypertarget{class_o_v_r_input_a37a0aed7362eb2f06ff34edfe10fe703}\label{class_o_v_r_input_a37a0aed7362eb2f06ff34edfe10fe703}} 
+static float {\bfseries Calculate\+Abs\+Max} (float a, float b)
+\item 
+\mbox{\Hypertarget{class_o_v_r_input_aabb9b7e761b09248e0c74c2fd701422d}\label{class_o_v_r_input_aabb9b7e761b09248e0c74c2fd701422d}} 
+static Vector2 {\bfseries Calculate\+Deadzone} (Vector2 a, float deadzone)
+\item 
+\mbox{\Hypertarget{class_o_v_r_input_a05a0d7dd070ea39869226080f1ea3264}\label{class_o_v_r_input_a05a0d7dd070ea39869226080f1ea3264}} 
+static float {\bfseries Calculate\+Deadzone} (float a, float deadzone)
+\item 
+\mbox{\Hypertarget{class_o_v_r_input_adc7c86ad410c6bfd641c8dc72fd05813}\label{class_o_v_r_input_adc7c86ad410c6bfd641c8dc72fd05813}} 
+static bool {\bfseries Should\+Resolve\+Controller} (\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}} controller\+Type, \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}} controller\+Mask)
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_o_v_r_input_aa6f8e8d6dd18d619d04f6ce066e6e480}\label{class_o_v_r_input_aa6f8e8d6dd18d619d04f6ce066e6e480}} 
+static readonly float {\bfseries A\+X\+I\+S\+\_\+\+A\+S\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+T\+H\+R\+E\+S\+H\+O\+LD} = 0.\+5f
+\item 
+\mbox{\Hypertarget{class_o_v_r_input_a54ee97ea23af605bfa5f544c2c1bc69b}\label{class_o_v_r_input_a54ee97ea23af605bfa5f544c2c1bc69b}} 
+static readonly float {\bfseries A\+X\+I\+S\+\_\+\+D\+E\+A\+D\+Z\+O\+N\+E\+\_\+\+T\+H\+R\+E\+S\+H\+O\+LD} = 0.\+2f
+\item 
+\mbox{\Hypertarget{class_o_v_r_input_a6499c54218dcada8227dc91395f9ccaf}\label{class_o_v_r_input_a6499c54218dcada8227dc91395f9ccaf}} 
+static List$<$ \mbox{\hyperlink{class_o_v_r_input_1_1_o_v_r_controller_base}{O\+V\+R\+Controller\+Base}} $>$ {\bfseries controllers}
+\item 
+\mbox{\Hypertarget{class_o_v_r_input_a955a3090518783b31ed14b690e7d8dc1}\label{class_o_v_r_input_a955a3090518783b31ed14b690e7d8dc1}} 
+static \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}} {\bfseries active\+Controller\+Type} = \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a6adf97f83acf6453d4a6a4b1070f3754}{Controller.\+None}}
+\item 
+\mbox{\Hypertarget{class_o_v_r_input_a8a5770c43ae13f462326e4211ea577cf}\label{class_o_v_r_input_a8a5770c43ae13f462326e4211ea577cf}} 
+static \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}} {\bfseries connected\+Controller\+Types} = \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a6adf97f83acf6453d4a6a4b1070f3754}{Controller.\+None}}
+\item 
+\mbox{\Hypertarget{class_o_v_r_input_ab842ec71204e4043a104ba2937d8ccd1}\label{class_o_v_r_input_ab842ec71204e4043a104ba2937d8ccd1}} 
+static O\+V\+R\+Plugin.\+Step {\bfseries step\+Type} = O\+V\+R\+Plugin.\+Step.\+Render
+\item 
+\mbox{\Hypertarget{class_o_v_r_input_a57a8681707fec13a0aa3238c9b198dd2}\label{class_o_v_r_input_a57a8681707fec13a0aa3238c9b198dd2}} 
+static int {\bfseries fixed\+Update\+Count} = 0
+\item 
+\mbox{\Hypertarget{class_o_v_r_input_aeb8f15f051d550f2244434f0cecf25c2}\label{class_o_v_r_input_aeb8f15f051d550f2244434f0cecf25c2}} 
+static bool {\bfseries \+\_\+plugin\+Supports\+Active\+Controller} = false
+\item 
+\mbox{\Hypertarget{class_o_v_r_input_ae0f47ad473f8165bafeda30e9a2b55e6}\label{class_o_v_r_input_ae0f47ad473f8165bafeda30e9a2b55e6}} 
+static bool {\bfseries \+\_\+plugin\+Supports\+Active\+Controller\+Cached} = false
+\item 
+\mbox{\Hypertarget{class_o_v_r_input_a817b890e23a8b7d40183a6c7936ba44e}\label{class_o_v_r_input_a817b890e23a8b7d40183a6c7936ba44e}} 
+static System.\+Version {\bfseries \+\_\+plugin\+Supports\+Active\+Controller\+Min\+Version} = new System.\+Version(1, 9, 0)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Provides a unified input system for Oculus controllers and gamepads. 
+
+
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_o_v_r_input_af5c3e63489ca9ee2e5db3a657f7f27f6}\label{class_o_v_r_input_af5c3e63489ca9ee2e5db3a657f7f27f6}} 
+\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Axis1D@{Axis1D}}
+\index{Axis1D@{Axis1D}!O\+V\+R\+Input@{O\+V\+R\+Input}}
+\subsubsection{\texorpdfstring{Axis1D}{Axis1D}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_o_v_r_input_af5c3e63489ca9ee2e5db3a657f7f27f6}{O\+V\+R\+Input.\+Axis1D}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Virtual 1-\/dimensional axis (float) mappings that allow the same input bindings to work across different controllers. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{None@{None}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!None@{None}}}\mbox{\Hypertarget{class_o_v_r_input_af5c3e63489ca9ee2e5db3a657f7f27f6a6adf97f83acf6453d4a6a4b1070f3754}\label{class_o_v_r_input_af5c3e63489ca9ee2e5db3a657f7f27f6a6adf97f83acf6453d4a6a4b1070f3754}} 
+None&Maps to Raw\+Axis1D\+: \mbox{[}Gamepad, Touch, L\+Touch, R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Primary\+Index\+Trigger@{Primary\+Index\+Trigger}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Primary\+Index\+Trigger@{Primary\+Index\+Trigger}}}\mbox{\Hypertarget{class_o_v_r_input_af5c3e63489ca9ee2e5db3a657f7f27f6a05ce3346fd067f05de712c153423a543}\label{class_o_v_r_input_af5c3e63489ca9ee2e5db3a657f7f27f6a05ce3346fd067f05de712c153423a543}} 
+Primary\+Index\+Trigger&Maps to Raw\+Axis1D\+: \mbox{[}Gamepad, Touch, L\+Touch\+: L\+Index\+Trigger\mbox{]}, \mbox{[}R\+Touch\+: R\+Index\+Trigger\mbox{]}, \mbox{[}L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Primary\+Hand\+Trigger@{Primary\+Hand\+Trigger}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Primary\+Hand\+Trigger@{Primary\+Hand\+Trigger}}}\mbox{\Hypertarget{class_o_v_r_input_af5c3e63489ca9ee2e5db3a657f7f27f6a2a8de88690d6135dc9389b0ce8014bd6}\label{class_o_v_r_input_af5c3e63489ca9ee2e5db3a657f7f27f6a2a8de88690d6135dc9389b0ce8014bd6}} 
+Primary\+Hand\+Trigger&Maps to Raw\+Axis1D\+: \mbox{[}Touch, L\+Touch\+: L\+Hand\+Trigger\mbox{]}, \mbox{[}R\+Touch\+: R\+Hand\+Trigger\mbox{]}, \mbox{[}Gamepad, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Secondary\+Index\+Trigger@{Secondary\+Index\+Trigger}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Secondary\+Index\+Trigger@{Secondary\+Index\+Trigger}}}\mbox{\Hypertarget{class_o_v_r_input_af5c3e63489ca9ee2e5db3a657f7f27f6a8e997b6d1a9db4d4084bdb67c3701b01}\label{class_o_v_r_input_af5c3e63489ca9ee2e5db3a657f7f27f6a8e997b6d1a9db4d4084bdb67c3701b01}} 
+Secondary\+Index\+Trigger&Maps to Raw\+Axis1D\+: \mbox{[}Gamepad, Touch\+: R\+Index\+Trigger\mbox{]}, \mbox{[}L\+Touch, R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Secondary\+Hand\+Trigger@{Secondary\+Hand\+Trigger}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Secondary\+Hand\+Trigger@{Secondary\+Hand\+Trigger}}}\mbox{\Hypertarget{class_o_v_r_input_af5c3e63489ca9ee2e5db3a657f7f27f6aad324586099c56274933df3594e0da91}\label{class_o_v_r_input_af5c3e63489ca9ee2e5db3a657f7f27f6aad324586099c56274933df3594e0da91}} 
+Secondary\+Hand\+Trigger&Maps to Raw\+Axis1D\+: \mbox{[}Touch\+: R\+Hand\+Trigger\mbox{]}, \mbox{[}Gamepad, L\+Touch, R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Any@{Any}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Any@{Any}}}\mbox{\Hypertarget{class_o_v_r_input_af5c3e63489ca9ee2e5db3a657f7f27f6aed36a1ef76a59ee3f15180e0441188ad}\label{class_o_v_r_input_af5c3e63489ca9ee2e5db3a657f7f27f6aed36a1ef76a59ee3f15180e0441188ad}} 
+Any&Maps to Raw\+Axis1D\+: \mbox{[}Gamepad, Touch, L\+Touch, R\+Touch\+: Any\mbox{]}, \mbox{[}L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{class_o_v_r_input_a8d8de8321e36e4c5c3b5266b72468d8a}\label{class_o_v_r_input_a8d8de8321e36e4c5c3b5266b72468d8a}} 
+\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Axis2D@{Axis2D}}
+\index{Axis2D@{Axis2D}!O\+V\+R\+Input@{O\+V\+R\+Input}}
+\subsubsection{\texorpdfstring{Axis2D}{Axis2D}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_o_v_r_input_a8d8de8321e36e4c5c3b5266b72468d8a}{O\+V\+R\+Input.\+Axis2D}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Virtual 2-\/dimensional axis (Vector2) mappings that allow the same input bindings to work across different controllers. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{None@{None}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!None@{None}}}\mbox{\Hypertarget{class_o_v_r_input_a8d8de8321e36e4c5c3b5266b72468d8aa6adf97f83acf6453d4a6a4b1070f3754}\label{class_o_v_r_input_a8d8de8321e36e4c5c3b5266b72468d8aa6adf97f83acf6453d4a6a4b1070f3754}} 
+None&Maps to Raw\+Axis2D\+: \mbox{[}Gamepad, Touch, L\+Touch, R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Primary\+Thumbstick@{Primary\+Thumbstick}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Primary\+Thumbstick@{Primary\+Thumbstick}}}\mbox{\Hypertarget{class_o_v_r_input_a8d8de8321e36e4c5c3b5266b72468d8aa44e853762529750fc9e2c3dfdbda6173}\label{class_o_v_r_input_a8d8de8321e36e4c5c3b5266b72468d8aa44e853762529750fc9e2c3dfdbda6173}} 
+Primary\+Thumbstick&Maps to Raw\+Axis2D\+: \mbox{[}Gamepad, Touch, L\+Touch\+: L\+Thumbstick\mbox{]}, \mbox{[}R\+Touch\+: R\+Thumbstick\mbox{]}, \mbox{[}L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Primary\+Touchpad@{Primary\+Touchpad}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Primary\+Touchpad@{Primary\+Touchpad}}}\mbox{\Hypertarget{class_o_v_r_input_a8d8de8321e36e4c5c3b5266b72468d8aaf7efa4c905fcd3de5fabbb80e316f797}\label{class_o_v_r_input_a8d8de8321e36e4c5c3b5266b72468d8aaf7efa4c905fcd3de5fabbb80e316f797}} 
+Primary\+Touchpad&Maps to Raw\+Axis2D\+: \mbox{[}L\+Tracked\+Remote, Touchpad\+: L\+Touchpad\mbox{]}, R\+Tracked\+Remote\+: R\+Touchpad\mbox{]}, \mbox{[}Gamepad, Touch, L\+Touch, R\+Touch, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Secondary\+Thumbstick@{Secondary\+Thumbstick}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Secondary\+Thumbstick@{Secondary\+Thumbstick}}}\mbox{\Hypertarget{class_o_v_r_input_a8d8de8321e36e4c5c3b5266b72468d8aa4cfe69061380abb7e3b7f1d21e633600}\label{class_o_v_r_input_a8d8de8321e36e4c5c3b5266b72468d8aa4cfe69061380abb7e3b7f1d21e633600}} 
+Secondary\+Thumbstick&Maps to Raw\+Axis2D\+: \mbox{[}Gamepad, Touch\+: R\+Thumbstick\mbox{]}, \mbox{[}L\+Touch, R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Secondary\+Touchpad@{Secondary\+Touchpad}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Secondary\+Touchpad@{Secondary\+Touchpad}}}\mbox{\Hypertarget{class_o_v_r_input_a8d8de8321e36e4c5c3b5266b72468d8aa177ba2bf42c325826c45d82357fc9e70}\label{class_o_v_r_input_a8d8de8321e36e4c5c3b5266b72468d8aa177ba2bf42c325826c45d82357fc9e70}} 
+Secondary\+Touchpad&Maps to Raw\+Axis2D\+: \mbox{[}Gamepad, Touch, L\+Touch, R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Any@{Any}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Any@{Any}}}\mbox{\Hypertarget{class_o_v_r_input_a8d8de8321e36e4c5c3b5266b72468d8aaed36a1ef76a59ee3f15180e0441188ad}\label{class_o_v_r_input_a8d8de8321e36e4c5c3b5266b72468d8aaed36a1ef76a59ee3f15180e0441188ad}} 
+Any&Maps to Raw\+Axis2D\+: \mbox{[}Gamepad, Touch, L\+Touch, R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad\+: Any\mbox{]}, \mbox{[}Remote\+: None\mbox{]}. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5}\label{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5}} 
+\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Button@{Button}}
+\index{Button@{Button}!O\+V\+R\+Input@{O\+V\+R\+Input}}
+\subsubsection{\texorpdfstring{Button}{Button}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5}{O\+V\+R\+Input.\+Button}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Virtual button mappings that allow the same input bindings to work across different controllers. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{None@{None}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!None@{None}}}\mbox{\Hypertarget{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a6adf97f83acf6453d4a6a4b1070f3754}\label{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a6adf97f83acf6453d4a6a4b1070f3754}} 
+None&Maps to Raw\+Button\+: \mbox{[}Gamepad, Touch, L\+Touch, R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{One@{One}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!One@{One}}}\mbox{\Hypertarget{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a06c2cea18679d64399783748fa367bdd}\label{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a06c2cea18679d64399783748fa367bdd}} 
+One&Maps to Raw\+Button\+: \mbox{[}Gamepad, Touch, R\+Touch\+: A\mbox{]}, \mbox{[}L\+Touch\+: X\mbox{]}, \mbox{[}L\+Tracked\+Remote\+: L\+Touchpad\mbox{]}, \mbox{[}R\+Tracked\+Remote\+: R\+Touchpad\mbox{]}, \mbox{[}Touchpad, Remote\+: Start\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Two@{Two}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Two@{Two}}}\mbox{\Hypertarget{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5aaada29daee1d64ed0fe907043855cb7e}\label{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5aaada29daee1d64ed0fe907043855cb7e}} 
+Two&Maps to Raw\+Button\+: \mbox{[}Gamepad, Touch, R\+Touch\+: B\mbox{]}, \mbox{[}L\+Touch\+: Y\mbox{]}, \mbox{[}L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: Back\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Three@{Three}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Three@{Three}}}\mbox{\Hypertarget{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5aca8a2087e5557e317599344687a57391}\label{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5aca8a2087e5557e317599344687a57391}} 
+Three&Maps to Raw\+Button\+: \mbox{[}Gamepad, Touch\+: X\mbox{]}, \mbox{[}L\+Touch, R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Four@{Four}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Four@{Four}}}\mbox{\Hypertarget{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a981b8fcee42e1e726a67a2b9a98ea6e9}\label{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a981b8fcee42e1e726a67a2b9a98ea6e9}} 
+Four&Maps to Raw\+Button\+: \mbox{[}Gamepad, Touch\+: Y\mbox{]}, \mbox{[}L\+Touch, R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Start@{Start}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Start@{Start}}}\mbox{\Hypertarget{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5aa6122a65eaa676f700ae68d393054a37}\label{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5aa6122a65eaa676f700ae68d393054a37}} 
+Start&Maps to Raw\+Button\+: \mbox{[}Gamepad\+: Start\mbox{]}, \mbox{[}Touch, L\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: Start\mbox{]}, \mbox{[}R\+Touch\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Back@{Back}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Back@{Back}}}\mbox{\Hypertarget{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a0557fa923dcee4d0f86b1409f5c2167f}\label{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a0557fa923dcee4d0f86b1409f5c2167f}} 
+Back&Maps to Raw\+Button\+: \mbox{[}Gamepad, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: Back\mbox{]}, \mbox{[}Touch, L\+Touch, R\+Touch\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Primary\+Shoulder@{Primary\+Shoulder}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Primary\+Shoulder@{Primary\+Shoulder}}}\mbox{\Hypertarget{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a1ec49088c410d9bfef3b40c7edefa927}\label{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a1ec49088c410d9bfef3b40c7edefa927}} 
+Primary\+Shoulder&Maps to Raw\+Button\+: \mbox{[}Gamepad\+: L\+Shoulder\mbox{]}, \mbox{[}Touch, L\+Touch, R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Primary\+Index\+Trigger@{Primary\+Index\+Trigger}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Primary\+Index\+Trigger@{Primary\+Index\+Trigger}}}\mbox{\Hypertarget{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a05ce3346fd067f05de712c153423a543}\label{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a05ce3346fd067f05de712c153423a543}} 
+Primary\+Index\+Trigger&Maps to Raw\+Button\+: \mbox{[}Gamepad, Touch, L\+Touch, L\+Tracked\+Remote\+: L\+Index\+Trigger\mbox{]}, \mbox{[}R\+Touch, R\+Tracked\+Remote\+: R\+Index\+Trigger\mbox{]}, \mbox{[}Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Primary\+Hand\+Trigger@{Primary\+Hand\+Trigger}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Primary\+Hand\+Trigger@{Primary\+Hand\+Trigger}}}\mbox{\Hypertarget{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a2a8de88690d6135dc9389b0ce8014bd6}\label{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a2a8de88690d6135dc9389b0ce8014bd6}} 
+Primary\+Hand\+Trigger&Maps to Raw\+Button\+: \mbox{[}Touch, L\+Touch\+: L\+Hand\+Trigger\mbox{]}, \mbox{[}R\+Touch\+: R\+Hand\+Trigger\mbox{]}, \mbox{[}Gamepad, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Primary\+Thumbstick@{Primary\+Thumbstick}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Primary\+Thumbstick@{Primary\+Thumbstick}}}\mbox{\Hypertarget{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a44e853762529750fc9e2c3dfdbda6173}\label{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a44e853762529750fc9e2c3dfdbda6173}} 
+Primary\+Thumbstick&Maps to Raw\+Button\+: \mbox{[}Gamepad, Touch, L\+Touch\+: L\+Thumbstick\mbox{]}, \mbox{[}R\+Touch\+: R\+Thumbstick\mbox{]}, \mbox{[}L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Primary\+Thumbstick\+Up@{Primary\+Thumbstick\+Up}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Primary\+Thumbstick\+Up@{Primary\+Thumbstick\+Up}}}\mbox{\Hypertarget{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5aefcd7e6a17d36bb743f07b54b98d418c}\label{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5aefcd7e6a17d36bb743f07b54b98d418c}} 
+Primary\+Thumbstick\+Up&Maps to Raw\+Button\+: \mbox{[}Gamepad, Touch, L\+Touch\+: L\+Thumbstick\+Up\mbox{]}, \mbox{[}R\+Touch\+: R\+Thumbstick\+Up\mbox{]}, \mbox{[}L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Primary\+Thumbstick\+Down@{Primary\+Thumbstick\+Down}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Primary\+Thumbstick\+Down@{Primary\+Thumbstick\+Down}}}\mbox{\Hypertarget{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5ae6a8aee39717b8f2bfb2bb6201fdb5c0}\label{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5ae6a8aee39717b8f2bfb2bb6201fdb5c0}} 
+Primary\+Thumbstick\+Down&Maps to Raw\+Button\+: \mbox{[}Gamepad, Touch, L\+Touch\+: L\+Thumbstick\+Down\mbox{]}, \mbox{[}R\+Touch\+: R\+Thumbstick\+Down\mbox{]}, \mbox{[}L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Primary\+Thumbstick\+Left@{Primary\+Thumbstick\+Left}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Primary\+Thumbstick\+Left@{Primary\+Thumbstick\+Left}}}\mbox{\Hypertarget{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5ab70806bd9dd5f7f1b14c9e03328c21c0}\label{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5ab70806bd9dd5f7f1b14c9e03328c21c0}} 
+Primary\+Thumbstick\+Left&Maps to Raw\+Button\+: \mbox{[}Gamepad, Touch, L\+Touch\+: L\+Thumbstick\+Left\mbox{]}, \mbox{[}R\+Touch\+: R\+Thumbstick\+Left\mbox{]}, \mbox{[}L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Primary\+Thumbstick\+Right@{Primary\+Thumbstick\+Right}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Primary\+Thumbstick\+Right@{Primary\+Thumbstick\+Right}}}\mbox{\Hypertarget{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a269f230f6f421a23590ed7c128d34e39}\label{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a269f230f6f421a23590ed7c128d34e39}} 
+Primary\+Thumbstick\+Right&Maps to Raw\+Button\+: \mbox{[}Gamepad, Touch, L\+Touch\+: L\+Thumbstick\+Right\mbox{]}, \mbox{[}R\+Touch\+: R\+Thumbstick\+Right\mbox{]}, \mbox{[}L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Primary\+Touchpad@{Primary\+Touchpad}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Primary\+Touchpad@{Primary\+Touchpad}}}\mbox{\Hypertarget{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5af7efa4c905fcd3de5fabbb80e316f797}\label{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5af7efa4c905fcd3de5fabbb80e316f797}} 
+Primary\+Touchpad&Maps to Raw\+Button\+: \mbox{[}L\+Tracked\+Remote, Touchpad\+: L\+Touchpad\mbox{]}, \mbox{[}R\+Tracked\+Remote\+: R\+Touchpad\mbox{]}, \mbox{[}Gamepad, Touch, L\+Touch, R\+Touch, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Secondary\+Shoulder@{Secondary\+Shoulder}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Secondary\+Shoulder@{Secondary\+Shoulder}}}\mbox{\Hypertarget{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a93fbd3ce5778a454ff725bc1a8acf6ef}\label{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a93fbd3ce5778a454ff725bc1a8acf6ef}} 
+Secondary\+Shoulder&Maps to Raw\+Button\+: \mbox{[}Gamepad\+: R\+Shoulder\mbox{]}, \mbox{[}Touch, L\+Touch, R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Secondary\+Index\+Trigger@{Secondary\+Index\+Trigger}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Secondary\+Index\+Trigger@{Secondary\+Index\+Trigger}}}\mbox{\Hypertarget{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a8e997b6d1a9db4d4084bdb67c3701b01}\label{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a8e997b6d1a9db4d4084bdb67c3701b01}} 
+Secondary\+Index\+Trigger&Maps to Raw\+Button\+: \mbox{[}Gamepad, Touch\+: R\+Index\+Trigger\mbox{]}, \mbox{[}L\+Touch, R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Secondary\+Hand\+Trigger@{Secondary\+Hand\+Trigger}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Secondary\+Hand\+Trigger@{Secondary\+Hand\+Trigger}}}\mbox{\Hypertarget{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5aad324586099c56274933df3594e0da91}\label{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5aad324586099c56274933df3594e0da91}} 
+Secondary\+Hand\+Trigger&Maps to Raw\+Button\+: \mbox{[}Touch\+: R\+Hand\+Trigger\mbox{]}, \mbox{[}Gamepad, L\+Touch, R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Secondary\+Thumbstick@{Secondary\+Thumbstick}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Secondary\+Thumbstick@{Secondary\+Thumbstick}}}\mbox{\Hypertarget{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a4cfe69061380abb7e3b7f1d21e633600}\label{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a4cfe69061380abb7e3b7f1d21e633600}} 
+Secondary\+Thumbstick&Maps to Raw\+Button\+: \mbox{[}Gamepad, Touch\+: R\+Thumbstick\mbox{]}, \mbox{[}L\+Touch, R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Secondary\+Thumbstick\+Up@{Secondary\+Thumbstick\+Up}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Secondary\+Thumbstick\+Up@{Secondary\+Thumbstick\+Up}}}\mbox{\Hypertarget{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5aec34a44f06f86b9ab77664fb20d844b5}\label{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5aec34a44f06f86b9ab77664fb20d844b5}} 
+Secondary\+Thumbstick\+Up&Maps to Raw\+Button\+: \mbox{[}Gamepad, Touch\+: R\+Thumbstick\+Up\mbox{]}, \mbox{[}L\+Touch, R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Secondary\+Thumbstick\+Down@{Secondary\+Thumbstick\+Down}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Secondary\+Thumbstick\+Down@{Secondary\+Thumbstick\+Down}}}\mbox{\Hypertarget{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a2ce896a345f38678b74c756e050a789d}\label{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a2ce896a345f38678b74c756e050a789d}} 
+Secondary\+Thumbstick\+Down&Maps to Raw\+Button\+: \mbox{[}Gamepad, Touch\+: R\+Thumbstick\+Down\mbox{]}, \mbox{[}L\+Touch, R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Secondary\+Thumbstick\+Left@{Secondary\+Thumbstick\+Left}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Secondary\+Thumbstick\+Left@{Secondary\+Thumbstick\+Left}}}\mbox{\Hypertarget{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a36dc00c0ad70cc1cd91a174b3e282c11}\label{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a36dc00c0ad70cc1cd91a174b3e282c11}} 
+Secondary\+Thumbstick\+Left&Maps to Raw\+Button\+: \mbox{[}Gamepad, Touch\+: R\+Thumbstick\+Left\mbox{]}, \mbox{[}L\+Touch, R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Secondary\+Thumbstick\+Right@{Secondary\+Thumbstick\+Right}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Secondary\+Thumbstick\+Right@{Secondary\+Thumbstick\+Right}}}\mbox{\Hypertarget{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a5a8aace1d2e424880be1916689a5f074}\label{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a5a8aace1d2e424880be1916689a5f074}} 
+Secondary\+Thumbstick\+Right&Maps to Raw\+Button\+: \mbox{[}Gamepad, Touch\+: R\+Thumbstick\+Right\mbox{]}, \mbox{[}L\+Touch, R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Secondary\+Touchpad@{Secondary\+Touchpad}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Secondary\+Touchpad@{Secondary\+Touchpad}}}\mbox{\Hypertarget{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a177ba2bf42c325826c45d82357fc9e70}\label{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a177ba2bf42c325826c45d82357fc9e70}} 
+Secondary\+Touchpad&Maps to Raw\+Button\+: \mbox{[}Gamepad, Touch, L\+Touch, R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Dpad\+Up@{Dpad\+Up}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Dpad\+Up@{Dpad\+Up}}}\mbox{\Hypertarget{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5ad3ca4590094b47dd5e7ddfd4679a1139}\label{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5ad3ca4590094b47dd5e7ddfd4679a1139}} 
+Dpad\+Up&Maps to Raw\+Button\+: \mbox{[}Gamepad, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: Dpad\+Up\mbox{]}, \mbox{[}Touch, L\+Touch, R\+Touch\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Dpad\+Down@{Dpad\+Down}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Dpad\+Down@{Dpad\+Down}}}\mbox{\Hypertarget{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5af926cb67913be40219a97ec3889f90d9}\label{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5af926cb67913be40219a97ec3889f90d9}} 
+Dpad\+Down&Maps to Raw\+Button\+: \mbox{[}Gamepad, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: Dpad\+Down\mbox{]}, \mbox{[}Touch, L\+Touch, R\+Touch\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Dpad\+Left@{Dpad\+Left}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Dpad\+Left@{Dpad\+Left}}}\mbox{\Hypertarget{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a126eb11514ec5936a690e24fce06a075}\label{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a126eb11514ec5936a690e24fce06a075}} 
+Dpad\+Left&Maps to Raw\+Button\+: \mbox{[}Gamepad, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: Dpad\+Left\mbox{]}, \mbox{[}Touch, L\+Touch, R\+Touch\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Dpad\+Right@{Dpad\+Right}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Dpad\+Right@{Dpad\+Right}}}\mbox{\Hypertarget{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5ad3c7cfd48048567e4d093aaad0bbcb7a}\label{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5ad3c7cfd48048567e4d093aaad0bbcb7a}} 
+Dpad\+Right&Maps to Raw\+Button\+: \mbox{[}Gamepad, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: Dpad\+Right\mbox{]}, \mbox{[}Touch, L\+Touch, R\+Touch\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Up@{Up}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Up@{Up}}}\mbox{\Hypertarget{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a258f49887ef8d14ac268c92b02503aaa}\label{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a258f49887ef8d14ac268c92b02503aaa}} 
+Up&Maps to Raw\+Button\+: \mbox{[}Gamepad, Touch, L\+Touch\+: L\+Thumbstick\+Up\mbox{]}, \mbox{[}R\+Touch\+: R\+Thumbstick\+Up\mbox{]}, \mbox{[}L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: Dpad\+Up\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Down@{Down}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Down@{Down}}}\mbox{\Hypertarget{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a08a38277b0309070706f6652eeae9a53}\label{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a08a38277b0309070706f6652eeae9a53}} 
+Down&Maps to Raw\+Button\+: \mbox{[}Gamepad, Touch, L\+Touch\+: L\+Thumbstick\+Down\mbox{]}, \mbox{[}R\+Touch\+: R\+Thumbstick\+Down\mbox{]}, \mbox{[}L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: Dpad\+Down\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Left@{Left}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Left@{Left}}}\mbox{\Hypertarget{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a945d5e233cf7d6240f6b783b36a374ff}\label{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a945d5e233cf7d6240f6b783b36a374ff}} 
+Left&Maps to Raw\+Button\+: \mbox{[}Gamepad, Touch, L\+Touch\+: L\+Thumbstick\+Left\mbox{]}, \mbox{[}R\+Touch\+: R\+Thumbstick\+Left\mbox{]}, \mbox{[}L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: Dpad\+Left\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Right@{Right}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Right@{Right}}}\mbox{\Hypertarget{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a92b09c7c48c520c3c55e497875da437c}\label{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5a92b09c7c48c520c3c55e497875da437c}} 
+Right&Maps to Raw\+Button\+: \mbox{[}Gamepad, Touch, L\+Touch\+: L\+Thumbstick\+Right\mbox{]}, \mbox{[}R\+Touch\+: R\+Thumbstick\+Right\mbox{]}, \mbox{[}L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: Dpad\+Right\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Any@{Any}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Any@{Any}}}\mbox{\Hypertarget{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5aed36a1ef76a59ee3f15180e0441188ad}\label{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5aed36a1ef76a59ee3f15180e0441188ad}} 
+Any&Maps to Raw\+Button\+: \mbox{[}Gamepad, Touch, L\+Touch, R\+Touch\+: Any\mbox{]}. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}\label{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}} 
+\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Controller@{Controller}}
+\index{Controller@{Controller}!O\+V\+R\+Input@{O\+V\+R\+Input}}
+\subsubsection{\texorpdfstring{Controller}{Controller}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{O\+V\+R\+Input.\+Controller}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Identifies a controller which can be used to query the virtual or raw input state. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{None@{None}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!None@{None}}}\mbox{\Hypertarget{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a6adf97f83acf6453d4a6a4b1070f3754}\label{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a6adf97f83acf6453d4a6a4b1070f3754}} 
+None&Null controller. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L\+Touch@{L\+Touch}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!L\+Touch@{L\+Touch}}}\mbox{\Hypertarget{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a253c104ad721758c8c0654a6878f47ff}\label{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a253c104ad721758c8c0654a6878f47ff}} 
+L\+Touch&Left Oculus Touch controller. Virtual input mapping differs from the combined L/R Touch mapping. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+Touch@{R\+Touch}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!R\+Touch@{R\+Touch}}}\mbox{\Hypertarget{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a02f85d6ee062327d58a289335f56fca1}\label{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a02f85d6ee062327d58a289335f56fca1}} 
+R\+Touch&Right Oculus Touch controller. Virtual input mapping differs from the combined L/R Touch mapping. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Touch@{Touch}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Touch@{Touch}}}\mbox{\Hypertarget{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8af0f31c9700c6b10d8a20dc487b2ae6a8}\label{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8af0f31c9700c6b10d8a20dc487b2ae6a8}} 
+Touch&Combined Left/\+Right pair of Oculus Touch controllers. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Remote@{Remote}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Remote@{Remote}}}\mbox{\Hypertarget{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8af8508f576cd3f742dfc268258dcdf0dd}\label{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8af8508f576cd3f742dfc268258dcdf0dd}} 
+Remote&Oculus Remote controller. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Gamepad@{Gamepad}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Gamepad@{Gamepad}}}\mbox{\Hypertarget{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a221f6781b4faa2d321ca0d928f518d6e}\label{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a221f6781b4faa2d321ca0d928f518d6e}} 
+Gamepad&Xbox 360 or Xbox One gamepad on PC. Generic gamepad on Android. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Touchpad@{Touchpad}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Touchpad@{Touchpad}}}\mbox{\Hypertarget{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a8229bf08d472e129beff22e3984afdbd}\label{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a8229bf08d472e129beff22e3984afdbd}} 
+Touchpad&Gear\+VR touchpad on Android. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L\+Tracked\+Remote@{L\+Tracked\+Remote}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!L\+Tracked\+Remote@{L\+Tracked\+Remote}}}\mbox{\Hypertarget{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8aa184aebbab0392c84449b5608c3018b7}\label{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8aa184aebbab0392c84449b5608c3018b7}} 
+L\+Tracked\+Remote&Left Gear\+VR tracked remote on Android. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+Tracked\+Remote@{R\+Tracked\+Remote}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!R\+Tracked\+Remote@{R\+Tracked\+Remote}}}\mbox{\Hypertarget{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a340397b86dde531ed77fa1b55f87f181}\label{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a340397b86dde531ed77fa1b55f87f181}} 
+R\+Tracked\+Remote&Right Gear\+VR tracked remote on Android. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Active@{Active}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Active@{Active}}}\mbox{\Hypertarget{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a4d3d769b812b6faa6b76e1a8abaece2d}\label{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a4d3d769b812b6faa6b76e1a8abaece2d}} 
+Active&Default controller. Represents the controller that most recently registered a button press from the user. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{All@{All}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!All@{All}}}\mbox{\Hypertarget{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8ab1c94ca2fbc3e78fc30069c8d0f01680}\label{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8ab1c94ca2fbc3e78fc30069c8d0f01680}} 
+All&Represents the logical OR of all controllers. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{class_o_v_r_input_afa31aa573064be9bab8fc9e58cddeab6}\label{class_o_v_r_input_afa31aa573064be9bab8fc9e58cddeab6}} 
+\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Near\+Touch@{Near\+Touch}}
+\index{Near\+Touch@{Near\+Touch}!O\+V\+R\+Input@{O\+V\+R\+Input}}
+\subsubsection{\texorpdfstring{Near\+Touch}{NearTouch}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_o_v_r_input_afa31aa573064be9bab8fc9e58cddeab6}{O\+V\+R\+Input.\+Near\+Touch}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+Virtual near touch mappings that allow the same input bindings to work across different controllers with near touch support. A near touch uses the capacitive touch sensors of a controller to detect approximate finger proximity prior to a full touch being reported. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{None@{None}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!None@{None}}}\mbox{\Hypertarget{class_o_v_r_input_afa31aa573064be9bab8fc9e58cddeab6a6adf97f83acf6453d4a6a4b1070f3754}\label{class_o_v_r_input_afa31aa573064be9bab8fc9e58cddeab6a6adf97f83acf6453d4a6a4b1070f3754}} 
+None&Maps to Raw\+Near\+Touch\+: \mbox{[}Gamepad, Touch, L\+Touch, R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Primary\+Index\+Trigger@{Primary\+Index\+Trigger}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Primary\+Index\+Trigger@{Primary\+Index\+Trigger}}}\mbox{\Hypertarget{class_o_v_r_input_afa31aa573064be9bab8fc9e58cddeab6a05ce3346fd067f05de712c153423a543}\label{class_o_v_r_input_afa31aa573064be9bab8fc9e58cddeab6a05ce3346fd067f05de712c153423a543}} 
+Primary\+Index\+Trigger&Maps to Raw\+Near\+Touch\+: \mbox{[}Touch, L\+Touch\+: L\+Index\+Trigger\mbox{]}, \mbox{[}R\+Touch\+: R\+Index\+Trigger\mbox{]}, \mbox{[}Gamepad, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Primary\+Thumb\+Buttons@{Primary\+Thumb\+Buttons}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Primary\+Thumb\+Buttons@{Primary\+Thumb\+Buttons}}}\mbox{\Hypertarget{class_o_v_r_input_afa31aa573064be9bab8fc9e58cddeab6a85205b778ef8021ee14805c3a36c67a1}\label{class_o_v_r_input_afa31aa573064be9bab8fc9e58cddeab6a85205b778ef8021ee14805c3a36c67a1}} 
+Primary\+Thumb\+Buttons&Maps to Raw\+Near\+Touch\+: \mbox{[}Touch, L\+Touch\+: L\+Thumb\+Buttons\mbox{]}, \mbox{[}R\+Touch\+: R\+Thumb\+Buttons\mbox{]}, \mbox{[}Gamepad, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Secondary\+Index\+Trigger@{Secondary\+Index\+Trigger}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Secondary\+Index\+Trigger@{Secondary\+Index\+Trigger}}}\mbox{\Hypertarget{class_o_v_r_input_afa31aa573064be9bab8fc9e58cddeab6a8e997b6d1a9db4d4084bdb67c3701b01}\label{class_o_v_r_input_afa31aa573064be9bab8fc9e58cddeab6a8e997b6d1a9db4d4084bdb67c3701b01}} 
+Secondary\+Index\+Trigger&Maps to Raw\+Near\+Touch\+: \mbox{[}Touch\+: R\+Index\+Trigger\mbox{]}, \mbox{[}Gamepad, L\+Touch, R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Secondary\+Thumb\+Buttons@{Secondary\+Thumb\+Buttons}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Secondary\+Thumb\+Buttons@{Secondary\+Thumb\+Buttons}}}\mbox{\Hypertarget{class_o_v_r_input_afa31aa573064be9bab8fc9e58cddeab6acfec5e25ea7af4398e8618195c792ec3}\label{class_o_v_r_input_afa31aa573064be9bab8fc9e58cddeab6acfec5e25ea7af4398e8618195c792ec3}} 
+Secondary\+Thumb\+Buttons&Maps to Raw\+Near\+Touch\+: \mbox{[}Touch\+: R\+Thumb\+Buttons\mbox{]}, \mbox{[}Gamepad, L\+Touch, R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Any@{Any}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Any@{Any}}}\mbox{\Hypertarget{class_o_v_r_input_afa31aa573064be9bab8fc9e58cddeab6aed36a1ef76a59ee3f15180e0441188ad}\label{class_o_v_r_input_afa31aa573064be9bab8fc9e58cddeab6aed36a1ef76a59ee3f15180e0441188ad}} 
+Any&Maps to Raw\+Near\+Touch\+: \mbox{[}Touch, L\+Touch, R\+Touch\+: Any\mbox{]}, \mbox{[}Gamepad, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{class_o_v_r_input_a9c9eff2910ca07d1fb0e924273ebefaf}\label{class_o_v_r_input_a9c9eff2910ca07d1fb0e924273ebefaf}} 
+\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Raw\+Axis1D@{Raw\+Axis1D}}
+\index{Raw\+Axis1D@{Raw\+Axis1D}!O\+V\+R\+Input@{O\+V\+R\+Input}}
+\subsubsection{\texorpdfstring{Raw\+Axis1D}{RawAxis1D}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_o_v_r_input_a9c9eff2910ca07d1fb0e924273ebefaf}{O\+V\+R\+Input.\+Raw\+Axis1D}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Raw 1-\/dimensional axis (float) mappings that can be used to directly query the state of a controller. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{None@{None}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!None@{None}}}\mbox{\Hypertarget{class_o_v_r_input_a9c9eff2910ca07d1fb0e924273ebefafa6adf97f83acf6453d4a6a4b1070f3754}\label{class_o_v_r_input_a9c9eff2910ca07d1fb0e924273ebefafa6adf97f83acf6453d4a6a4b1070f3754}} 
+None&Maps to Physical Axis1D\+: \mbox{[}Gamepad, Touch, L\+Touch, R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L\+Index\+Trigger@{L\+Index\+Trigger}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!L\+Index\+Trigger@{L\+Index\+Trigger}}}\mbox{\Hypertarget{class_o_v_r_input_a9c9eff2910ca07d1fb0e924273ebefafa539fc444c6c42c09fec1c86daa96b8a2}\label{class_o_v_r_input_a9c9eff2910ca07d1fb0e924273ebefafa539fc444c6c42c09fec1c86daa96b8a2}} 
+L\+Index\+Trigger&Maps to Physical Axis1D\+: \mbox{[}Gamepad, Touch, L\+Touch\+: L\+Index\+Trigger\mbox{]}, \mbox{[}R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L\+Hand\+Trigger@{L\+Hand\+Trigger}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!L\+Hand\+Trigger@{L\+Hand\+Trigger}}}\mbox{\Hypertarget{class_o_v_r_input_a9c9eff2910ca07d1fb0e924273ebefafa0676a01bc10e9f8770512c041832f748}\label{class_o_v_r_input_a9c9eff2910ca07d1fb0e924273ebefafa0676a01bc10e9f8770512c041832f748}} 
+L\+Hand\+Trigger&Maps to Physical Axis1D\+: \mbox{[}Touch, L\+Touch\+: L\+Hand\+Trigger\mbox{]}, \mbox{[}Gamepad, R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+Index\+Trigger@{R\+Index\+Trigger}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!R\+Index\+Trigger@{R\+Index\+Trigger}}}\mbox{\Hypertarget{class_o_v_r_input_a9c9eff2910ca07d1fb0e924273ebefafa0501589371e70c45f36658f9bb4b7843}\label{class_o_v_r_input_a9c9eff2910ca07d1fb0e924273ebefafa0501589371e70c45f36658f9bb4b7843}} 
+R\+Index\+Trigger&Maps to Physical Axis1D\+: \mbox{[}Gamepad, Touch, R\+Touch\+: R\+Index\+Trigger\mbox{]}, \mbox{[}L\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+Hand\+Trigger@{R\+Hand\+Trigger}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!R\+Hand\+Trigger@{R\+Hand\+Trigger}}}\mbox{\Hypertarget{class_o_v_r_input_a9c9eff2910ca07d1fb0e924273ebefafa2d5b73bea84840ebcd86393266fb601d}\label{class_o_v_r_input_a9c9eff2910ca07d1fb0e924273ebefafa2d5b73bea84840ebcd86393266fb601d}} 
+R\+Hand\+Trigger&Maps to Physical Axis1D\+: \mbox{[}Touch, R\+Touch\+: R\+Hand\+Trigger\mbox{]}, \mbox{[}Gamepad, L\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Any@{Any}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Any@{Any}}}\mbox{\Hypertarget{class_o_v_r_input_a9c9eff2910ca07d1fb0e924273ebefafaed36a1ef76a59ee3f15180e0441188ad}\label{class_o_v_r_input_a9c9eff2910ca07d1fb0e924273ebefafaed36a1ef76a59ee3f15180e0441188ad}} 
+Any&Maps to Physical Axis1D\+: \mbox{[}Gamepad, Touch, L\+Touch, R\+Touch\+: Any\mbox{]}, \mbox{[}L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{class_o_v_r_input_a973c161bfb3bd6d0cc16c3a0b56c9f4a}\label{class_o_v_r_input_a973c161bfb3bd6d0cc16c3a0b56c9f4a}} 
+\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Raw\+Axis2D@{Raw\+Axis2D}}
+\index{Raw\+Axis2D@{Raw\+Axis2D}!O\+V\+R\+Input@{O\+V\+R\+Input}}
+\subsubsection{\texorpdfstring{Raw\+Axis2D}{RawAxis2D}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_o_v_r_input_a973c161bfb3bd6d0cc16c3a0b56c9f4a}{O\+V\+R\+Input.\+Raw\+Axis2D}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Raw 2-\/dimensional axis (Vector2) mappings that can be used to directly query the state of a controller. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{None@{None}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!None@{None}}}\mbox{\Hypertarget{class_o_v_r_input_a973c161bfb3bd6d0cc16c3a0b56c9f4aa6adf97f83acf6453d4a6a4b1070f3754}\label{class_o_v_r_input_a973c161bfb3bd6d0cc16c3a0b56c9f4aa6adf97f83acf6453d4a6a4b1070f3754}} 
+None&Maps to Physical Axis2D\+: \mbox{[}Gamepad, Touch, L\+Touch, R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L\+Thumbstick@{L\+Thumbstick}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!L\+Thumbstick@{L\+Thumbstick}}}\mbox{\Hypertarget{class_o_v_r_input_a973c161bfb3bd6d0cc16c3a0b56c9f4aa60bb23d20b84538d31231081472ba86c}\label{class_o_v_r_input_a973c161bfb3bd6d0cc16c3a0b56c9f4aa60bb23d20b84538d31231081472ba86c}} 
+L\+Thumbstick&Maps to Physical Axis2D\+: \mbox{[}Gamepad, Touch, L\+Touch\+: L\+Thumbstick\mbox{]}, \mbox{[}R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L\+Touchpad@{L\+Touchpad}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!L\+Touchpad@{L\+Touchpad}}}\mbox{\Hypertarget{class_o_v_r_input_a973c161bfb3bd6d0cc16c3a0b56c9f4aa7c0bd966a0e7a99323b6fd18efef7602}\label{class_o_v_r_input_a973c161bfb3bd6d0cc16c3a0b56c9f4aa7c0bd966a0e7a99323b6fd18efef7602}} 
+L\+Touchpad&Maps to Physical Axis2D\+: \mbox{[}L\+Tracked\+Remote, Touchpad\+: L\+Touchpad\mbox{]}, \mbox{[}Gamepad, Touch, L\+Touch, R\+Touch, R\+Tracked\+Remote, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+Thumbstick@{R\+Thumbstick}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!R\+Thumbstick@{R\+Thumbstick}}}\mbox{\Hypertarget{class_o_v_r_input_a973c161bfb3bd6d0cc16c3a0b56c9f4aa143ae6547eaed39d27d96f4bd1a57df7}\label{class_o_v_r_input_a973c161bfb3bd6d0cc16c3a0b56c9f4aa143ae6547eaed39d27d96f4bd1a57df7}} 
+R\+Thumbstick&Maps to Physical Axis2D\+: \mbox{[}Gamepad, Touch, R\+Touch\+: R\+Thumbstick\mbox{]}, \mbox{[}L\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+Touchpad@{R\+Touchpad}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!R\+Touchpad@{R\+Touchpad}}}\mbox{\Hypertarget{class_o_v_r_input_a973c161bfb3bd6d0cc16c3a0b56c9f4aa589550297d0b2ddda9f8bc62fcb2060e}\label{class_o_v_r_input_a973c161bfb3bd6d0cc16c3a0b56c9f4aa589550297d0b2ddda9f8bc62fcb2060e}} 
+R\+Touchpad&Maps to Physical Axis2D\+: \mbox{[}R\+Tracked\+Remote\+: R\+Touchpad\mbox{]}, \mbox{[}Gamepad, Touch, L\+Touch, R\+Touch, L\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Any@{Any}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Any@{Any}}}\mbox{\Hypertarget{class_o_v_r_input_a973c161bfb3bd6d0cc16c3a0b56c9f4aaed36a1ef76a59ee3f15180e0441188ad}\label{class_o_v_r_input_a973c161bfb3bd6d0cc16c3a0b56c9f4aaed36a1ef76a59ee3f15180e0441188ad}} 
+Any&Maps to Physical Axis2D\+: \mbox{[}Gamepad, Touch, L\+Touch, R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote\+: Any\mbox{]}, \mbox{[}Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77a}\label{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77a}} 
+\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Raw\+Button@{Raw\+Button}}
+\index{Raw\+Button@{Raw\+Button}!O\+V\+R\+Input@{O\+V\+R\+Input}}
+\subsubsection{\texorpdfstring{Raw\+Button}{RawButton}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77a}{O\+V\+R\+Input.\+Raw\+Button}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Raw button mappings that can be used to directly query the state of a controller. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{None@{None}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!None@{None}}}\mbox{\Hypertarget{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa6adf97f83acf6453d4a6a4b1070f3754}\label{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa6adf97f83acf6453d4a6a4b1070f3754}} 
+None&Maps to Physical Button\+: \mbox{[}Gamepad, Touch, L\+Touch, R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A@{A}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!A@{A}}}\mbox{\Hypertarget{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa7fc56270e7a70fa81a5935b72eacbe29}\label{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa7fc56270e7a70fa81a5935b72eacbe29}} 
+A&Maps to Physical Button\+: \mbox{[}Gamepad, Touch, R\+Touch\+: A\mbox{]}, \mbox{[}L\+Tracked\+Remote\+: L\+Index\+Trigger\mbox{]}, \mbox{[}R\+Tracked\+Remote\+: R\+Index\+Trigger\mbox{]}, \mbox{[}L\+Touch, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{B@{B}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!B@{B}}}\mbox{\Hypertarget{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa9d5ed678fe57bcca610140957afab571}\label{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa9d5ed678fe57bcca610140957afab571}} 
+B&Maps to Physical Button\+: \mbox{[}Gamepad, Touch, R\+Touch\+: B\mbox{]}, \mbox{[}L\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{X@{X}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!X@{X}}}\mbox{\Hypertarget{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa02129bb861061d1a052c592e2dc6b383}\label{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa02129bb861061d1a052c592e2dc6b383}} 
+X&Maps to Physical Button\+: \mbox{[}Gamepad, Touch, L\+Touch\+: X\mbox{]}, \mbox{[}R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Y@{Y}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Y@{Y}}}\mbox{\Hypertarget{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa57cec4137b614c87cb4e24a3d003a3e0}\label{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa57cec4137b614c87cb4e24a3d003a3e0}} 
+Y&Maps to Physical Button\+: \mbox{[}Gamepad, Touch, L\+Touch\+: Y\mbox{]}, \mbox{[}R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Start@{Start}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Start@{Start}}}\mbox{\Hypertarget{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aaa6122a65eaa676f700ae68d393054a37}\label{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aaa6122a65eaa676f700ae68d393054a37}} 
+Start&Maps to Physical Button\+: \mbox{[}Gamepad, Touch, L\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: Start\mbox{]}, \mbox{[}R\+Touch\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Back@{Back}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Back@{Back}}}\mbox{\Hypertarget{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa0557fa923dcee4d0f86b1409f5c2167f}\label{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa0557fa923dcee4d0f86b1409f5c2167f}} 
+Back&Maps to Physical Button\+: \mbox{[}Gamepad, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: Back\mbox{]}, \mbox{[}Touch, L\+Touch, R\+Touch\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L\+Shoulder@{L\+Shoulder}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!L\+Shoulder@{L\+Shoulder}}}\mbox{\Hypertarget{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aafe788e67252c3049b894226c0c6ca5aa}\label{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aafe788e67252c3049b894226c0c6ca5aa}} 
+L\+Shoulder&Maps to Physical Button\+: \mbox{[}Gamepad\+: L\+Shoulder\mbox{]}, \mbox{[}Touch, L\+Touch, R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L\+Index\+Trigger@{L\+Index\+Trigger}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!L\+Index\+Trigger@{L\+Index\+Trigger}}}\mbox{\Hypertarget{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa539fc444c6c42c09fec1c86daa96b8a2}\label{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa539fc444c6c42c09fec1c86daa96b8a2}} 
+L\+Index\+Trigger&Maps to Physical Button\+: \mbox{[}Gamepad, Touch, L\+Touch, L\+Tracked\+Remote\+: L\+Index\+Trigger\mbox{]}, \mbox{[}R\+Touch, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L\+Hand\+Trigger@{L\+Hand\+Trigger}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!L\+Hand\+Trigger@{L\+Hand\+Trigger}}}\mbox{\Hypertarget{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa0676a01bc10e9f8770512c041832f748}\label{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa0676a01bc10e9f8770512c041832f748}} 
+L\+Hand\+Trigger&Maps to Physical Button\+: \mbox{[}Touch, L\+Touch\+: L\+Hand\+Trigger\mbox{]}, \mbox{[}Gamepad, R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L\+Thumbstick@{L\+Thumbstick}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!L\+Thumbstick@{L\+Thumbstick}}}\mbox{\Hypertarget{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa60bb23d20b84538d31231081472ba86c}\label{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa60bb23d20b84538d31231081472ba86c}} 
+L\+Thumbstick&Maps to Physical Button\+: \mbox{[}Gamepad, Touch, L\+Touch\+: L\+Thumbstick\mbox{]}, \mbox{[}R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L\+Thumbstick\+Up@{L\+Thumbstick\+Up}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!L\+Thumbstick\+Up@{L\+Thumbstick\+Up}}}\mbox{\Hypertarget{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa63a682a06c8b48a275ce3e6808e346ea}\label{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa63a682a06c8b48a275ce3e6808e346ea}} 
+L\+Thumbstick\+Up&Maps to Physical Button\+: \mbox{[}Gamepad, Touch, L\+Touch\+: L\+Thumbstick\+Up\mbox{]}, \mbox{[}R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L\+Thumbstick\+Down@{L\+Thumbstick\+Down}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!L\+Thumbstick\+Down@{L\+Thumbstick\+Down}}}\mbox{\Hypertarget{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aad4c8c2597b450a33c01383f3aa8970cd}\label{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aad4c8c2597b450a33c01383f3aa8970cd}} 
+L\+Thumbstick\+Down&Maps to Physical Button\+: \mbox{[}Gamepad, Touch, L\+Touch\+: L\+Thumbstick\+Down\mbox{]}, \mbox{[}R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L\+Thumbstick\+Left@{L\+Thumbstick\+Left}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!L\+Thumbstick\+Left@{L\+Thumbstick\+Left}}}\mbox{\Hypertarget{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa2251cbf49fdcce9aa31b12116d8971ee}\label{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa2251cbf49fdcce9aa31b12116d8971ee}} 
+L\+Thumbstick\+Left&Maps to Physical Button\+: \mbox{[}Gamepad, Touch, L\+Touch\+: L\+Thumbstick\+Left\mbox{]}, \mbox{[}R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L\+Thumbstick\+Right@{L\+Thumbstick\+Right}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!L\+Thumbstick\+Right@{L\+Thumbstick\+Right}}}\mbox{\Hypertarget{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa0edd1863a955bf90c202143547d316b6}\label{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa0edd1863a955bf90c202143547d316b6}} 
+L\+Thumbstick\+Right&Maps to Physical Button\+: \mbox{[}Gamepad, Touch, L\+Touch\+: L\+Thumbstick\+Right\mbox{]}, \mbox{[}R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L\+Touchpad@{L\+Touchpad}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!L\+Touchpad@{L\+Touchpad}}}\mbox{\Hypertarget{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa7c0bd966a0e7a99323b6fd18efef7602}\label{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa7c0bd966a0e7a99323b6fd18efef7602}} 
+L\+Touchpad&Maps to Physical Button\+: \mbox{[}L\+Tracked\+Remote\+: L\+Touchpad\mbox{]}, \mbox{[}Gamepad, Touch, L\+Touch, R\+Touch, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+Shoulder@{R\+Shoulder}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!R\+Shoulder@{R\+Shoulder}}}\mbox{\Hypertarget{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa41a810fe24d1ea211a55337eaaa1e3d2}\label{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa41a810fe24d1ea211a55337eaaa1e3d2}} 
+R\+Shoulder&Maps to Physical Button\+: \mbox{[}Gamepad\+: R\+Shoulder\mbox{]}, \mbox{[}Touch, L\+Touch, R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+Index\+Trigger@{R\+Index\+Trigger}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!R\+Index\+Trigger@{R\+Index\+Trigger}}}\mbox{\Hypertarget{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa0501589371e70c45f36658f9bb4b7843}\label{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa0501589371e70c45f36658f9bb4b7843}} 
+R\+Index\+Trigger&Maps to Physical Button\+: \mbox{[}Gamepad, Touch, R\+Touch, R\+Tracked\+Remote\+: R\+Index\+Trigger\mbox{]}, \mbox{[}L\+Touch, L\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+Hand\+Trigger@{R\+Hand\+Trigger}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!R\+Hand\+Trigger@{R\+Hand\+Trigger}}}\mbox{\Hypertarget{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa2d5b73bea84840ebcd86393266fb601d}\label{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa2d5b73bea84840ebcd86393266fb601d}} 
+R\+Hand\+Trigger&Maps to Physical Button\+: \mbox{[}Touch, R\+Touch\+: R\+Hand\+Trigger\mbox{]}, \mbox{[}Gamepad, L\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+Thumbstick@{R\+Thumbstick}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!R\+Thumbstick@{R\+Thumbstick}}}\mbox{\Hypertarget{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa143ae6547eaed39d27d96f4bd1a57df7}\label{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa143ae6547eaed39d27d96f4bd1a57df7}} 
+R\+Thumbstick&Maps to Physical Button\+: \mbox{[}Gamepad, Touch, R\+Touch\+: R\+Thumbstick\mbox{]}, \mbox{[}L\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+Thumbstick\+Up@{R\+Thumbstick\+Up}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!R\+Thumbstick\+Up@{R\+Thumbstick\+Up}}}\mbox{\Hypertarget{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa9c9e4202021739d84c3b90010c89ccfa}\label{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa9c9e4202021739d84c3b90010c89ccfa}} 
+R\+Thumbstick\+Up&Maps to Physical Button\+: \mbox{[}Gamepad, Touch, R\+Touch\+: R\+Thumbstick\+Up\mbox{]}, \mbox{[}L\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+Thumbstick\+Down@{R\+Thumbstick\+Down}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!R\+Thumbstick\+Down@{R\+Thumbstick\+Down}}}\mbox{\Hypertarget{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aae5bafe28b2a52cd6e82cb04e70c77481}\label{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aae5bafe28b2a52cd6e82cb04e70c77481}} 
+R\+Thumbstick\+Down&Maps to Physical Button\+: \mbox{[}Gamepad, Touch, R\+Touch\+: R\+Thumbstick\+Down\mbox{]}, \mbox{[}L\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+Thumbstick\+Left@{R\+Thumbstick\+Left}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!R\+Thumbstick\+Left@{R\+Thumbstick\+Left}}}\mbox{\Hypertarget{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aad2680ec4a1c95d6b296c403a504e06e3}\label{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aad2680ec4a1c95d6b296c403a504e06e3}} 
+R\+Thumbstick\+Left&Maps to Physical Button\+: \mbox{[}Gamepad, Touch, R\+Touch\+: R\+Thumbstick\+Left\mbox{]}, \mbox{[}L\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+Thumbstick\+Right@{R\+Thumbstick\+Right}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!R\+Thumbstick\+Right@{R\+Thumbstick\+Right}}}\mbox{\Hypertarget{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aabdfb1d9b3943a1cc85ac7d37f0bb69f0}\label{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aabdfb1d9b3943a1cc85ac7d37f0bb69f0}} 
+R\+Thumbstick\+Right&Maps to Physical Button\+: \mbox{[}Gamepad, Touch, R\+Touch\+: R\+Thumbstick\+Right\mbox{]}, \mbox{[}L\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+Touchpad@{R\+Touchpad}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!R\+Touchpad@{R\+Touchpad}}}\mbox{\Hypertarget{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa589550297d0b2ddda9f8bc62fcb2060e}\label{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa589550297d0b2ddda9f8bc62fcb2060e}} 
+R\+Touchpad&Maps to Physical Button\+: \mbox{[}Gamepad, Touch, L\+Touch, R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Dpad\+Up@{Dpad\+Up}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Dpad\+Up@{Dpad\+Up}}}\mbox{\Hypertarget{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aad3ca4590094b47dd5e7ddfd4679a1139}\label{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aad3ca4590094b47dd5e7ddfd4679a1139}} 
+Dpad\+Up&Maps to Physical Button\+: \mbox{[}Gamepad, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: Dpad\+Up\mbox{]}, \mbox{[}Touch, L\+Touch, R\+Touch\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Dpad\+Down@{Dpad\+Down}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Dpad\+Down@{Dpad\+Down}}}\mbox{\Hypertarget{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aaf926cb67913be40219a97ec3889f90d9}\label{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aaf926cb67913be40219a97ec3889f90d9}} 
+Dpad\+Down&Maps to Physical Button\+: \mbox{[}Gamepad, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: Dpad\+Down\mbox{]}, \mbox{[}Touch, L\+Touch, R\+Touch\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Dpad\+Left@{Dpad\+Left}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Dpad\+Left@{Dpad\+Left}}}\mbox{\Hypertarget{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa126eb11514ec5936a690e24fce06a075}\label{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aa126eb11514ec5936a690e24fce06a075}} 
+Dpad\+Left&Maps to Physical Button\+: \mbox{[}Gamepad, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: Dpad\+Left\mbox{]}, \mbox{[}Touch, L\+Touch, R\+Touch\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Dpad\+Right@{Dpad\+Right}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Dpad\+Right@{Dpad\+Right}}}\mbox{\Hypertarget{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aad3c7cfd48048567e4d093aaad0bbcb7a}\label{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aad3c7cfd48048567e4d093aaad0bbcb7a}} 
+Dpad\+Right&Maps to Physical Button\+: \mbox{[}Gamepad, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: Dpad\+Right\mbox{]}, \mbox{[}Touch, L\+Touch, R\+Touch\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Any@{Any}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Any@{Any}}}\mbox{\Hypertarget{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aaed36a1ef76a59ee3f15180e0441188ad}\label{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77aaed36a1ef76a59ee3f15180e0441188ad}} 
+Any&Maps to Physical Button\+: \mbox{[}Gamepad, Touch, L\+Touch, R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: Any\mbox{]}. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{class_o_v_r_input_ac9c3c10aa9911507c6dc66e2dd6ec60e}\label{class_o_v_r_input_ac9c3c10aa9911507c6dc66e2dd6ec60e}} 
+\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Raw\+Near\+Touch@{Raw\+Near\+Touch}}
+\index{Raw\+Near\+Touch@{Raw\+Near\+Touch}!O\+V\+R\+Input@{O\+V\+R\+Input}}
+\subsubsection{\texorpdfstring{Raw\+Near\+Touch}{RawNearTouch}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_o_v_r_input_ac9c3c10aa9911507c6dc66e2dd6ec60e}{O\+V\+R\+Input.\+Raw\+Near\+Touch}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Raw near touch mappings that can be used to directly query the state of a controller. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{None@{None}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!None@{None}}}\mbox{\Hypertarget{class_o_v_r_input_ac9c3c10aa9911507c6dc66e2dd6ec60ea6adf97f83acf6453d4a6a4b1070f3754}\label{class_o_v_r_input_ac9c3c10aa9911507c6dc66e2dd6ec60ea6adf97f83acf6453d4a6a4b1070f3754}} 
+None&Maps to Physical Near\+Touch\+: \mbox{[}Gamepad, Touch, L\+Touch, R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L\+Index\+Trigger@{L\+Index\+Trigger}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!L\+Index\+Trigger@{L\+Index\+Trigger}}}\mbox{\Hypertarget{class_o_v_r_input_ac9c3c10aa9911507c6dc66e2dd6ec60ea539fc444c6c42c09fec1c86daa96b8a2}\label{class_o_v_r_input_ac9c3c10aa9911507c6dc66e2dd6ec60ea539fc444c6c42c09fec1c86daa96b8a2}} 
+L\+Index\+Trigger&Maps to Physical Near\+Touch\+: \mbox{[}Touch, L\+Touch\+: Implies finger is in close proximity to L\+Index\+Trigger.\mbox{]}, \mbox{[}Gamepad, R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L\+Thumb\+Buttons@{L\+Thumb\+Buttons}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!L\+Thumb\+Buttons@{L\+Thumb\+Buttons}}}\mbox{\Hypertarget{class_o_v_r_input_ac9c3c10aa9911507c6dc66e2dd6ec60ea4fa5a033fe18dd12447d7305efc90e91}\label{class_o_v_r_input_ac9c3c10aa9911507c6dc66e2dd6ec60ea4fa5a033fe18dd12447d7305efc90e91}} 
+L\+Thumb\+Buttons&Maps to Physical Near\+Touch\+: \mbox{[}Touch, L\+Touch\+: Implies thumb is in close proximity to L\+Thumbstick OR X/Y buttons.\mbox{]}, \mbox{[}Gamepad, R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+Index\+Trigger@{R\+Index\+Trigger}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!R\+Index\+Trigger@{R\+Index\+Trigger}}}\mbox{\Hypertarget{class_o_v_r_input_ac9c3c10aa9911507c6dc66e2dd6ec60ea0501589371e70c45f36658f9bb4b7843}\label{class_o_v_r_input_ac9c3c10aa9911507c6dc66e2dd6ec60ea0501589371e70c45f36658f9bb4b7843}} 
+R\+Index\+Trigger&Maps to Physical Near\+Touch\+: \mbox{[}Touch, R\+Touch\+: Implies finger is in close proximity to R\+Index\+Trigger.\mbox{]}, \mbox{[}Gamepad, L\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+Thumb\+Buttons@{R\+Thumb\+Buttons}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!R\+Thumb\+Buttons@{R\+Thumb\+Buttons}}}\mbox{\Hypertarget{class_o_v_r_input_ac9c3c10aa9911507c6dc66e2dd6ec60ea62dfe22c21f7c46d025b41f5b0d78a33}\label{class_o_v_r_input_ac9c3c10aa9911507c6dc66e2dd6ec60ea62dfe22c21f7c46d025b41f5b0d78a33}} 
+R\+Thumb\+Buttons&Maps to Physical Near\+Touch\+: \mbox{[}Touch, R\+Touch\+: Implies thumb is in close proximity to R\+Thumbstick OR A/B buttons.\mbox{]}, \mbox{[}Gamepad, L\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Any@{Any}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Any@{Any}}}\mbox{\Hypertarget{class_o_v_r_input_ac9c3c10aa9911507c6dc66e2dd6ec60eaed36a1ef76a59ee3f15180e0441188ad}\label{class_o_v_r_input_ac9c3c10aa9911507c6dc66e2dd6ec60eaed36a1ef76a59ee3f15180e0441188ad}} 
+Any&Maps to Physical Near\+Touch\+: \mbox{[}Touch, L\+Touch, R\+Touch\+: Any\mbox{]}, \mbox{[}Gamepad, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{class_o_v_r_input_a6e130faa2035c5b20853c1177d909cc6}\label{class_o_v_r_input_a6e130faa2035c5b20853c1177d909cc6}} 
+\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Raw\+Touch@{Raw\+Touch}}
+\index{Raw\+Touch@{Raw\+Touch}!O\+V\+R\+Input@{O\+V\+R\+Input}}
+\subsubsection{\texorpdfstring{Raw\+Touch}{RawTouch}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_o_v_r_input_a6e130faa2035c5b20853c1177d909cc6}{O\+V\+R\+Input.\+Raw\+Touch}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Raw capacitive touch mappings that can be used to directly query the state of a controller. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{None@{None}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!None@{None}}}\mbox{\Hypertarget{class_o_v_r_input_a6e130faa2035c5b20853c1177d909cc6a6adf97f83acf6453d4a6a4b1070f3754}\label{class_o_v_r_input_a6e130faa2035c5b20853c1177d909cc6a6adf97f83acf6453d4a6a4b1070f3754}} 
+None&Maps to Physical Touch\+: \mbox{[}Gamepad, Touch, L\+Touch, R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A@{A}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!A@{A}}}\mbox{\Hypertarget{class_o_v_r_input_a6e130faa2035c5b20853c1177d909cc6a7fc56270e7a70fa81a5935b72eacbe29}\label{class_o_v_r_input_a6e130faa2035c5b20853c1177d909cc6a7fc56270e7a70fa81a5935b72eacbe29}} 
+A&Maps to Physical Touch\+: \mbox{[}Touch, R\+Touch\+: A\mbox{]}, \mbox{[}Gamepad, L\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{B@{B}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!B@{B}}}\mbox{\Hypertarget{class_o_v_r_input_a6e130faa2035c5b20853c1177d909cc6a9d5ed678fe57bcca610140957afab571}\label{class_o_v_r_input_a6e130faa2035c5b20853c1177d909cc6a9d5ed678fe57bcca610140957afab571}} 
+B&Maps to Physical Touch\+: \mbox{[}Touch, R\+Touch\+: B\mbox{]}, \mbox{[}Gamepad, L\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{X@{X}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!X@{X}}}\mbox{\Hypertarget{class_o_v_r_input_a6e130faa2035c5b20853c1177d909cc6a02129bb861061d1a052c592e2dc6b383}\label{class_o_v_r_input_a6e130faa2035c5b20853c1177d909cc6a02129bb861061d1a052c592e2dc6b383}} 
+X&Maps to Physical Touch\+: \mbox{[}Touch, L\+Touch\+: X\mbox{]}, \mbox{[}Gamepad, R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Y@{Y}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Y@{Y}}}\mbox{\Hypertarget{class_o_v_r_input_a6e130faa2035c5b20853c1177d909cc6a57cec4137b614c87cb4e24a3d003a3e0}\label{class_o_v_r_input_a6e130faa2035c5b20853c1177d909cc6a57cec4137b614c87cb4e24a3d003a3e0}} 
+Y&Maps to Physical Touch\+: \mbox{[}Touch, L\+Touch\+: Y\mbox{]}, \mbox{[}Gamepad, R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L\+Index\+Trigger@{L\+Index\+Trigger}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!L\+Index\+Trigger@{L\+Index\+Trigger}}}\mbox{\Hypertarget{class_o_v_r_input_a6e130faa2035c5b20853c1177d909cc6a539fc444c6c42c09fec1c86daa96b8a2}\label{class_o_v_r_input_a6e130faa2035c5b20853c1177d909cc6a539fc444c6c42c09fec1c86daa96b8a2}} 
+L\+Index\+Trigger&Maps to Physical Touch\+: \mbox{[}Touch, L\+Touch\+: L\+Index\+Trigger\mbox{]}, \mbox{[}Gamepad, R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L\+Thumbstick@{L\+Thumbstick}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!L\+Thumbstick@{L\+Thumbstick}}}\mbox{\Hypertarget{class_o_v_r_input_a6e130faa2035c5b20853c1177d909cc6a60bb23d20b84538d31231081472ba86c}\label{class_o_v_r_input_a6e130faa2035c5b20853c1177d909cc6a60bb23d20b84538d31231081472ba86c}} 
+L\+Thumbstick&Maps to Physical Touch\+: \mbox{[}Touch, L\+Touch\+: L\+Thumbstick\mbox{]}, \mbox{[}Gamepad, R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L\+Thumb\+Rest@{L\+Thumb\+Rest}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!L\+Thumb\+Rest@{L\+Thumb\+Rest}}}\mbox{\Hypertarget{class_o_v_r_input_a6e130faa2035c5b20853c1177d909cc6af3a7cacac94764828ecf8f2c9c53641a}\label{class_o_v_r_input_a6e130faa2035c5b20853c1177d909cc6af3a7cacac94764828ecf8f2c9c53641a}} 
+L\+Thumb\+Rest&Maps to Physical Touch\+: \mbox{[}Touch, L\+Touch\+: L\+Thumb\+Rest\mbox{]}, \mbox{[}Gamepad, R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L\+Touchpad@{L\+Touchpad}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!L\+Touchpad@{L\+Touchpad}}}\mbox{\Hypertarget{class_o_v_r_input_a6e130faa2035c5b20853c1177d909cc6a7c0bd966a0e7a99323b6fd18efef7602}\label{class_o_v_r_input_a6e130faa2035c5b20853c1177d909cc6a7c0bd966a0e7a99323b6fd18efef7602}} 
+L\+Touchpad&Maps to Physical Touch\+: \mbox{[}L\+Tracked\+Remote, Touchpad\+: L\+Touchpad\mbox{]}, \mbox{[}Gamepad, Touch, L\+Touch, R\+Touch, R\+Tracked\+Remote, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+Index\+Trigger@{R\+Index\+Trigger}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!R\+Index\+Trigger@{R\+Index\+Trigger}}}\mbox{\Hypertarget{class_o_v_r_input_a6e130faa2035c5b20853c1177d909cc6a0501589371e70c45f36658f9bb4b7843}\label{class_o_v_r_input_a6e130faa2035c5b20853c1177d909cc6a0501589371e70c45f36658f9bb4b7843}} 
+R\+Index\+Trigger&Maps to Physical Touch\+: \mbox{[}Touch, R\+Touch\+: R\+Index\+Trigger\mbox{]}, \mbox{[}Gamepad, L\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+Thumbstick@{R\+Thumbstick}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!R\+Thumbstick@{R\+Thumbstick}}}\mbox{\Hypertarget{class_o_v_r_input_a6e130faa2035c5b20853c1177d909cc6a143ae6547eaed39d27d96f4bd1a57df7}\label{class_o_v_r_input_a6e130faa2035c5b20853c1177d909cc6a143ae6547eaed39d27d96f4bd1a57df7}} 
+R\+Thumbstick&Maps to Physical Touch\+: \mbox{[}Touch, R\+Touch\+: R\+Thumbstick\mbox{]}, \mbox{[}Gamepad, L\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+Thumb\+Rest@{R\+Thumb\+Rest}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!R\+Thumb\+Rest@{R\+Thumb\+Rest}}}\mbox{\Hypertarget{class_o_v_r_input_a6e130faa2035c5b20853c1177d909cc6a285473e5dabe9d4f69223538d5d973d7}\label{class_o_v_r_input_a6e130faa2035c5b20853c1177d909cc6a285473e5dabe9d4f69223538d5d973d7}} 
+R\+Thumb\+Rest&Maps to Physical Touch\+: \mbox{[}Touch, R\+Touch\+: R\+Thumb\+Rest\mbox{]}, \mbox{[}Gamepad, L\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+Touchpad@{R\+Touchpad}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!R\+Touchpad@{R\+Touchpad}}}\mbox{\Hypertarget{class_o_v_r_input_a6e130faa2035c5b20853c1177d909cc6a589550297d0b2ddda9f8bc62fcb2060e}\label{class_o_v_r_input_a6e130faa2035c5b20853c1177d909cc6a589550297d0b2ddda9f8bc62fcb2060e}} 
+R\+Touchpad&Maps to Physical Touch\+: \mbox{[}R\+Tracked\+Remote\+: R\+Touchpad\mbox{]}, \mbox{[}Gamepad, Touch, L\+Touch, R\+Touch, L\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Any@{Any}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Any@{Any}}}\mbox{\Hypertarget{class_o_v_r_input_a6e130faa2035c5b20853c1177d909cc6aed36a1ef76a59ee3f15180e0441188ad}\label{class_o_v_r_input_a6e130faa2035c5b20853c1177d909cc6aed36a1ef76a59ee3f15180e0441188ad}} 
+Any&Maps to Physical Touch\+: \mbox{[}Touch, L\+Touch, R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad\+: Any\mbox{]}, \mbox{[}Gamepad, Remote\+: None\mbox{]}. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{class_o_v_r_input_a4e1f1eb856223383aefc1965dd2db39a}\label{class_o_v_r_input_a4e1f1eb856223383aefc1965dd2db39a}} 
+\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Touch@{Touch}}
+\index{Touch@{Touch}!O\+V\+R\+Input@{O\+V\+R\+Input}}
+\subsubsection{\texorpdfstring{Touch}{Touch}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_o_v_r_input_a4e1f1eb856223383aefc1965dd2db39a}{O\+V\+R\+Input.\+Touch}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Virtual capacitive touch mappings that allow the same input bindings to work across different controllers with capacitive touch support. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{None@{None}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!None@{None}}}\mbox{\Hypertarget{class_o_v_r_input_a4e1f1eb856223383aefc1965dd2db39aa6adf97f83acf6453d4a6a4b1070f3754}\label{class_o_v_r_input_a4e1f1eb856223383aefc1965dd2db39aa6adf97f83acf6453d4a6a4b1070f3754}} 
+None&Maps to Raw\+Touch\+: \mbox{[}Gamepad, Touch, L\+Touch, R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{One@{One}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!One@{One}}}\mbox{\Hypertarget{class_o_v_r_input_a4e1f1eb856223383aefc1965dd2db39aa06c2cea18679d64399783748fa367bdd}\label{class_o_v_r_input_a4e1f1eb856223383aefc1965dd2db39aa06c2cea18679d64399783748fa367bdd}} 
+One&Maps to Raw\+Touch\+: \mbox{[}Touch, R\+Touch\+: A\mbox{]}, \mbox{[}L\+Touch\+: X\mbox{]}, \mbox{[}Gamepad, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Two@{Two}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Two@{Two}}}\mbox{\Hypertarget{class_o_v_r_input_a4e1f1eb856223383aefc1965dd2db39aaaada29daee1d64ed0fe907043855cb7e}\label{class_o_v_r_input_a4e1f1eb856223383aefc1965dd2db39aaaada29daee1d64ed0fe907043855cb7e}} 
+Two&Maps to Raw\+Touch\+: \mbox{[}Touch, R\+Touch\+: B\mbox{]}, \mbox{[}L\+Touch\+: Y\mbox{]}, \mbox{[}Gamepad, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Three@{Three}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Three@{Three}}}\mbox{\Hypertarget{class_o_v_r_input_a4e1f1eb856223383aefc1965dd2db39aaca8a2087e5557e317599344687a57391}\label{class_o_v_r_input_a4e1f1eb856223383aefc1965dd2db39aaca8a2087e5557e317599344687a57391}} 
+Three&Maps to Raw\+Touch\+: \mbox{[}Touch\+: X\mbox{]}, \mbox{[}Gamepad, L\+Touch, R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Four@{Four}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Four@{Four}}}\mbox{\Hypertarget{class_o_v_r_input_a4e1f1eb856223383aefc1965dd2db39aa981b8fcee42e1e726a67a2b9a98ea6e9}\label{class_o_v_r_input_a4e1f1eb856223383aefc1965dd2db39aa981b8fcee42e1e726a67a2b9a98ea6e9}} 
+Four&Maps to Raw\+Touch\+: \mbox{[}Touch\+: Y\mbox{]}, \mbox{[}Gamepad, L\+Touch, R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Primary\+Index\+Trigger@{Primary\+Index\+Trigger}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Primary\+Index\+Trigger@{Primary\+Index\+Trigger}}}\mbox{\Hypertarget{class_o_v_r_input_a4e1f1eb856223383aefc1965dd2db39aa05ce3346fd067f05de712c153423a543}\label{class_o_v_r_input_a4e1f1eb856223383aefc1965dd2db39aa05ce3346fd067f05de712c153423a543}} 
+Primary\+Index\+Trigger&Maps to Raw\+Touch\+: \mbox{[}Touch, L\+Touch\+: L\+Index\+Trigger\mbox{]}, \mbox{[}R\+Touch\+: R\+Index\+Trigger\mbox{]}, \mbox{[}Gamepad, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Primary\+Thumbstick@{Primary\+Thumbstick}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Primary\+Thumbstick@{Primary\+Thumbstick}}}\mbox{\Hypertarget{class_o_v_r_input_a4e1f1eb856223383aefc1965dd2db39aa44e853762529750fc9e2c3dfdbda6173}\label{class_o_v_r_input_a4e1f1eb856223383aefc1965dd2db39aa44e853762529750fc9e2c3dfdbda6173}} 
+Primary\+Thumbstick&Maps to Raw\+Touch\+: \mbox{[}Touch, L\+Touch\+: L\+Thumbstick\mbox{]}, \mbox{[}R\+Touch\+: R\+Thumbstick\mbox{]}, \mbox{[}Gamepad, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Primary\+Thumb\+Rest@{Primary\+Thumb\+Rest}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Primary\+Thumb\+Rest@{Primary\+Thumb\+Rest}}}\mbox{\Hypertarget{class_o_v_r_input_a4e1f1eb856223383aefc1965dd2db39aad9ebd1d603d9438d99fc32baaf94a417}\label{class_o_v_r_input_a4e1f1eb856223383aefc1965dd2db39aad9ebd1d603d9438d99fc32baaf94a417}} 
+Primary\+Thumb\+Rest&Maps to Raw\+Touch\+: \mbox{[}Touch, L\+Touch\+: L\+Thumb\+Rest\mbox{]}, \mbox{[}R\+Touch\+: R\+Thumb\+Rest\mbox{]}, \mbox{[}Gamepad, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Primary\+Touchpad@{Primary\+Touchpad}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Primary\+Touchpad@{Primary\+Touchpad}}}\mbox{\Hypertarget{class_o_v_r_input_a4e1f1eb856223383aefc1965dd2db39aaf7efa4c905fcd3de5fabbb80e316f797}\label{class_o_v_r_input_a4e1f1eb856223383aefc1965dd2db39aaf7efa4c905fcd3de5fabbb80e316f797}} 
+Primary\+Touchpad&Maps to Raw\+Touch\+: \mbox{[}L\+Tracked\+Remote, Touchpad\+: L\+Touchpad\mbox{]}, \mbox{[}R\+Tracked\+Remote\+: R\+Touchpad\mbox{]}, \mbox{[}Gamepad, Touch, L\+Touch, R\+Touch, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Secondary\+Index\+Trigger@{Secondary\+Index\+Trigger}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Secondary\+Index\+Trigger@{Secondary\+Index\+Trigger}}}\mbox{\Hypertarget{class_o_v_r_input_a4e1f1eb856223383aefc1965dd2db39aa8e997b6d1a9db4d4084bdb67c3701b01}\label{class_o_v_r_input_a4e1f1eb856223383aefc1965dd2db39aa8e997b6d1a9db4d4084bdb67c3701b01}} 
+Secondary\+Index\+Trigger&Maps to Raw\+Touch\+: \mbox{[}Touch\+: R\+Index\+Trigger\mbox{]}, \mbox{[}Gamepad, L\+Touch, R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Secondary\+Thumbstick@{Secondary\+Thumbstick}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Secondary\+Thumbstick@{Secondary\+Thumbstick}}}\mbox{\Hypertarget{class_o_v_r_input_a4e1f1eb856223383aefc1965dd2db39aa4cfe69061380abb7e3b7f1d21e633600}\label{class_o_v_r_input_a4e1f1eb856223383aefc1965dd2db39aa4cfe69061380abb7e3b7f1d21e633600}} 
+Secondary\+Thumbstick&Maps to Raw\+Touch\+: \mbox{[}Touch\+: R\+Thumbstick\mbox{]}, \mbox{[}Gamepad, L\+Touch, R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Secondary\+Thumb\+Rest@{Secondary\+Thumb\+Rest}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Secondary\+Thumb\+Rest@{Secondary\+Thumb\+Rest}}}\mbox{\Hypertarget{class_o_v_r_input_a4e1f1eb856223383aefc1965dd2db39aad4314569e4872e34d68317e2bfd7354b}\label{class_o_v_r_input_a4e1f1eb856223383aefc1965dd2db39aad4314569e4872e34d68317e2bfd7354b}} 
+Secondary\+Thumb\+Rest&Maps to Raw\+Touch\+: \mbox{[}Touch\+: R\+Thumb\+Rest\mbox{]}, \mbox{[}Gamepad, L\+Touch, R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Secondary\+Touchpad@{Secondary\+Touchpad}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Secondary\+Touchpad@{Secondary\+Touchpad}}}\mbox{\Hypertarget{class_o_v_r_input_a4e1f1eb856223383aefc1965dd2db39aa177ba2bf42c325826c45d82357fc9e70}\label{class_o_v_r_input_a4e1f1eb856223383aefc1965dd2db39aa177ba2bf42c325826c45d82357fc9e70}} 
+Secondary\+Touchpad&Maps to Raw\+Touch\+: \mbox{[}Gamepad, Touch, L\+Touch, R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad, Remote\+: None\mbox{]}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Any@{Any}!O\+V\+R\+Input@{O\+V\+R\+Input}}\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Any@{Any}}}\mbox{\Hypertarget{class_o_v_r_input_a4e1f1eb856223383aefc1965dd2db39aaed36a1ef76a59ee3f15180e0441188ad}\label{class_o_v_r_input_a4e1f1eb856223383aefc1965dd2db39aaed36a1ef76a59ee3f15180e0441188ad}} 
+Any&Maps to Raw\+Touch\+: \mbox{[}Touch, L\+Touch, R\+Touch, L\+Tracked\+Remote, R\+Tracked\+Remote, Touchpad\+: Any\mbox{]}, \mbox{[}Gamepad, Remote\+: None\mbox{]}. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_o_v_r_input_a243b77bb05dd7621adb2fc3ae46f4283}\label{class_o_v_r_input_a243b77bb05dd7621adb2fc3ae46f4283}} 
+\index{O\+V\+R\+Input@{O\+V\+R\+Input}!O\+V\+R\+Input@{O\+V\+R\+Input}}
+\index{O\+V\+R\+Input@{O\+V\+R\+Input}!O\+V\+R\+Input@{O\+V\+R\+Input}}
+\subsubsection{\texorpdfstring{O\+V\+R\+Input()}{OVRInput()}}
+{\footnotesize\ttfamily static O\+V\+R\+Input.\+O\+V\+R\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Creates an instance of \mbox{\hyperlink{class_o_v_r_input}{O\+V\+R\+Input}}. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_o_v_r_input_acd501ed1f3f262609c66c37d784065dc}\label{class_o_v_r_input_acd501ed1f3f262609c66c37d784065dc}} 
+\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Fixed\+Update@{Fixed\+Update}}
+\index{Fixed\+Update@{Fixed\+Update}!O\+V\+R\+Input@{O\+V\+R\+Input}}
+\subsubsection{\texorpdfstring{Fixed\+Update()}{FixedUpdate()}}
+{\footnotesize\ttfamily static void O\+V\+R\+Input.\+Fixed\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Updates the internal physics state of \mbox{\hyperlink{class_o_v_r_input}{O\+V\+R\+Input}}. Must be called manually if used independently from O\+V\+R\+Manager. 
+
+\mbox{\Hypertarget{class_o_v_r_input_a8ed5f1b79ace01d32a26c222aa64c50c}\label{class_o_v_r_input_a8ed5f1b79ace01d32a26c222aa64c50c}} 
+\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Get@{Get}}
+\index{Get@{Get}!O\+V\+R\+Input@{O\+V\+R\+Input}}
+\subsubsection{\texorpdfstring{Get()}{Get()}\hspace{0.1cm}{\footnotesize\ttfamily [1/10]}}
+{\footnotesize\ttfamily static bool O\+V\+R\+Input.\+Get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5}{Button}}}]{virtual\+Mask,  }\item[{\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}}}]{controller\+Mask = {\ttfamily \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a4d3d769b812b6faa6b76e1a8abaece2d}{Controller.\+Active}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the current state of the given virtual button mask with the given controller mask. Returns true if any masked button is down on any masked controller. 
+
+\mbox{\Hypertarget{class_o_v_r_input_abf55006f2fbc436561df178f7cb5a45a}\label{class_o_v_r_input_abf55006f2fbc436561df178f7cb5a45a}} 
+\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Get@{Get}}
+\index{Get@{Get}!O\+V\+R\+Input@{O\+V\+R\+Input}}
+\subsubsection{\texorpdfstring{Get()}{Get()}\hspace{0.1cm}{\footnotesize\ttfamily [2/10]}}
+{\footnotesize\ttfamily static bool O\+V\+R\+Input.\+Get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77a}{Raw\+Button}}}]{raw\+Mask,  }\item[{\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}}}]{controller\+Mask = {\ttfamily \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a4d3d769b812b6faa6b76e1a8abaece2d}{Controller.\+Active}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the current state of the given raw button mask with the given controller mask. Returns true if any masked button is down on any masked controllers. 
+
+\mbox{\Hypertarget{class_o_v_r_input_a166b60cfe8c0d26773c5bbe03194bbaf}\label{class_o_v_r_input_a166b60cfe8c0d26773c5bbe03194bbaf}} 
+\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Get@{Get}}
+\index{Get@{Get}!O\+V\+R\+Input@{O\+V\+R\+Input}}
+\subsubsection{\texorpdfstring{Get()}{Get()}\hspace{0.1cm}{\footnotesize\ttfamily [3/10]}}
+{\footnotesize\ttfamily static bool O\+V\+R\+Input.\+Get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_o_v_r_input_a4e1f1eb856223383aefc1965dd2db39a}{Touch}}}]{virtual\+Mask,  }\item[{\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}}}]{controller\+Mask = {\ttfamily \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a4d3d769b812b6faa6b76e1a8abaece2d}{Controller.\+Active}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the current state of the given virtual touch mask with the given controller mask. Returns true if any masked touch is down on any masked controller. 
+
+\mbox{\Hypertarget{class_o_v_r_input_a406a3baba0bd66abfe0d158a711f53dc}\label{class_o_v_r_input_a406a3baba0bd66abfe0d158a711f53dc}} 
+\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Get@{Get}}
+\index{Get@{Get}!O\+V\+R\+Input@{O\+V\+R\+Input}}
+\subsubsection{\texorpdfstring{Get()}{Get()}\hspace{0.1cm}{\footnotesize\ttfamily [4/10]}}
+{\footnotesize\ttfamily static bool O\+V\+R\+Input.\+Get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_o_v_r_input_a6e130faa2035c5b20853c1177d909cc6}{Raw\+Touch}}}]{raw\+Mask,  }\item[{\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}}}]{controller\+Mask = {\ttfamily \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a4d3d769b812b6faa6b76e1a8abaece2d}{Controller.\+Active}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the current state of the given raw touch mask with the given controller mask. Returns true if any masked touch is down on any masked controllers. 
+
+\mbox{\Hypertarget{class_o_v_r_input_a89c93aac3fe4c225f2dd8984055cc163}\label{class_o_v_r_input_a89c93aac3fe4c225f2dd8984055cc163}} 
+\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Get@{Get}}
+\index{Get@{Get}!O\+V\+R\+Input@{O\+V\+R\+Input}}
+\subsubsection{\texorpdfstring{Get()}{Get()}\hspace{0.1cm}{\footnotesize\ttfamily [5/10]}}
+{\footnotesize\ttfamily static bool O\+V\+R\+Input.\+Get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_o_v_r_input_afa31aa573064be9bab8fc9e58cddeab6}{Near\+Touch}}}]{virtual\+Mask,  }\item[{\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}}}]{controller\+Mask = {\ttfamily \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a4d3d769b812b6faa6b76e1a8abaece2d}{Controller.\+Active}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the current state of the given virtual near touch mask with the given controller mask. Returns true if any masked near touch is down on any masked controller. 
+
+\mbox{\Hypertarget{class_o_v_r_input_afa96809b0dd349bfa586e97932f4f129}\label{class_o_v_r_input_afa96809b0dd349bfa586e97932f4f129}} 
+\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Get@{Get}}
+\index{Get@{Get}!O\+V\+R\+Input@{O\+V\+R\+Input}}
+\subsubsection{\texorpdfstring{Get()}{Get()}\hspace{0.1cm}{\footnotesize\ttfamily [6/10]}}
+{\footnotesize\ttfamily static bool O\+V\+R\+Input.\+Get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_o_v_r_input_ac9c3c10aa9911507c6dc66e2dd6ec60e}{Raw\+Near\+Touch}}}]{raw\+Mask,  }\item[{\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}}}]{controller\+Mask = {\ttfamily \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a4d3d769b812b6faa6b76e1a8abaece2d}{Controller.\+Active}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the current state of the given raw near touch mask with the given controller mask. Returns true if any masked near touch is down on any masked controllers. 
+
+\mbox{\Hypertarget{class_o_v_r_input_a32afd2d0bf3c8fa6332f685745de380a}\label{class_o_v_r_input_a32afd2d0bf3c8fa6332f685745de380a}} 
+\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Get@{Get}}
+\index{Get@{Get}!O\+V\+R\+Input@{O\+V\+R\+Input}}
+\subsubsection{\texorpdfstring{Get()}{Get()}\hspace{0.1cm}{\footnotesize\ttfamily [7/10]}}
+{\footnotesize\ttfamily static float O\+V\+R\+Input.\+Get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_o_v_r_input_af5c3e63489ca9ee2e5db3a657f7f27f6}{Axis1D}}}]{virtual\+Mask,  }\item[{\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}}}]{controller\+Mask = {\ttfamily \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a4d3d769b812b6faa6b76e1a8abaece2d}{Controller.\+Active}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the current state of the given virtual 1-\/dimensional axis mask on the given controller mask. Returns the value of the largest masked axis across all masked controllers. Values range from 0 to 1. 
+
+\mbox{\Hypertarget{class_o_v_r_input_ace9bc5cb3f2817fffc28d58564890133}\label{class_o_v_r_input_ace9bc5cb3f2817fffc28d58564890133}} 
+\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Get@{Get}}
+\index{Get@{Get}!O\+V\+R\+Input@{O\+V\+R\+Input}}
+\subsubsection{\texorpdfstring{Get()}{Get()}\hspace{0.1cm}{\footnotesize\ttfamily [8/10]}}
+{\footnotesize\ttfamily static float O\+V\+R\+Input.\+Get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_o_v_r_input_a9c9eff2910ca07d1fb0e924273ebefaf}{Raw\+Axis1D}}}]{raw\+Mask,  }\item[{\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}}}]{controller\+Mask = {\ttfamily \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a4d3d769b812b6faa6b76e1a8abaece2d}{Controller.\+Active}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the current state of the given raw 1-\/dimensional axis mask on the given controller mask. Returns the value of the largest masked axis across all masked controllers. Values range from 0 to 1. 
+
+\mbox{\Hypertarget{class_o_v_r_input_a9f50a4960aff3d92d98d3661d0321fd8}\label{class_o_v_r_input_a9f50a4960aff3d92d98d3661d0321fd8}} 
+\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Get@{Get}}
+\index{Get@{Get}!O\+V\+R\+Input@{O\+V\+R\+Input}}
+\subsubsection{\texorpdfstring{Get()}{Get()}\hspace{0.1cm}{\footnotesize\ttfamily [9/10]}}
+{\footnotesize\ttfamily static Vector2 O\+V\+R\+Input.\+Get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_o_v_r_input_a8d8de8321e36e4c5c3b5266b72468d8a}{Axis2D}}}]{virtual\+Mask,  }\item[{\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}}}]{controller\+Mask = {\ttfamily \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a4d3d769b812b6faa6b76e1a8abaece2d}{Controller.\+Active}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the current state of the given virtual 2-\/dimensional axis mask on the given controller mask. Returns the vector of the largest masked axis across all masked controllers. Values range from -\/1 to 1. 
+
+\mbox{\Hypertarget{class_o_v_r_input_affa601653694045986dd68f3edd21b6b}\label{class_o_v_r_input_affa601653694045986dd68f3edd21b6b}} 
+\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Get@{Get}}
+\index{Get@{Get}!O\+V\+R\+Input@{O\+V\+R\+Input}}
+\subsubsection{\texorpdfstring{Get()}{Get()}\hspace{0.1cm}{\footnotesize\ttfamily [10/10]}}
+{\footnotesize\ttfamily static Vector2 O\+V\+R\+Input.\+Get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_o_v_r_input_a973c161bfb3bd6d0cc16c3a0b56c9f4a}{Raw\+Axis2D}}}]{raw\+Mask,  }\item[{\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}}}]{controller\+Mask = {\ttfamily \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a4d3d769b812b6faa6b76e1a8abaece2d}{Controller.\+Active}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the current state of the given raw 2-\/dimensional axis mask on the given controller mask. Returns the vector of the largest masked axis across all masked controllers. Values range from -\/1 to 1. 
+
+\mbox{\Hypertarget{class_o_v_r_input_aac9caffc4a6ddf1d467ed3cb63bc0db2}\label{class_o_v_r_input_aac9caffc4a6ddf1d467ed3cb63bc0db2}} 
+\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Get\+Active\+Controller@{Get\+Active\+Controller}}
+\index{Get\+Active\+Controller@{Get\+Active\+Controller}!O\+V\+R\+Input@{O\+V\+R\+Input}}
+\subsubsection{\texorpdfstring{Get\+Active\+Controller()}{GetActiveController()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}} O\+V\+R\+Input.\+Get\+Active\+Controller (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the current active controller type. 
+
+\mbox{\Hypertarget{class_o_v_r_input_a057e31053088d33555d5465313929148}\label{class_o_v_r_input_a057e31053088d33555d5465313929148}} 
+\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Get\+Connected\+Controllers@{Get\+Connected\+Controllers}}
+\index{Get\+Connected\+Controllers@{Get\+Connected\+Controllers}!O\+V\+R\+Input@{O\+V\+R\+Input}}
+\subsubsection{\texorpdfstring{Get\+Connected\+Controllers()}{GetConnectedControllers()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}} O\+V\+R\+Input.\+Get\+Connected\+Controllers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns a mask of all currently connected controller types. 
+
+\mbox{\Hypertarget{class_o_v_r_input_abed7e5330bf1ef803f06728c48e2aa14}\label{class_o_v_r_input_abed7e5330bf1ef803f06728c48e2aa14}} 
+\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Get\+Controller\+Battery\+Percent\+Remaining@{Get\+Controller\+Battery\+Percent\+Remaining}}
+\index{Get\+Controller\+Battery\+Percent\+Remaining@{Get\+Controller\+Battery\+Percent\+Remaining}!O\+V\+R\+Input@{O\+V\+R\+Input}}
+\subsubsection{\texorpdfstring{Get\+Controller\+Battery\+Percent\+Remaining()}{GetControllerBatteryPercentRemaining()}}
+{\footnotesize\ttfamily static byte O\+V\+R\+Input.\+Get\+Controller\+Battery\+Percent\+Remaining (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}}}]{controller\+Mask = {\ttfamily \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a4d3d769b812b6faa6b76e1a8abaece2d}{Controller.\+Active}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the battery percentage remaining for the specified controller. Values range from 0 to 100. Only applicable to controllers that report battery level, such as the Gear\+VR Controller. Returns 0 for controllers that do not report battery level. 
+
+\mbox{\Hypertarget{class_o_v_r_input_adc89b414c04cff08dc0e8fdf469cf02a}\label{class_o_v_r_input_adc89b414c04cff08dc0e8fdf469cf02a}} 
+\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Get\+Controller\+Orientation\+Tracked@{Get\+Controller\+Orientation\+Tracked}}
+\index{Get\+Controller\+Orientation\+Tracked@{Get\+Controller\+Orientation\+Tracked}!O\+V\+R\+Input@{O\+V\+R\+Input}}
+\subsubsection{\texorpdfstring{Get\+Controller\+Orientation\+Tracked()}{GetControllerOrientationTracked()}}
+{\footnotesize\ttfamily static bool O\+V\+R\+Input.\+Get\+Controller\+Orientation\+Tracked (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{O\+V\+R\+Input.\+Controller}}}]{controller\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns true if the given Controller\textquotesingle{}s orientation is currently tracked. Only supported for Oculus L\+Touch and R\+Touch controllers. Non-\/tracked controllers will return false. 
+
+\mbox{\Hypertarget{class_o_v_r_input_ab99039a8f1f7b5ecc9b6ad137752a305}\label{class_o_v_r_input_ab99039a8f1f7b5ecc9b6ad137752a305}} 
+\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Get\+Controller\+Position\+Tracked@{Get\+Controller\+Position\+Tracked}}
+\index{Get\+Controller\+Position\+Tracked@{Get\+Controller\+Position\+Tracked}!O\+V\+R\+Input@{O\+V\+R\+Input}}
+\subsubsection{\texorpdfstring{Get\+Controller\+Position\+Tracked()}{GetControllerPositionTracked()}}
+{\footnotesize\ttfamily static bool O\+V\+R\+Input.\+Get\+Controller\+Position\+Tracked (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{O\+V\+R\+Input.\+Controller}}}]{controller\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns true if the given Controller\textquotesingle{}s position is currently tracked. Only supported for Oculus L\+Touch and R\+Touch controllers. Non-\/tracked controllers will return false. 
+
+\mbox{\Hypertarget{class_o_v_r_input_ad77e66e45c218b833c6dc4a4d9b21f00}\label{class_o_v_r_input_ad77e66e45c218b833c6dc4a4d9b21f00}} 
+\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Get\+Controller\+Recenter\+Count@{Get\+Controller\+Recenter\+Count}}
+\index{Get\+Controller\+Recenter\+Count@{Get\+Controller\+Recenter\+Count}!O\+V\+R\+Input@{O\+V\+R\+Input}}
+\subsubsection{\texorpdfstring{Get\+Controller\+Recenter\+Count()}{GetControllerRecenterCount()}}
+{\footnotesize\ttfamily static byte O\+V\+R\+Input.\+Get\+Controller\+Recenter\+Count (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}}}]{controller\+Mask = {\ttfamily \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a4d3d769b812b6faa6b76e1a8abaece2d}{Controller.\+Active}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the number of times the controller has been recentered this session. Useful for detecting recenter events and resetting state such as arm model simulations, etc. Wraps around to 0 after 255. Only applicable to controllers that require recentering, such as the Gear\+VR Controller. Returns 0 for controllers that do not require recentering. 
+
+\mbox{\Hypertarget{class_o_v_r_input_a07731a02d39af2a011d7579439dbeffd}\label{class_o_v_r_input_a07731a02d39af2a011d7579439dbeffd}} 
+\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Get\+Controller\+Was\+Recentered@{Get\+Controller\+Was\+Recentered}}
+\index{Get\+Controller\+Was\+Recentered@{Get\+Controller\+Was\+Recentered}!O\+V\+R\+Input@{O\+V\+R\+Input}}
+\subsubsection{\texorpdfstring{Get\+Controller\+Was\+Recentered()}{GetControllerWasRecentered()}}
+{\footnotesize\ttfamily static bool O\+V\+R\+Input.\+Get\+Controller\+Was\+Recentered (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}}}]{controller\+Mask = {\ttfamily \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a4d3d769b812b6faa6b76e1a8abaece2d}{Controller.\+Active}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns true if the specified controller was recentered this frame. Only applicable to controllers that require recentering, such as the Gear\+VR Controller. Returns false for controllers that do not require recentering. 
+
+\mbox{\Hypertarget{class_o_v_r_input_a9c2ccada669b0054fd25a82e84d659c9}\label{class_o_v_r_input_a9c2ccada669b0054fd25a82e84d659c9}} 
+\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Get\+Down@{Get\+Down}}
+\index{Get\+Down@{Get\+Down}!O\+V\+R\+Input@{O\+V\+R\+Input}}
+\subsubsection{\texorpdfstring{Get\+Down()}{GetDown()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily static bool O\+V\+R\+Input.\+Get\+Down (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5}{Button}}}]{virtual\+Mask,  }\item[{\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}}}]{controller\+Mask = {\ttfamily \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a4d3d769b812b6faa6b76e1a8abaece2d}{Controller.\+Active}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the current down state of the given virtual button mask with the given controller mask. Returns true if any masked button was pressed this frame on any masked controller and no masked button was previously down last frame. 
+
+\mbox{\Hypertarget{class_o_v_r_input_aa1f47bbdab31082c5173cb8905b720d5}\label{class_o_v_r_input_aa1f47bbdab31082c5173cb8905b720d5}} 
+\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Get\+Down@{Get\+Down}}
+\index{Get\+Down@{Get\+Down}!O\+V\+R\+Input@{O\+V\+R\+Input}}
+\subsubsection{\texorpdfstring{Get\+Down()}{GetDown()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily static bool O\+V\+R\+Input.\+Get\+Down (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77a}{Raw\+Button}}}]{raw\+Mask,  }\item[{\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}}}]{controller\+Mask = {\ttfamily \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a4d3d769b812b6faa6b76e1a8abaece2d}{Controller.\+Active}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the current down state of the given raw button mask with the given controller mask. Returns true if any masked button was pressed this frame on any masked controller and no masked button was previously down last frame. 
+
+\mbox{\Hypertarget{class_o_v_r_input_a2ac7a06a7df7f7e3371d7183d144dea9}\label{class_o_v_r_input_a2ac7a06a7df7f7e3371d7183d144dea9}} 
+\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Get\+Down@{Get\+Down}}
+\index{Get\+Down@{Get\+Down}!O\+V\+R\+Input@{O\+V\+R\+Input}}
+\subsubsection{\texorpdfstring{Get\+Down()}{GetDown()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily static bool O\+V\+R\+Input.\+Get\+Down (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_o_v_r_input_a4e1f1eb856223383aefc1965dd2db39a}{Touch}}}]{virtual\+Mask,  }\item[{\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}}}]{controller\+Mask = {\ttfamily \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a4d3d769b812b6faa6b76e1a8abaece2d}{Controller.\+Active}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the current down state of the given virtual touch mask with the given controller mask. Returns true if any masked touch was pressed this frame on any masked controller and no masked touch was previously down last frame. 
+
+\mbox{\Hypertarget{class_o_v_r_input_ae1aeb0251eb70fc326264a720ec2a210}\label{class_o_v_r_input_ae1aeb0251eb70fc326264a720ec2a210}} 
+\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Get\+Down@{Get\+Down}}
+\index{Get\+Down@{Get\+Down}!O\+V\+R\+Input@{O\+V\+R\+Input}}
+\subsubsection{\texorpdfstring{Get\+Down()}{GetDown()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily static bool O\+V\+R\+Input.\+Get\+Down (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_o_v_r_input_a6e130faa2035c5b20853c1177d909cc6}{Raw\+Touch}}}]{raw\+Mask,  }\item[{\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}}}]{controller\+Mask = {\ttfamily \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a4d3d769b812b6faa6b76e1a8abaece2d}{Controller.\+Active}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the current down state of the given raw touch mask with the given controller mask. Returns true if any masked touch was pressed this frame on any masked controller and no masked touch was previously down last frame. 
+
+\mbox{\Hypertarget{class_o_v_r_input_afb4731b4094d004c6df90d86189cb138}\label{class_o_v_r_input_afb4731b4094d004c6df90d86189cb138}} 
+\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Get\+Down@{Get\+Down}}
+\index{Get\+Down@{Get\+Down}!O\+V\+R\+Input@{O\+V\+R\+Input}}
+\subsubsection{\texorpdfstring{Get\+Down()}{GetDown()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily static bool O\+V\+R\+Input.\+Get\+Down (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_o_v_r_input_afa31aa573064be9bab8fc9e58cddeab6}{Near\+Touch}}}]{virtual\+Mask,  }\item[{\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}}}]{controller\+Mask = {\ttfamily \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a4d3d769b812b6faa6b76e1a8abaece2d}{Controller.\+Active}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the current down state of the given virtual near touch mask with the given controller mask. Returns true if any masked near touch was pressed this frame on any masked controller and no masked near touch was previously down last frame. 
+
+\mbox{\Hypertarget{class_o_v_r_input_adb67773105cb3dbda71635d14b0963d5}\label{class_o_v_r_input_adb67773105cb3dbda71635d14b0963d5}} 
+\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Get\+Down@{Get\+Down}}
+\index{Get\+Down@{Get\+Down}!O\+V\+R\+Input@{O\+V\+R\+Input}}
+\subsubsection{\texorpdfstring{Get\+Down()}{GetDown()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily static bool O\+V\+R\+Input.\+Get\+Down (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_o_v_r_input_ac9c3c10aa9911507c6dc66e2dd6ec60e}{Raw\+Near\+Touch}}}]{raw\+Mask,  }\item[{\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}}}]{controller\+Mask = {\ttfamily \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a4d3d769b812b6faa6b76e1a8abaece2d}{Controller.\+Active}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the current down state of the given raw near touch mask with the given controller mask. Returns true if any masked near touch was pressed this frame on any masked controller and no masked near touch was previously down last frame. 
+
+\mbox{\Hypertarget{class_o_v_r_input_a3d20bf824d737b85497fab8442638864}\label{class_o_v_r_input_a3d20bf824d737b85497fab8442638864}} 
+\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Get\+Local\+Controller\+Acceleration@{Get\+Local\+Controller\+Acceleration}}
+\index{Get\+Local\+Controller\+Acceleration@{Get\+Local\+Controller\+Acceleration}!O\+V\+R\+Input@{O\+V\+R\+Input}}
+\subsubsection{\texorpdfstring{Get\+Local\+Controller\+Acceleration()}{GetLocalControllerAcceleration()}}
+{\footnotesize\ttfamily static Vector3 O\+V\+R\+Input.\+Get\+Local\+Controller\+Acceleration (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{O\+V\+R\+Input.\+Controller}}}]{controller\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the linear acceleration of the given Controller local to its tracking space. Only supported for Oculus L\+Touch and R\+Touch controllers. Non-\/tracked controllers will return Vector3.\+zero. 
+
+\mbox{\Hypertarget{class_o_v_r_input_a065d9defd470387ea588a374d2c1c6b3}\label{class_o_v_r_input_a065d9defd470387ea588a374d2c1c6b3}} 
+\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Get\+Local\+Controller\+Angular\+Acceleration@{Get\+Local\+Controller\+Angular\+Acceleration}}
+\index{Get\+Local\+Controller\+Angular\+Acceleration@{Get\+Local\+Controller\+Angular\+Acceleration}!O\+V\+R\+Input@{O\+V\+R\+Input}}
+\subsubsection{\texorpdfstring{Get\+Local\+Controller\+Angular\+Acceleration()}{GetLocalControllerAngularAcceleration()}}
+{\footnotesize\ttfamily static Vector3 O\+V\+R\+Input.\+Get\+Local\+Controller\+Angular\+Acceleration (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{O\+V\+R\+Input.\+Controller}}}]{controller\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the angular acceleration of the given Controller local to its tracking space in radians per second per second around each axis. Only supported for Oculus L\+Touch and R\+Touch controllers. Non-\/tracked controllers will return Quaternion.\+identity. 
+
+\mbox{\Hypertarget{class_o_v_r_input_a98fc49ac302d343de505be72f6aec495}\label{class_o_v_r_input_a98fc49ac302d343de505be72f6aec495}} 
+\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Get\+Local\+Controller\+Angular\+Velocity@{Get\+Local\+Controller\+Angular\+Velocity}}
+\index{Get\+Local\+Controller\+Angular\+Velocity@{Get\+Local\+Controller\+Angular\+Velocity}!O\+V\+R\+Input@{O\+V\+R\+Input}}
+\subsubsection{\texorpdfstring{Get\+Local\+Controller\+Angular\+Velocity()}{GetLocalControllerAngularVelocity()}}
+{\footnotesize\ttfamily static Vector3 O\+V\+R\+Input.\+Get\+Local\+Controller\+Angular\+Velocity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{O\+V\+R\+Input.\+Controller}}}]{controller\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the angular velocity of the given Controller local to its tracking space in radians per second around each axis. Only supported for Oculus L\+Touch and R\+Touch controllers. Non-\/tracked controllers will return Quaternion.\+identity. 
+
+\mbox{\Hypertarget{class_o_v_r_input_aaf856370bc93d972ca00b9777e137493}\label{class_o_v_r_input_aaf856370bc93d972ca00b9777e137493}} 
+\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Get\+Local\+Controller\+Position@{Get\+Local\+Controller\+Position}}
+\index{Get\+Local\+Controller\+Position@{Get\+Local\+Controller\+Position}!O\+V\+R\+Input@{O\+V\+R\+Input}}
+\subsubsection{\texorpdfstring{Get\+Local\+Controller\+Position()}{GetLocalControllerPosition()}}
+{\footnotesize\ttfamily static Vector3 O\+V\+R\+Input.\+Get\+Local\+Controller\+Position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{O\+V\+R\+Input.\+Controller}}}]{controller\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the position of the given Controller local to its tracking space. Only supported for Oculus L\+Touch and R\+Touch controllers. Non-\/tracked controllers will return Vector3.\+zero. 
+
+\mbox{\Hypertarget{class_o_v_r_input_ae2f486b9046928c9e82bf8cbc68054e6}\label{class_o_v_r_input_ae2f486b9046928c9e82bf8cbc68054e6}} 
+\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Get\+Local\+Controller\+Rotation@{Get\+Local\+Controller\+Rotation}}
+\index{Get\+Local\+Controller\+Rotation@{Get\+Local\+Controller\+Rotation}!O\+V\+R\+Input@{O\+V\+R\+Input}}
+\subsubsection{\texorpdfstring{Get\+Local\+Controller\+Rotation()}{GetLocalControllerRotation()}}
+{\footnotesize\ttfamily static Quaternion O\+V\+R\+Input.\+Get\+Local\+Controller\+Rotation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{O\+V\+R\+Input.\+Controller}}}]{controller\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the rotation of the given Controller local to its tracking space. Only supported for Oculus L\+Touch and R\+Touch controllers. Non-\/tracked controllers will return Quaternion.\+identity. 
+
+\mbox{\Hypertarget{class_o_v_r_input_a284d11ad0469f2b1e04447e2d6a26bd4}\label{class_o_v_r_input_a284d11ad0469f2b1e04447e2d6a26bd4}} 
+\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Get\+Local\+Controller\+Velocity@{Get\+Local\+Controller\+Velocity}}
+\index{Get\+Local\+Controller\+Velocity@{Get\+Local\+Controller\+Velocity}!O\+V\+R\+Input@{O\+V\+R\+Input}}
+\subsubsection{\texorpdfstring{Get\+Local\+Controller\+Velocity()}{GetLocalControllerVelocity()}}
+{\footnotesize\ttfamily static Vector3 O\+V\+R\+Input.\+Get\+Local\+Controller\+Velocity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{O\+V\+R\+Input.\+Controller}}}]{controller\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the linear velocity of the given Controller local to its tracking space. Only supported for Oculus L\+Touch and R\+Touch controllers. Non-\/tracked controllers will return Vector3.\+zero. 
+
+\mbox{\Hypertarget{class_o_v_r_input_a27ab53793953a2222097e5664852c6ad}\label{class_o_v_r_input_a27ab53793953a2222097e5664852c6ad}} 
+\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Get\+Up@{Get\+Up}}
+\index{Get\+Up@{Get\+Up}!O\+V\+R\+Input@{O\+V\+R\+Input}}
+\subsubsection{\texorpdfstring{Get\+Up()}{GetUp()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily static bool O\+V\+R\+Input.\+Get\+Up (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_o_v_r_input_aed3cf5b4b5e0669cea0941f61e018ee5}{Button}}}]{virtual\+Mask,  }\item[{\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}}}]{controller\+Mask = {\ttfamily \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a4d3d769b812b6faa6b76e1a8abaece2d}{Controller.\+Active}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the current up state of the given virtual button mask with the given controller mask. Returns true if any masked button was released this frame on any masked controller and no other masked button is still down this frame. 
+
+\mbox{\Hypertarget{class_o_v_r_input_a4dd206208ab9835257a2495e92f41f71}\label{class_o_v_r_input_a4dd206208ab9835257a2495e92f41f71}} 
+\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Get\+Up@{Get\+Up}}
+\index{Get\+Up@{Get\+Up}!O\+V\+R\+Input@{O\+V\+R\+Input}}
+\subsubsection{\texorpdfstring{Get\+Up()}{GetUp()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily static bool O\+V\+R\+Input.\+Get\+Up (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_o_v_r_input_a9d6423af820e22b93f0b33a4fc4bf77a}{Raw\+Button}}}]{raw\+Mask,  }\item[{\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}}}]{controller\+Mask = {\ttfamily \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a4d3d769b812b6faa6b76e1a8abaece2d}{Controller.\+Active}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the current up state of the given raw button mask with the given controller mask. Returns true if any masked button was released this frame on any masked controller and no other masked button is still down this frame. 
+
+\mbox{\Hypertarget{class_o_v_r_input_a70c67e065dffb7d2ea3cfbb67944a0ea}\label{class_o_v_r_input_a70c67e065dffb7d2ea3cfbb67944a0ea}} 
+\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Get\+Up@{Get\+Up}}
+\index{Get\+Up@{Get\+Up}!O\+V\+R\+Input@{O\+V\+R\+Input}}
+\subsubsection{\texorpdfstring{Get\+Up()}{GetUp()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily static bool O\+V\+R\+Input.\+Get\+Up (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_o_v_r_input_a4e1f1eb856223383aefc1965dd2db39a}{Touch}}}]{virtual\+Mask,  }\item[{\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}}}]{controller\+Mask = {\ttfamily \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a4d3d769b812b6faa6b76e1a8abaece2d}{Controller.\+Active}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the current up state of the given virtual touch mask with the given controller mask. Returns true if any masked touch was released this frame on any masked controller and no other masked touch is still down this frame. 
+
+\mbox{\Hypertarget{class_o_v_r_input_a32e849220eb1167615c8e44e7f7cfd41}\label{class_o_v_r_input_a32e849220eb1167615c8e44e7f7cfd41}} 
+\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Get\+Up@{Get\+Up}}
+\index{Get\+Up@{Get\+Up}!O\+V\+R\+Input@{O\+V\+R\+Input}}
+\subsubsection{\texorpdfstring{Get\+Up()}{GetUp()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily static bool O\+V\+R\+Input.\+Get\+Up (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_o_v_r_input_a6e130faa2035c5b20853c1177d909cc6}{Raw\+Touch}}}]{raw\+Mask,  }\item[{\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}}}]{controller\+Mask = {\ttfamily \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a4d3d769b812b6faa6b76e1a8abaece2d}{Controller.\+Active}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the current up state of the given raw touch mask with the given controller mask. Returns true if any masked touch was released this frame on any masked controller and no other masked touch is still down this frame. 
+
+\mbox{\Hypertarget{class_o_v_r_input_a68539258d6e7216281b8f85722ac10b3}\label{class_o_v_r_input_a68539258d6e7216281b8f85722ac10b3}} 
+\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Get\+Up@{Get\+Up}}
+\index{Get\+Up@{Get\+Up}!O\+V\+R\+Input@{O\+V\+R\+Input}}
+\subsubsection{\texorpdfstring{Get\+Up()}{GetUp()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily static bool O\+V\+R\+Input.\+Get\+Up (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_o_v_r_input_afa31aa573064be9bab8fc9e58cddeab6}{Near\+Touch}}}]{virtual\+Mask,  }\item[{\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}}}]{controller\+Mask = {\ttfamily \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a4d3d769b812b6faa6b76e1a8abaece2d}{Controller.\+Active}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the current up state of the given virtual near touch mask with the given controller mask. Returns true if any masked near touch was released this frame on any masked controller and no other masked near touch is still down this frame. 
+
+\mbox{\Hypertarget{class_o_v_r_input_a183c4e73f60720968a86fae467e9fc4f}\label{class_o_v_r_input_a183c4e73f60720968a86fae467e9fc4f}} 
+\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Get\+Up@{Get\+Up}}
+\index{Get\+Up@{Get\+Up}!O\+V\+R\+Input@{O\+V\+R\+Input}}
+\subsubsection{\texorpdfstring{Get\+Up()}{GetUp()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily static bool O\+V\+R\+Input.\+Get\+Up (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_o_v_r_input_ac9c3c10aa9911507c6dc66e2dd6ec60e}{Raw\+Near\+Touch}}}]{raw\+Mask,  }\item[{\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}}}]{controller\+Mask = {\ttfamily \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a4d3d769b812b6faa6b76e1a8abaece2d}{Controller.\+Active}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the current up state of the given raw near touch mask with the given controller mask. Returns true if any masked near touch was released this frame on any masked controller and no other masked near touch is still down this frame. 
+
+\mbox{\Hypertarget{class_o_v_r_input_a3f4e283bf5665cbd9e2272d6ed5b54c0}\label{class_o_v_r_input_a3f4e283bf5665cbd9e2272d6ed5b54c0}} 
+\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Is\+Controller\+Connected@{Is\+Controller\+Connected}}
+\index{Is\+Controller\+Connected@{Is\+Controller\+Connected}!O\+V\+R\+Input@{O\+V\+R\+Input}}
+\subsubsection{\texorpdfstring{Is\+Controller\+Connected()}{IsControllerConnected()}}
+{\footnotesize\ttfamily static bool O\+V\+R\+Input.\+Is\+Controller\+Connected (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}}}]{controller }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns true if the specified controller type is currently connected. 
+
+\mbox{\Hypertarget{class_o_v_r_input_ac31fe82f3aab6c0964331831a94833ce}\label{class_o_v_r_input_ac31fe82f3aab6c0964331831a94833ce}} 
+\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Recenter\+Controller@{Recenter\+Controller}}
+\index{Recenter\+Controller@{Recenter\+Controller}!O\+V\+R\+Input@{O\+V\+R\+Input}}
+\subsubsection{\texorpdfstring{Recenter\+Controller()}{RecenterController()}}
+{\footnotesize\ttfamily static void O\+V\+R\+Input.\+Recenter\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}}}]{controller\+Mask = {\ttfamily \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a4d3d769b812b6faa6b76e1a8abaece2d}{Controller.\+Active}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Triggers a recenter to realign the specified controller\textquotesingle{}s virtual pose with the user\textquotesingle{}s real-\/world pose. Only applicable to controllers that require recentering, such as the Gear\+VR Controller. Ignored for controllers that do not require recentering. 
+
+\mbox{\Hypertarget{class_o_v_r_input_a53bfdaf8b68f660d37acaabdd79c26e9}\label{class_o_v_r_input_a53bfdaf8b68f660d37acaabdd79c26e9}} 
+\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Set\+Controller\+Vibration@{Set\+Controller\+Vibration}}
+\index{Set\+Controller\+Vibration@{Set\+Controller\+Vibration}!O\+V\+R\+Input@{O\+V\+R\+Input}}
+\subsubsection{\texorpdfstring{Set\+Controller\+Vibration()}{SetControllerVibration()}}
+{\footnotesize\ttfamily static void O\+V\+R\+Input.\+Set\+Controller\+Vibration (\begin{DoxyParamCaption}\item[{float}]{frequency,  }\item[{float}]{amplitude,  }\item[{\mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8}{Controller}}}]{controller\+Mask = {\ttfamily \mbox{\hyperlink{class_o_v_r_input_a5c86f9052a9cbb0b73779ff5704d60a8a4d3d769b812b6faa6b76e1a8abaece2d}{Controller.\+Active}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Activates vibration with the given frequency and amplitude with the given controller mask. Ignored on controllers that do not support vibration. Expected values range from 0 to 1. 
+
+\mbox{\Hypertarget{class_o_v_r_input_a6dfa622504b96b15183e4ba1b2e91575}\label{class_o_v_r_input_a6dfa622504b96b15183e4ba1b2e91575}} 
+\index{O\+V\+R\+Input@{O\+V\+R\+Input}!Update@{Update}}
+\index{Update@{Update}!O\+V\+R\+Input@{O\+V\+R\+Input}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily static void O\+V\+R\+Input.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Updates the internal state of \mbox{\hyperlink{class_o_v_r_input}{O\+V\+R\+Input}}. Must be called manually if used independently from O\+V\+R\+Manager. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+O\+V\+R\+Input.\+cs\end{DoxyCompactItemize}

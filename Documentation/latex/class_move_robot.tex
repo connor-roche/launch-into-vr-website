@@ -1,0 +1,127 @@
+\hypertarget{class_move_robot}{}\section{Move\+Robot Class Reference}
+\label{class_move_robot}\index{Move\+Robot@{Move\+Robot}}
+Inheritance diagram for Move\+Robot\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_move_robot}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_move_robot_acaa18eb45c2af4e040d08314ef6bfd77}{Start\+Moving}} (Vector3 destination, float speed=5f)
+\begin{DoxyCompactList}\small\item\em Moves the robot to a destination specified in the param at a speed specified in the param (default 5f) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_move_robot_a6f4c86e1a93a5f83cdde0d43998d48bd}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_move_robot_a358d1401815e59ddae6edca2f7874b88}{Update}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_move_robot_a3c7eeca97f62b1b3441b4f94854e6124}{m\+\_\+\+Is\+Moving}}
+\item 
+bool \mbox{\hyperlink{class_move_robot_a60f1a3b2d56b3c298e677d04d5a7b414}{m\+\_\+\+First\+Call}}
+\item 
+bool \mbox{\hyperlink{class_move_robot_a348c3db6da2394e433cb3bcd6cd9cb0b}{m\+\_\+\+Is\+Stopping}}
+\item 
+float \mbox{\hyperlink{class_move_robot_afaca031aa3c9f6a660d71c0e371f536f}{m\+\_\+\+Speed}} = 5f
+\item 
+Vector3 \mbox{\hyperlink{class_move_robot_a67cd9847aff3dc2e26cbb9cf3f27ab12}{m\+\_\+\+Dest}}
+\item 
+Game\+Object \mbox{\hyperlink{class_move_robot_a838c7823c5f333bb3583cce57fd9fcc8}{m\+\_\+\+Target\+Look\+At}}
+\item 
+float \mbox{\hyperlink{class_move_robot_a1be84318f7c7f9f5af8a2e84a2cf76b8}{m\+\_\+\+Stopping\+Distance}}
+\item 
+Animator \mbox{\hyperlink{class_move_robot_aef5a0d2a14b309e48c645400ec6b9be1}{m\+\_\+\+Robot\+Animator}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_move_robot_a6f4c86e1a93a5f83cdde0d43998d48bd}\label{class_move_robot_a6f4c86e1a93a5f83cdde0d43998d48bd}} 
+\index{Move\+Robot@{Move\+Robot}!Start@{Start}}
+\index{Start@{Start}!Move\+Robot@{Move\+Robot}}
+\subsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Move\+Robot.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_move_robot_acaa18eb45c2af4e040d08314ef6bfd77}\label{class_move_robot_acaa18eb45c2af4e040d08314ef6bfd77}} 
+\index{Move\+Robot@{Move\+Robot}!Start\+Moving@{Start\+Moving}}
+\index{Start\+Moving@{Start\+Moving}!Move\+Robot@{Move\+Robot}}
+\subsubsection{\texorpdfstring{Start\+Moving()}{StartMoving()}}
+{\footnotesize\ttfamily void Move\+Robot.\+Start\+Moving (\begin{DoxyParamCaption}\item[{Vector3}]{destination,  }\item[{float}]{speed = {\ttfamily 5f} }\end{DoxyParamCaption})}
+
+
+
+Moves the robot to a destination specified in the param at a speed specified in the param (default 5f) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em destination} & destination to mvoe the robot to\\
+\hline
+{\em speed} & speed at which to move the robot\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_move_robot_a358d1401815e59ddae6edca2f7874b88}\label{class_move_robot_a358d1401815e59ddae6edca2f7874b88}} 
+\index{Move\+Robot@{Move\+Robot}!Update@{Update}}
+\index{Update@{Update}!Move\+Robot@{Move\+Robot}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Move\+Robot.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_move_robot_a67cd9847aff3dc2e26cbb9cf3f27ab12}\label{class_move_robot_a67cd9847aff3dc2e26cbb9cf3f27ab12}} 
+\index{Move\+Robot@{Move\+Robot}!m\+\_\+\+Dest@{m\+\_\+\+Dest}}
+\index{m\+\_\+\+Dest@{m\+\_\+\+Dest}!Move\+Robot@{Move\+Robot}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Dest}{m\_Dest}}
+{\footnotesize\ttfamily Vector3 Move\+Robot.\+m\+\_\+\+Dest\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_move_robot_a60f1a3b2d56b3c298e677d04d5a7b414}\label{class_move_robot_a60f1a3b2d56b3c298e677d04d5a7b414}} 
+\index{Move\+Robot@{Move\+Robot}!m\+\_\+\+First\+Call@{m\+\_\+\+First\+Call}}
+\index{m\+\_\+\+First\+Call@{m\+\_\+\+First\+Call}!Move\+Robot@{Move\+Robot}}
+\subsubsection{\texorpdfstring{m\+\_\+\+First\+Call}{m\_FirstCall}}
+{\footnotesize\ttfamily bool Move\+Robot.\+m\+\_\+\+First\+Call\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_move_robot_a3c7eeca97f62b1b3441b4f94854e6124}\label{class_move_robot_a3c7eeca97f62b1b3441b4f94854e6124}} 
+\index{Move\+Robot@{Move\+Robot}!m\+\_\+\+Is\+Moving@{m\+\_\+\+Is\+Moving}}
+\index{m\+\_\+\+Is\+Moving@{m\+\_\+\+Is\+Moving}!Move\+Robot@{Move\+Robot}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Is\+Moving}{m\_IsMoving}}
+{\footnotesize\ttfamily bool Move\+Robot.\+m\+\_\+\+Is\+Moving\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_move_robot_a348c3db6da2394e433cb3bcd6cd9cb0b}\label{class_move_robot_a348c3db6da2394e433cb3bcd6cd9cb0b}} 
+\index{Move\+Robot@{Move\+Robot}!m\+\_\+\+Is\+Stopping@{m\+\_\+\+Is\+Stopping}}
+\index{m\+\_\+\+Is\+Stopping@{m\+\_\+\+Is\+Stopping}!Move\+Robot@{Move\+Robot}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Is\+Stopping}{m\_IsStopping}}
+{\footnotesize\ttfamily bool Move\+Robot.\+m\+\_\+\+Is\+Stopping\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_move_robot_aef5a0d2a14b309e48c645400ec6b9be1}\label{class_move_robot_aef5a0d2a14b309e48c645400ec6b9be1}} 
+\index{Move\+Robot@{Move\+Robot}!m\+\_\+\+Robot\+Animator@{m\+\_\+\+Robot\+Animator}}
+\index{m\+\_\+\+Robot\+Animator@{m\+\_\+\+Robot\+Animator}!Move\+Robot@{Move\+Robot}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Robot\+Animator}{m\_RobotAnimator}}
+{\footnotesize\ttfamily Animator Move\+Robot.\+m\+\_\+\+Robot\+Animator\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_move_robot_afaca031aa3c9f6a660d71c0e371f536f}\label{class_move_robot_afaca031aa3c9f6a660d71c0e371f536f}} 
+\index{Move\+Robot@{Move\+Robot}!m\+\_\+\+Speed@{m\+\_\+\+Speed}}
+\index{m\+\_\+\+Speed@{m\+\_\+\+Speed}!Move\+Robot@{Move\+Robot}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Speed}{m\_Speed}}
+{\footnotesize\ttfamily float Move\+Robot.\+m\+\_\+\+Speed = 5f\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_move_robot_a1be84318f7c7f9f5af8a2e84a2cf76b8}\label{class_move_robot_a1be84318f7c7f9f5af8a2e84a2cf76b8}} 
+\index{Move\+Robot@{Move\+Robot}!m\+\_\+\+Stopping\+Distance@{m\+\_\+\+Stopping\+Distance}}
+\index{m\+\_\+\+Stopping\+Distance@{m\+\_\+\+Stopping\+Distance}!Move\+Robot@{Move\+Robot}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Stopping\+Distance}{m\_StoppingDistance}}
+{\footnotesize\ttfamily float Move\+Robot.\+m\+\_\+\+Stopping\+Distance\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_move_robot_a838c7823c5f333bb3583cce57fd9fcc8}\label{class_move_robot_a838c7823c5f333bb3583cce57fd9fcc8}} 
+\index{Move\+Robot@{Move\+Robot}!m\+\_\+\+Target\+Look\+At@{m\+\_\+\+Target\+Look\+At}}
+\index{m\+\_\+\+Target\+Look\+At@{m\+\_\+\+Target\+Look\+At}!Move\+Robot@{Move\+Robot}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Target\+Look\+At}{m\_TargetLookAt}}
+{\footnotesize\ttfamily Game\+Object Move\+Robot.\+m\+\_\+\+Target\+Look\+At\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_move_robot_8cs}{Move\+Robot.\+cs}}\end{DoxyCompactItemize}

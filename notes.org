@@ -1,0 +1,12 @@
+* need pictures for the bios
+* need new gameplay video for the landing page
+* need new hype video for the about tab
+* note: downloading unity package
+* utility section for docs
+** command prompt interaction in game
+** castin vr experience
+* downloads 
+** package
+** apk w/direction
+* in landing page specify for andriod phones only on GEAR VR 
+* meet our student http://www.njit.edu/ for about cards
