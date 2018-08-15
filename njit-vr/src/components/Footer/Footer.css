@@ -1,0 +1,23 @@
+footer {
+    font-size: 13px;
+    color: black;
+    background-color: #d1d1d1;
+    padding: 10px 0px;
+}
+
+footer a {
+    text-decoration: none !important;
+    color: black;
+    font-size: 13px;
+}
+
+footer a:hover {
+    color: black;
+    cursor: pointer;
+}
+
+@media (max-width: 575px) {
+    .githubLink {
+	margin: 15px 0;
+    }
+}

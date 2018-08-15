@@ -1,0 +1,48 @@
+.logo {
+    margin-top: 80px;
+}
+
+.projectDescription {
+    width: 90%;
+}
+
+#intro {
+    margin-top: 50px;
+}
+
+#summary {
+    margin-top: 30px;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+.buttons button {
+    width: 180px;
+    height: 50px;
+}
+
+.buttons #download {
+    margin-left: 20px;
+}
+
+.video {
+    width: 90%;
+    height: 90%;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+@media (max-width: 409px) {
+    .buttons {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+    }
+
+    .buttons #download {
+	margin-left: 0px;
+	margin-top: 35px;
+    }
+}

@@ -6,8 +6,8 @@ class Navbar extends Component {
 
     render () {
 	return (
-	    <header className="navbar navbar-expand bg-dark justify-content-center flex-column">
-	      <div className="navbar-nav-scroll p-1">
+	    <header className="fixed-top navbar navbar-expand bg-dark justify-content-center flex-column">
+	      <div className="navbar-nav-scroll">
 		<ul className="navbar-nav">
 		  <li className="nav-item">
 		    <a className="nav-link active text-white-50" href="#">Home</a>
