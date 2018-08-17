@@ -1,20 +1,20 @@
 import React, { Component } from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 
-import classes from './App.css';
-import VRTutorial from './components/VRTutorial/VRTutorial';
-import Navbar from './components/Navbar/Navbar';
-import Footer from './components/Footer/Footer';
 import Aux from './hoc/Aux/Aux';
+import Landing from './hoc/Landing/Landing';
+import About from './hoc/About/About';
+import Downloads from './hoc/Downloads/Downloads';
 
 class App extends Component {
+    
     render() {
 	return (
 	    <BrowserRouter>
-	      <Aux className={classes.app}>
-		<Navbar />
-		<VRTutorial />
-		<Footer />
+	      <Aux>
+		<Route path="/" exact component={Landing} />
+		<Route path="/about" exact component={About} />
+		<Route path="/downloads" exact component={Downloads} />
 	      </Aux>
 	    </BrowserRouter>
 	);

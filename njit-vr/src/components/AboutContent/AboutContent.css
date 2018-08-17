@@ -1,0 +1,19 @@
+.content {
+    margin-top: 100px;
+}
+
+.teamTitle {
+    margin-top: 40px;
+}
+
+.teamMember {
+    margin-top: 40px;
+}
+
+.card {
+    border-style: none;
+}
+
+.card img {
+    height: 300px;
+}

@@ -1,17 +1,18 @@
-footer {
+.footer {
     font-size: 13px;
     color: black;
     background-color: #d1d1d1;
-    padding: 10px 0px;
+    height: 60px;
+    margin-top: 70px;
 }
 
-footer a {
+.footer a {
     text-decoration: none !important;
     color: black;
     font-size: 13px;
 }
 
-footer a:hover {
+.footer a:hover {
     color: black;
     cursor: pointer;
 }

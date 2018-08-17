@@ -6,7 +6,7 @@ class Navbar extends Component {
 
     render () {
 	return (
-	    <header className="fixed-top navbar navbar-expand bg-dark justify-content-center flex-column">
+	    <div className="fixed-top navbar navbar-expand bg-dark justify-content-center flex-column">
 	      <div className="navbar-nav-scroll">
 		<ul className="navbar-nav">
 		  <li className="nav-item">
@@ -23,7 +23,7 @@ class Navbar extends Component {
 		  </li>
 		</ul>
 	      </div>
-	    </header>
+	    </div>
 	);
     }
     
