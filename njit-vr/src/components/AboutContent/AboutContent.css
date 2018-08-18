@@ -2,8 +2,12 @@
     margin-top: 100px;
 }
 
-.teamTitle {
+.subTitle {
     margin-top: 40px;
+}
+
+.aboutDesc {
+    font-size: 1.4em
 }
 
 .teamMember {

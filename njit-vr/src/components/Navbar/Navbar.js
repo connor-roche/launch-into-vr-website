@@ -1,32 +1,28 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-import logo from '../../assets/images/logo-small.png';
+import classes from './Navbar.css';
 
-class Navbar extends Component {
+const Navbar = () => (
 
-    render () {
-	return (
-	    <div className="fixed-top navbar navbar-expand bg-dark justify-content-center flex-column">
-	      <div className="navbar-nav-scroll">
-		<ul className="navbar-nav">
-		  <li className="nav-item">
-		    <a className="nav-link active text-white-50" href="#">Home</a>
-		  </li>
-		  <li className="nav-item">
-		    <a className="nav-link text-white-50" href="#">Documentation</a>
-		  </li>
-		  <li className="nav-item">
-		    <a className="nav-link text-white-50" href="#">Downloads</a>
-		  </li>
-		  <li className="nav-item">
-		    <a className="nav-link text-white-50" href="#">About</a>
-		  </li>
-		</ul>
-	      </div>
-	    </div>
-	);
-    }
+    <div className={[classes.navbarCSS, "fixed-top navbar navbar-expand bg-dark justify-content-center flex-column"].join(' ')}>
+      <div className="navbar-nav-scroll">
+	<ul className="navbar-nav">
+	  <li className="nav-item">
+	    <a className="nav-link" href="#">Home</a>
+	  </li>
+	  <li className="nav-item">
+	    <a className="nav-link" href="#">Documentation</a>
+	  </li>
+	  <li className="nav-item">
+	    <a className="nav-link" href="#">Downloads</a>
+	  </li>
+	  <li className="nav-item">
+	    <a className="nav-link" href="#">About</a>
+	  </li>
+	</ul>
+      </div>
+    </div>
     
-};
+);
 
 export default Navbar;

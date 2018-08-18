@@ -10,9 +10,11 @@ const AboutContent = () => (
     <Aux>
       
       <section className={[classes.content, "container"].join(' ')}>
-	<h2>History</h2>
+	<h1>About</h1>
+	<p className={classes.aboutDesc}>Learn about the history of Launch and the team that created it.</p>
+	<h3 className={classes.subTitle}>History</h3>
 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec diam massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus faucibus molestie tempus. Vestibulum pretium faucibus est, quis volutpat diam ornare sit amet. Sed dignissim cursus turpis, eget congue leo suscipit eget. Aliquam lacinia risus nec orci convallis, id lacinia urna sollicitudin. Maecenas vitae condimentum velit, in congue augue. Phasellus id est a sapien hendrerit congue quis et justo. </p>
-	<h2 className={classes.teamTitle}>Team</h2>
+	<h3 className={classes.subTitle}>Team</h3>
 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec diam massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 	
 	<div className="row">

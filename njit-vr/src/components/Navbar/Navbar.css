@@ -1,0 +1,7 @@
+.navbarCSS a {
+    color: #bfbfbf;
+}
+
+.navbarCSS a:hover {
+    color: white;
+}
