@@ -2,6 +2,7 @@
     color: #bfbfbf;
 }
 
-.navbarCSS a:hover {
+.navbarCSS a:hover,
+.navbarCSS a:active {
     color: white;
 }

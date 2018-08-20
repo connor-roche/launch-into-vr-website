@@ -1,4 +1,5 @@
 import React from 'react';
+import {NavLink} from 'react-router-dom';
 
 import classes from './Navbar.css';
 
@@ -8,16 +9,16 @@ const Navbar = () => (
       <div className="navbar-nav-scroll">
 	<ul className="navbar-nav">
 	  <li className="nav-item">
-	    <a className="nav-link" href="#">Home</a>
+	    <NavLink to="/" className="nav-link" exact activeStyle={{color: 'white'}}>Home</NavLink>
 	  </li>
 	  <li className="nav-item">
 	    <a className="nav-link" href="#">Documentation</a>
 	  </li>
 	  <li className="nav-item">
-	    <a className="nav-link" href="#">Downloads</a>
+	    <NavLink to="/downloads" className="nav-link" exact activeStyle={{color: 'white'}}>Downloads</NavLink>
 	  </li>
 	  <li className="nav-item">
-	    <a className="nav-link" href="#">About</a>
+	    <NavLink to="/about" className="nav-link" exact activeStyle={{color: 'white'}}>About</NavLink>
 	  </li>
 	</ul>
       </div>

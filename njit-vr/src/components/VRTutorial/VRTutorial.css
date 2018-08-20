@@ -33,7 +33,7 @@
     margin-top: 50px;
 }
 
-@media (max-width: 409px) {
+@media screen and (max-width: 409px) {
     .buttons {
 	display: flex;
 	flex-direction: column;

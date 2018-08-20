@@ -21,3 +21,11 @@
 .card img {
     height: 300px;
 }
+
+@media screen and (max-width: 767px) {
+    .teamMember {
+	float: none;
+	margin: auto;
+	margin-top: 30px;
+    }
+}

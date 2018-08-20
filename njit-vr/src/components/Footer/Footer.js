@@ -12,7 +12,7 @@ class Footer extends Component {
 	const screenHeight = window.innerHeight;
 	const contentHeight = document.body.clientHeight - document.querySelector('footer').clientHeight;
 	console.log('screen height:' + screenHeight, 'content height:' + contentHeight);
-	if (contentHeight < (screenHeight - 130))
+	if (contentHeight < (screenHeight - ( document.querySelector('footer').clientHeight+ 70)))
 	    this.setState({style: {position: 'absolute',
 				   right: '0',
 				   left: '0',

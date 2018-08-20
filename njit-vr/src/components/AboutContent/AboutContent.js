@@ -4,6 +4,7 @@ import classes from './AboutContent.css';
 import Aux from '../../hoc/Aux/Aux';
 
 import pat from '../../assets/images/pat.jpg';
+import connor from '../../assets/images/connor.jpg';
 
 const AboutContent = () => (
     
@@ -19,7 +20,7 @@ const AboutContent = () => (
 	
 	<div className="row">
 	  
-	  <div className={[classes.teamMember, "col-lg-4 offset-lg-1"].join(' ')}>
+	  <div className={[classes.teamMember, "col-xl-4 offset-xl-1 col-lg-5 col-md-6 col-sm-9 col-10"].join(' ')}>
 	    <div className={[classes.card, "card"].join(' ')}>
 	      <img className="card-img-top" src={pat} alt="Card image cap" />
 	      <div className="card-body">
@@ -30,9 +31,9 @@ const AboutContent = () => (
 	    </div>
 	  </div>
 
-	  <div className={[classes.teamMember, "col-lg-4 offset-lg-2"].join(' ')}>
+	  <div className={[classes.teamMember, "col-xl-4 offset-xl-2 col-lg-5 offset-lg-2 col-md-6 col-sm-9 col-10"].join(' ')}>
 	    <div className={[classes.card, "card"].join(' ')}>
-	      <img className="card-img-top" src={pat} alt="Card image cap" />
+	      <img className="card-img-top" src={connor} alt="Card image cap" />
 	      <div className="card-body">
 		<h5 className="card-title">Connor Roche</h5>
 		<p className="card-text">Connor is a recent college grad with interests in full stack web development, Linux, and hockey.</p>
@@ -45,7 +46,7 @@ const AboutContent = () => (
 
 	<div className="row">
 
-	  <div className={[classes.teamMember, "col-lg-4 offset-lg-1"].join(' ')}>
+	  <div className={[classes.teamMember, "col-xl-4 offset-xl-1 col-lg-5 col-md-6 col-sm-9 col-10"].join(' ')}>
 	    <div className={[classes.card, "card"].join(' ')}>
 	      <img className="card-img-top" src={pat} alt="Card image cap" />
 	      <div className="card-body">
@@ -56,7 +57,7 @@ const AboutContent = () => (
 	    </div>
 	  </div>
 
-	  <div className={[classes.teamMember, "col-lg-4 offset-lg-2"].join(' ')}>
+	  <div className={[classes.teamMember, "col-xl-4 offset-xl-2 col-lg-5 offset-lg-2 col-md-6 col-sm-9 col-10"].join(' ')}>
 	    <div className={[classes.card, "card"].join(' ')}>
 	      <img className="card-img-top" src={pat} alt="Card image cap" />
 	      <div className="card-body">
