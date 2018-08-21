@@ -11,8 +11,11 @@
 * in landing page specify for andriod phones only on GEAR VR 
 * meet our student http://www.njit.edu/ for about cards
 * Website todo:
-** TODO change footer so that download button is in the footer when in mobile (iphone 7)
-** TODO fix grid for cards so it works in all screen sizes
-** TODO add "About" title to about page with a quick summary of the page
-** TODO fix font sizes for all p tags in root element
-** TODO add directions for apk download
+** DONE change footer so that download button is in the footer when in mobile (iphone 7)
+** DONE fix grid for cards so it works in all screen sizes
+** DONE add "About" title to about page with a quick summary of the page
+** DONE fix font sizes for all p tags in root element
+** DONE fill in text content for about and landing page
+** DONE add links to github accounts for about page
+** DONE add link to download button in navbar
+** 

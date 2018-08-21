@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 
+import './App.css';
 import Aux from './hoc/Aux/Aux';
 import Landing from './hoc/Landing/Landing';
 import About from './hoc/About/About';
