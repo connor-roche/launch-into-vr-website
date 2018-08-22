@@ -18,4 +18,8 @@
 ** DONE fill in text content for about and landing page
 ** DONE add links to github accounts for about page
 ** DONE add link to download button in navbar
-** 
+** TODO add desc of stages to documentation
+** TODO create frame with doxigen docs in it 
+** TODO eventually create own documentation scheme
+*** TODO structure scheme so Mike can load it as such
+*** TODO load docs dynamically

@@ -12,7 +12,7 @@ const Navbar = () => (
 	    <NavLink to="/" className="nav-link" exact activeStyle={{color: 'white'}}>Home</NavLink>
 	  </li>
 	  <li className="nav-item">
-	    <a className="nav-link" href="#">Documentation</a>
+	    <NavLink to="/documentation" className="nav-link" exact activeStyle={{color: 'white'}}>Documentation</NavLink>
 	  </li>
 	  <li className="nav-item">
 	    <NavLink to="/downloads" className="nav-link" exact activeStyle={{color: 'white'}}>Downloads</NavLink>

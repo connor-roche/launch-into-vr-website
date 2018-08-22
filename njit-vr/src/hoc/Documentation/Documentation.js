@@ -2,15 +2,17 @@ import React from 'react';
 
 import Aux from '../Aux/Aux';
 import Navbar from '../../components/Navbar/Navbar';
-import LandingContent from '../../components/LandingContent/LandingContent';
+import DocumentationContent from '../../components/DocumentationContent/DocumentationContent';
 import Footer from '../../components/Footer/Footer';
 
-const Landing = () => (
+const Documentation = () => (
+
     <Aux>
       <Navbar />
-      <LandingContent />
+      <DocumentationContent />
       <Footer />
     </Aux>
+
 );
 
-export default Landing;
+export default Documentation;
