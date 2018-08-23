@@ -92,5 +92,8 @@
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "devDependencies": {
+    "html-loader": "^0.5.5"
   }
 }

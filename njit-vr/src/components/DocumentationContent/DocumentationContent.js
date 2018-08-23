@@ -1,8 +1,8 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 
 import classes from './DocumentationContent.css';
 import Aux from '../../hoc/Aux/Aux';
+import docs from '../../assets/Documentation.zip';
 
 const DocumentationContent = () => (
 
@@ -26,7 +26,7 @@ const DocumentationContent = () => (
 	<p>Targets and a new ball appear and now the player must use all their previously acquired skills to destroy the targets with the balls.</p>
 	<h3 className={classes.subTitle}>Documentation</h3>
 	<p>Right now our documentation is done by Doxygen. This is not ideal, but for now, it gets the job done. Bear in mind that all our codebase, that you get in the unity package, contains extensive, internal XML documentation.</p>
-	<Link to="/dox-documentation"><button type="button" className="btn btn-outline-secondary">Doxygen Documentation</button></Link>
+	<a href={docs} type="button" className="btn btn-outline-secondary">Doxygen Documentation</a>
 	<p style={{marginTop: '20px'}}><strong>We plan to update our documentation by the middle of September 2018 to make it more legible and better represent our framework.</strong></p>
       </section>
     </Aux>
