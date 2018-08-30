@@ -5,6 +5,8 @@ import Aux from '../../hoc/Aux/Aux';
 
 import pat from '../../assets/images/pat.jpg';
 import connor from '../../assets/images/connor.jpg';
+import alek from '../../assets/images/alek.jpg';
+import mike from '../../assets/images/mike.jpg';
 
 const AboutContent = () => (
     
@@ -24,10 +26,10 @@ const AboutContent = () => (
 	  
 	  <div className={[classes.teamMember, "col-xl-4 offset-xl-1 col-lg-5 col-md-6 col-sm-9 col-10"].join(' ')}>
 	    <div className={[classes.card, "card"].join(' ')}>
-	      <img className="card-img-top" src={pat} alt="Card image cap" />
+	      <img className="card-img-top" src={mike} alt="Card cap" />
 	      <div className="card-body">
 		<h5 className="card-title">Michael Martin</h5>
-		<p className="card-text">Michael is a graduate computer science student who enjoys game development and fitness training.</p>
+		<p className="card-text">Michael is a computer science student studying cybersecurity and enjoys adventuring to new places.</p>
 		<a href="https://github.com/michaeljmartin28" className="btn btn-outline-secondary">GitHub</a>
 	      </div>
 	    </div>
@@ -35,7 +37,7 @@ const AboutContent = () => (
 
 	  <div className={[classes.teamMember, "col-xl-4 offset-xl-2 col-lg-5 offset-lg-2 col-md-6 col-sm-9 col-10"].join(' ')}>
 	    <div className={[classes.card, "card"].join(' ')}>
-	      <img className="card-img-top" src={connor} alt="Card image cap" />
+	      <img className="card-img-top" src={connor} alt="Card cap" />
 	      <div className="card-body">
 		<h5 className="card-title">Connor Roche</h5>
 		<p className="card-text">Connor is a recent college grad with interests in full stack web development, Linux, and hockey.</p>
@@ -50,7 +52,7 @@ const AboutContent = () => (
 
 	  <div className={[classes.teamMember, "col-xl-4 offset-xl-1 col-lg-5 col-md-6 col-sm-9 col-10"].join(' ')}>
 	    <div className={[classes.card, "card"].join(' ')}>
-	      <img className="card-img-top" src={pat} alt="Card image cap" />
+	      <img className="card-img-top" src={pat} alt="Card cap" />
 	      <div className="card-body">
 		<h5 className="card-title">Patrick Delong</h5>
 		<p className="card-text">Pat is a computer science student whose focus is on cybersecurity and playing Super Smash Bros.</p>
@@ -61,7 +63,7 @@ const AboutContent = () => (
 
 	  <div className={[classes.teamMember, "col-xl-4 offset-xl-2 col-lg-5 offset-lg-2 col-md-6 col-sm-9 col-10"].join(' ')}>
 	    <div className={[classes.card, "card"].join(' ')}>
-	      <img className="card-img-top" src={pat} alt="Card image cap" />
+	      <img className="card-img-top" src={alek} alt="Card cap" />
 	      <div className="card-body">
 		<h5 className="card-title">Alek Gulbenkian</h5>
 		<p className="card-text">Alek is a recent college grad with a passion for web development and competitive lifting. </p>

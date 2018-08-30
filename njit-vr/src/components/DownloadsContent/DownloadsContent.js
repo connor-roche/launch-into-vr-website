@@ -2,8 +2,8 @@ import React from 'react';
 
 import classes from './DownloadsContent.css';
 import Aux from '../../hoc/Aux/Aux';
-import unityPackage from '../../assets/downloads/LaunchIntoVr.unitypackage';
-import apk from '../../assets/downloads/LaunchIntoVR.apk';
+import unityPackage from '../../assets/downloads/LaunchIntoVrUnity.zip';
+import apk from '../../assets/downloads/LaunchIntoVRAPK.zip';
 
 const DownloadsContent = () => (
 

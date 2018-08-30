@@ -7,7 +7,6 @@ import Landing from './hoc/Landing/Landing';
 import About from './hoc/About/About';
 import Downloads from './hoc/Downloads/Downloads';
 import Documentation from './hoc/Documentation/Documentation';
-{/* import DoxDocumentation from './components/DoxDocumentation/DoxDocumentation'; */}
 
 class App extends Component {
     
@@ -19,7 +18,6 @@ class App extends Component {
 		<Route path="/about" exact component={About} />
 		<Route path="/downloads" exact component={Downloads} />
 		<Route path="/documentation" exact component={Documentation}/>
-		{/* <Route path="/dox-documentation" exact component={DoxDocumentation} /> */}
 	      </Aux>
 	    </BrowserRouter>
 	);
