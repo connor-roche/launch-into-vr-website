@@ -16,7 +16,7 @@ const AboutContent = () => (
 	<h1>About</h1>
 	<p className={classes.aboutDesc}>Learn about the history of Launch and the team that created it.</p>
 	<h3 className={classes.subTitle}>History</h3>
-	<p> Launch into VR is a capstone project created by four senior computer science students at NJIT. Nobody in the team knew each other before working on the game. We came together and completed Launch in two months despite having no prior experience in Unity, C#, game design, or 3D asset creation.</p>
+	<p> Launch into VR is a capstone project created by four senior computer science students at the New Jersey Institute of Technology. Nobody in the team knew each other before working on the game. We came together and completed Launch in two months despite having no prior experience in Unity, C#, game design, or 3D asset creation.</p>
 	<h3 className={classes.subTitle}>Team</h3>
 	<p>Each team member utilized their specific set of skills in order to achieve the completed tutorial game.</p>
 
